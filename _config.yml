@@ -3,14 +3,14 @@ markdown:         redcarpet
 highlighter:      pygments
 
 # Permalinks
-permalink:        pretty
+permalink:        /:month-:day-:year-:title.html
 relative_permalinks: true
 
 # Setup
-title:            Poole
-tagline:          The Jekyll Butler
-url:              http://jameswilson.github.io/
-paginate:         1
+title:            James Wilson
+tagline:          Web developer. Drupal enthusiast. Surfer and musician. I craft bespoke websites at <a href="http://bluespark.com">Bluespark</a>.
+url:              http://jameswilson.github.io
+paginate:         3
 baseurl:          /
 author:
   name:           James Wilson
@@ -20,4 +20,10 @@ author:
 # Custom vars
 version:          1.0.0
 github:
-  repo:           https://github.com/poole/poole
+  repo:           https://github.com/jameswilson/jameswilson.github.io
+
+# Main navigation (see _layouts/default.html for usage)
+pages_list:
+  About: '/about.html'
+  Archive: '/archive.html'
+  Feed: '/atom.xml'
