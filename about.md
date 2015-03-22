@@ -4,27 +4,24 @@ title: About
 ---
 
 <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+  Hey there! My name is James Wilson.  I'm the lead front-end web developer
+  at Bluespark. I use this space to blog about technical things I work on.
 </p>
 
-In the novel, *The Strange Case of Dr. Jekyll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+You can find me elsewhere online at:
 
-There are currently two themes built on Poole:
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+* [Drupal.org](https://www.drupal.org/u/jwilson3)
+* [GitHub.org](https://www.github.com/jameswilson)
+* [Twitter.com](https://twitter.com/jwilson3)
+* [Facebook.com](https://www.facebook.com/jrwilson3)
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+## Credits
 
-## Setup
+This blog was:
 
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
+* Built with [Jekyll](http://jekyllrb.com) on top of the [Poole](http://getpoole.com/) framework theme.
 * Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
+* Coded with [Sublime Text 3](http://sublimetext.com), an amazing code editor.
 
 Thanks for reading!
