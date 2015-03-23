@@ -1,19 +1,26 @@
 # Permalinks
-permalink:        pretty
+permalink:        /:year-:month-:day-:title.html
 relative_permalinks: true
 
 # Setup
-title:            Poole
-tagline:          The Jekyll Butler
-url:              http://getpoole.com
-paginate:         1
+title:            James Wilson
+tagline:          Web developer. Drupal enthusiast. Surfer and musician. I craft bespoke websites at <a href="http://bluespark.com">Bluespark</a>.
+url:              http://jameswilson.github.io
+paginate:         3
 baseurl:          /
 author:
-  name:           Mark Otto
-  url:            https://twitter.com/mdo
-  email:          markdotto@gmail.com
+  name:           James Wilson
+  url:            https://twitter.com/jwilson3
+  email:          jrwilson3@gmail.com
 
 # Custom vars
 version:          1.0.0
 github:
-  repo:           https://github.com/poole/poole
+  repo:           https://github.com/jameswilson/jameswilson.github.io
+
+# Main navigation (see _layouts/default.html for usage)
+pages_list:
+  About: '/about.html'
+  Twitter: 'http://twitter.com/jwilson3'
+  Archive: '/archive.html'
+  Feed: '/atom.xml'
