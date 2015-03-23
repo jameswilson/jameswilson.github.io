@@ -10,7 +10,7 @@ paginate:         3
 markdown:         redcarpet
 baseurl:          /
 author:
-  name:           James Wilson
+  name:           James
   url:            https://twitter.com/jwilson3
   email:          jrwilson3@gmail.com
 

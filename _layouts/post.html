@@ -4,7 +4,8 @@ layout: default
 
 <article class="post">
   <h1 class="post-title">{{ page.title }}</h1>
-  <time datetime="{{ page.date | date_to_xmlschema }}" class="page-date">{{ page.date | date_to_string }}</time>
+  <div class="post-date">Penned by <a href="{{ site.author.url }}">{{ site.author.name }}</a> on <time datetime="{{ page.date | date_to_xmlschema }}" class="page-date">{{ page.date | date_to_string }}</time>
+  </div>
   {{ content }}
 </article>
 

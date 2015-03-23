@@ -354,6 +354,10 @@ a.sidebar-nav-item:focus {
   color: inherit;
 }
 
+/* Retweet */
+.retweet {
+  margin: 4rem 0;
+}
 
 /*
  * Pagination
