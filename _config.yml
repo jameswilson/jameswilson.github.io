@@ -8,7 +8,7 @@ relative_permalinks: true
 
 # Setup
 title:            James Wilson
-tagline:          Web developer. Drupal enthusiast. Surfer and musician. I craft bespoke websites at <a href="http://bluespark.com">Bluespark</a>.
+tagline:          Web developer. Drupal enthusiast. Surfer and musician.<br/> I craft bespoke websites at <a href="http://bluespark.com">Bluespark</a>.
 url:              http://jameswilson.github.io
 paginate:         3
 baseurl:          /
