@@ -145,7 +145,7 @@ expected the inverse: `padding-right: 15px`. Thanks Drupal!  Well, fortunately,
 this is super easy to mitigate by adding the code in the following gist to your
 Drupal theme’s template.php file.
 
-[gist url="https://gist.github.com/jameswilson/33c1f5d405119a508ceb”]
+{% gist 33c1f5d405119a508ceb %}
 
 This snippet of code searches through the list of stylesheets and removes the
 original LTR CSS files on pages whose language is RTL.  It is careful to only
@@ -162,6 +162,7 @@ http://www.matanich.com/2013/09/06/rtl-css-with-sass/
 One nice feature I like to use is the `side-values` function:
 
 ```scss
+/* styles.scss */
 .sidebar-first {
   float: $left;
   padding: side-values(10px 5px 60px 20px);
