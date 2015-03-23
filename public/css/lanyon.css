@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 56rem) {
   .container {
-    max-width: 38rem;
+    max-width: 43rem;
   }
 }
 
@@ -98,16 +98,20 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 1rem;
   margin-bottom: 3rem;
   border-bottom: 1px solid #eee;
+  background: #252525;
+  color: #CCC;
+  text-align: center;
 }
 .masthead-title {
   margin-top: 0;
   margin-bottom: 0;
-  color: #505050;
+  font-size: 1.4em;
 }
+.masthead-title,
 .masthead-title a {
-  color: #505050;
+  color: #dfdfdf;
 }
-.masthead-title small {
+.tagline {
   font-size: 75%;
   font-weight: 400;
   color: #c0c0c0;
@@ -115,10 +119,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 48rem) {
-  .masthead-title {
-    text-align: center;
-  }
-  .masthead-title small {
+  .tagline {
     display: none;
   }
 }
