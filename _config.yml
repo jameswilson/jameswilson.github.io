@@ -25,5 +25,6 @@ github:
 # Main navigation (see _layouts/default.html for usage)
 pages_list:
   About: '/about.html'
+  Twitter: 'http://twitter.com/jwilson3'
   Archive: '/archive.html'
   Feed: '/atom.xml'
