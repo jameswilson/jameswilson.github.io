@@ -38,7 +38,19 @@ Qué idioma utilizar y cuándo?
 - Habilitar "URL" como método principal de detección.
 
 
-5. Configurar fecha y hora
+5. Alternador de idiomas
+-------------------
+Colocar el bloque del alternador de idiomas en la primera barra lateral del sitio.
+
+- Administrar > Estructura > Diseño de bloques<br>
+  URL: `admin/structure/block`
+- En la region de la Primera barra lateral, aplasta el botón: *Colocar bloque*.
+- Buscar y colocar el bloque *Alternador de idioma*.
+- Deshabilitar la opción: *Mostrar título* y cliquear *Guardar el bloque*.
+- *Regresar al sitio* para visualizar el Alternador.
+
+
+6. Configurar fecha y hora
 --------------------------
 Por defecto Drupal usa mes/día/año (el format común del ingles) lo que hay que cambiar a día/mes/año.
 
@@ -57,7 +69,7 @@ También se recomienda crear formatos más comunes en español como:
   `d/m/Y - h:i a`
 
 
-6. Habilitar módulos para traducción
+7. Habilitar módulos para traducción
 ------------------------------------
 - Administrar > Extender<br>
   URL: `admin/modules`
@@ -74,18 +86,6 @@ También se recomienda crear formatos más comunes en español como:
       - Son datos y textos almacenados dentro del contenido creado para tu sitio a través del sistema de entidades y campos en Drupal.
       - No se puede compartir ni exportar las traducciones de contenido con Drupal core.
       - No hay un solo lugar para ver todas las traducciones de contenido. La gestión se encuentra como pestaña en la configuración de cada entidad creado en tu sitio.
-
-
-7. Alternador de idiomas
--------------------
-Colocar el bloque del alternador de idiomas en la primera barra lateral del sitio.
-
-- Administrar > Estructura > Diseño de bloques<br>
-  URL: `admin/structure/block`
-- En la region de la Primera barra lateral, aplasta el botón: *Colocar bloque*.
-- Buscar y colocar el bloque *Alternador de idioma*.
-- Deshabilitar la opción: *Mostrar título* y cliquear *Guardar el bloque*.
-- *Regresar al sitio* para visualizar el Alternador.
 
 
 8. Habilitar traducción de Entidades
