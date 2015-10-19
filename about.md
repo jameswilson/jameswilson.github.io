@@ -12,7 +12,7 @@ You can find me elsewhere online at:
 
 
 * [Drupal.org](https://www.drupal.org/u/jwilson3)
-* [GitHub.org](https://www.github.com/jameswilson)
+* [GitHub.com](https://www.github.com/jameswilson)
 * [Twitter.com](https://twitter.com/jwilson3)
 * [Facebook.com](https://www.facebook.com/james.r.wilson.iii)
 
