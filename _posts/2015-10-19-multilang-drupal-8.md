@@ -137,7 +137,7 @@ También se recomienda crear formatos más comunes en español como:
 - Agregar una traducción en inglés.
   - Titulo: `An article`
   - Cuerpo: `An article in English.`
-  - *Deja las Etiquetas tales como están.
+  - *Deja las Etiquetas tales como están.*
   - Alternative Text: `Drupal Eight`.
 
 
