@@ -1,0 +1,126 @@
+<!DOCTYPE html><html><head><title></title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><link href='big.css' rel='stylesheet' type='text/css' /><script src='big.js'></script><script src='showdown.js'></script>
+<style type="text/css">
+body {
+  color: #144673;
+  background-size: cover !important;
+}
+ul, li {
+  color: #333;
+}
+code {
+  background: #666;
+  padding: .1em .5em;
+  border-radius: .3em;
+  color: #fda;
+}
+img[src*="svg"] {
+  max-height: 1.4em;
+  max-width: 1.4em;
+  vertical-align: middle;
+  display: inline-block;
+}
+a {
+  white-space: nowrap;
+}
+</style>
+</head>
+<body>
+# !Arrarray!
+##### Drupal Theming<br><br>
+##### DrupalCamp Quito 2015<br>
+####### Martes 20 Octubre 2015
+
+
+#### James Wilson<br><br>
+![James Wilson](img/james.png "James")<br><br>
+##### [@jwilson3](https://twitter.com/jwilson3)
+
+
+## Diapositivos<br><br>
+[bit.ly/arrarray](http://bit.ly/arrarray)
+
+
+![backgrounds](img/constant-change.jpg "background")
+####### Lo único constante<br> es el cambio
+
+
+## Browser Support
+- ≥IE9
+- SVG&nbsp;(no&nbsp;Android&nbsp;2.3)
+<!-- - Drupal 8 drops support for IE 6, 7 and 8, enabling the use of jQuery 2.0 and other code that assumes modern HTML5/CSS3 browser support.
+- Drupal 8 does not support browsers that do not support SVG (including IE8 and Android Browser 2.3) -->
+
+
+## HTML(5)
+- formato&nbsp;schema.org&nbsp;(RDFa)
+- Mejor accessibilidad.
+- Atributos WAI-ARIA.
+- Atributos _data_.
+- Niveles&nbsp;DOM:&nbsp;D7&nbsp;17,&nbsp;D8&nbsp;17
+
+
+## CSS(3)
+- Menos \#IDs
+- SMACSS &amp; BEM
+- Clases definidos en TWIG
+- [d.o/coding-standards/css](https://www.drupal.org/coding-standards/css)
+
+
+## Javascript
+- jQuery v2.x
+- Modernizr&nbsp;-&nbsp;detección
+- Backbone.js&nbsp;-&nbsp;MVC
+- Underscore.js&nbsp;-&nbsp;utilidades
+
+
+## Templating
+- _PHPTemplate_ => _Twig_
+- `theme_*` y `*.tpl.php` => `*.html.twig`
+- Mas limpio.
+- Mas seguro.
+- Mas facil.
+
+
+## Performance
+- _Agregación de CSS y JavaScript_ por defecto.
+
+
+## Components
+- Mejor&nbsp;experiencia&nbsp;admin
+- Nuevos elementos
+  - Botones&nbsp;desplegables
+  - Dialogos&nbsp;modales
+
+
+## Responsivo
+- Themes, toolbar, imagenes, y tablas
+- Breakpoint media queries
+
+![backgrounds](img/sunset.jpg "background")
+## Más Allá
+
+## SASS
+- Extender la sintaxis de CSS con:
+  - `$variables`
+  - reglas encajadas
+  - inline `@imports`
+  - `@mixins` (funciones)
+
+## Compass
+- caja de herramientas
+
+## Recursos
+- [caniuse.com](http://caniuse.com/svg)
+- [d.o/documentation/theme](https://www.drupal.org/documentation/theme)
+- [#2356951: Diferencias de Theming 6,7, y 8](https://www.drupal.org/node/2356951)
+
+
+#### Gracias!!<br><br>
+James Wilson [@jwilson3](https://twitter.com/jwilson3)<br><br>
+## Diapositivos [bit.ly/arrarray](http://bit.ly/arrarray)
+
+</body>
+<footer>
+<script>var converter = new Showdown.converter(); var slides = document.body.innerHTML.split("\n\n"); document.body.innerHTML = ""; for ( var i=0; i<slides.length-1; i++) { console.log(i); document.body.innerHTML += "<div>" + converter.makeHtml(slides[i]) + "</div>"; }</script>
+</footer>
+</html>
