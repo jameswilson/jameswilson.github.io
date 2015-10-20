@@ -1,0 +1,35 @@
+<!DOCTYPE html><html><head><title></title><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><link href='big.css' rel='stylesheet' type='text/css' /><script src='big.js'></script><script src='showdown.js'></script></head><body>
+  
+use &harr; to navigate
+
+#Big
+
+##Presentation software
+for busy busy hackers<br />
+#######(who care about design)
+
+#####Markdown
+
+displayed as
+##big
+as it can be
+
+using only font-sizes according to the
+<font color="#ffd700">golden ratio</font>
+
+###no config<br />
+#######(unless you want to)
+
+![backgrounds](background.jpg "background")
+########background
+
+![and inline images](image.png "inline")  
+images
+
+MD+JS+CSS [github.com/mdznr/big](https://github.com/mdznr/big "github page")
+
+</body>
+<footer>
+<script>var converter = new Showdown.converter(); var slides = document.body.innerHTML.split("\n\n"); document.body.innerHTML = ""; for ( var i=0; i<slides.length-1; i++) { console.log(i); document.body.innerHTML += "<div>" + converter.makeHtml(slides[i]) + "</div>"; }</script>
+</footer>
+</html>
