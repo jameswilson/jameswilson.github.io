@@ -9,6 +9,9 @@ Ecuador el 16 de Octubre de 2015 en Quito, Ecuador.
 
 Para crear un sitio multi-idioma en Drupal 7 revisa mi post del año pasado: [Los ABC de Multi-idioma en Drupal 7][1].
 
+
+Puedes encontrar los diapositivos aquí: [/slides/multilenguaje-drupal-8.html](/slides/multilenguaje-drupal-8.html).
+
 1. Crear un Sitio
 --------------
 * Abrir una cuenta en [Pantheon.io][2].

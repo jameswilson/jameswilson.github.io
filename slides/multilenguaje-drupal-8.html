@@ -1,0 +1,163 @@
+<!DOCTYPE html><html><head><title></title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><link href='big.css' rel='stylesheet' type='text/css' /><script src='big.js'></script><script src='showdown.js'></script>
+<style type="text/css">
+body {
+  color: #144673;
+}
+ul, li {
+  color: #333;
+}
+code {
+  background: #666;
+  padding: .1em .5em;
+  border-radius: .3em;
+  color: #fda;
+}
+img[src*="svg"] {
+  max-height: 1.4em;
+  max-width: 1.4em;
+  vertical-align: middle;
+  display: inline-block;
+}
+</style>
+</head>
+<body>
+# Taller Drupal 8 Multilenguaje<br>
+<br>
+##### DrupalCamp Quito 2015<br>
+####### Lunes 19 Octubre 2015
+
+#### James Wilson<br>
+<br>
+![James Wilson](img/james.png "James")<br>
+<br>
+##### [@jwilson3](https://twitter.com/jwilson3)<br>
+
+
+## Diapositivos
+
+[bit.ly/idioma8](http://bit.ly/idioma8)
+
+1. Crear un Sitio
+--------------
+* Abrir una cuenta en [Pantheon.io](https://pantheon.io)
+* Pantheon Dashboard → Crear sitio
+* Instalar Drupal 8 RC-1.
+
+
+2. Instalar Drupal
+--------------
+- Selecciona *español* como lenguaje predeterminado.
+- Crear cuenta de Administrador.
+
+
+3. ![Configuración](img/wrench.svg "Configuración") Agregar idioma<br><br>
+-----------------
+######  [admin/config/regional/language]()
+
+
+4. Qué idioma utilizar y cuándo?
+--------------------------------
+
+## ![](img/wrench.svg "Configuración") Detección y selección<br><br>
+[admin/config/regional/language/detection]()<br><br>
+#### Metodo de detección:
+# *URL*
+
+5. English | Spanish ?<br><br>
+----------------------
+Alternador de idiomas<br><br>
+[admin/structure/block]()<br><br>
+Colocar el bloque *Alternador de idioma*
+
+6. Formatear fechas<br><br>
+-------------------
+[admin/config/regional/date-time]()<br><br>
+##### mes/día/año ☹<br><br>
+#### día/mes/año ☺
+
+## 6. Small<br><br>
+#### "19/10/2015 - 11:15 pm"<br><br>
+`d/m/Y - h:i a`
+
+## 6. Medium<br><br>
+#### "Lunes 19 de Octubre 2015 - 11:15 pm"<br><br>
+`l j \d\e F Y - h:g a`
+
+## 6. Long<br><br>
+#### "Lunes el 19 de Octubre de 2015 a las 11:15 pm"<br><br>
+`l \e\l j \d\e F \d\e\l Y \a \l\a\s h:g a`<br>
+
+7. Habilitar módulos para traducción<br><br>
+------------------------------------
+- [/admin/modules]()<br><br>
+  - Content Translation<br>
+  - Interface Translation
+
+#### Contenido vs. Interfaz
+
+## 7. La interfaz<br><br>
+#### *cadenas de texto* traducible<br>
+#### en el núcleo de Drupal y sus módulos.<br><br>
+- Config&nbsp;[admin/config/regional/translate]()
+- Contribuir&nbsp;[localize.drupal.org](http://localize.drupal.org)
+
+## 7. El contenido<br><br>
+*datos y textos* traducibles<br>
+creado para tu sitio a través del<br>
+sistema de entidades y campos en Drupal.
+
+
+8. Entidades
+------------
+- [admin/config/regional/content-language]()
+  - Contenido
+  - Taxonomía
+  - Bloques
+  - Menus
+
+
+9. Una página
+-------------
+- [node/add/page]()
+  - con traduccion al ingés
+  - y enlace del menú traducido
+
+
+10. Un Artículo
+---------------
+- [node/add/article]()
+  - con traduccion al ingés
+  - y un imagen con texto alternativo traducible
+  - con etiqueta (taxonomia) traducible
+
+
+11. Taxonomía
+-------------
+- Traducir etiqueta 'Noticias' al inglés
+  - Taxonomy [admin/structure/taxonomy/manage/tags/overview]()
+  - 'Noticias' > Traducir
+
+12. Bloques<br><br>
+-----------
+Al fin, bloques son entidades!<br><br>
+[admin/structure/blocks]()
+
+
+13. Nombre del sitio y slogan
+--------------------------------------
+- [admin/config/system/site-information]()
+  - Nombre: `D8 Multilenguaje`
+  - Lema: `Instalando Drupal 8 en varias idiomas`
+- Habilitar modulo *Configuration Translation*
+- Traducir: [admin/config/regional/config-translation]()
+
+
+#### Gracias!!<br><br>
+James Wilson [@jwilson3](https://twitter.com/jwilson3)<br><br>
+## Diapositivos [bit.ly/idioma8](http://bit.ly/idioma8)
+
+</body>
+<footer>
+<script>var converter = new Showdown.converter(); var slides = document.body.innerHTML.split("\n\n"); document.body.innerHTML = ""; for ( var i=0; i<slides.length-1; i++) { console.log(i); document.body.innerHTML += "<div>" + converter.makeHtml(slides[i]) + "</div>"; }</script>
+</footer>
+</html>
