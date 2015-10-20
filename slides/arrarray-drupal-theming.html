@@ -53,8 +53,11 @@ a {
 ## Browser Support
 - ≥IE9
 - SVG&nbsp;(no&nbsp;Android&nbsp;2.3)
-<!-- - Drupal 8 drops support for IE 6, 7 and 8, enabling the use of jQuery 2.0 and other code that assumes modern HTML5/CSS3 browser support.
-- Drupal 8 does not support browsers that do not support SVG (including IE8 and Android Browser 2.3) -->
+
+
+# ☹<br><br>
+[d.o/project/ie8](https://www.drupal.org/project/ie8)<br><br>
+(por si lo necesitas)
 
 
 ## HTML(5)
@@ -102,20 +105,98 @@ a {
 - Themes, toolbar, imagenes, y tablas
 - Breakpoint media queries
 
+## SVG
+- Druplicon
+- Throbbers/Spinners
+- Icono RSS
+
+
 ![backgrounds](img/sunset.jpg "background")
-## Más Allá
+######## Más Allá
+
+
+## Metas
+- Reducir repeticion
+- Codigo más eficiente
+- Reducir tamaño de recursos
 
 ## SASS
 - Extender la sintaxis de CSS con:
   - `$variables`
-  - reglas encajadas
+  - `.reglas{.encajadas{}}`
   - inline `@imports`
   - `@mixins` (funciones)
 
 ## Compass
 - caja de herramientas
+- vendor prefixes
+
+## Autoprefixer<br><br>
+Crear CSS prefijos automaticamente<br>
+según datos de caniuse.com
+
+[caniuse.com/svg](http://caniuse.com/svg)<br><br>
+![caniuse.com/svg](img/caniuse.png "SVG Support Oct 2015")
+
+
+    a {
+        display: flex;
+    }
+
+    a {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex
+    }
+
+## NPM, Grunt, Gulp
+- concatenar archivos
+- mejorar sintaxis (js/css hint)
+- correr pruebas
+- minificar js, css, svg
+- monitorear cambios
+
+## Optimización front-end
+- Drupal
+  - CDN
+  - ImageAPI Optimize (Yahoo! SmushIt)
+  - CSSTidy
+- Non-drupal
+
+
+## Divitis D7<br><br>
+No hay una bala mágica<br><br>
+Mothership
+
+## Divitis D8<br><br>
+Classy o Stable
+
+## Classy
+    <div class="field field--name-field-favorite-horses
+         field--type-string field--label-above">
+      <div class="field__label">Favorite horses</div>
+      <div class='field__items'>
+        <div class="field__item">Black Stallion</div>
+        <div class="field__item">Shadowfax</div>
+        <div class="field__item">Hidalgo</div>
+      </div>
+    </div>
+
+
+## Stable
+    <div>
+      <div>Favorite horses</div>
+      <div>
+        <div>Black Stallion</div>
+        <div>Shadowfax</div>
+        <div>Hidalgo</div>
+      </div>
+    </div>
+
 
 ## Recursos
+- [#57563: modulos de optimizacion front-end](https://groups.drupal.org/node/57563)
 - [caniuse.com](http://caniuse.com/svg)
 - [d.o/documentation/theme](https://www.drupal.org/documentation/theme)
 - [#2356951: Diferencias de Theming 6,7, y 8](https://www.drupal.org/node/2356951)
