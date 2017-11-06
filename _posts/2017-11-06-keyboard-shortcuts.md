@@ -75,7 +75,7 @@ Add/edit these in Settings › Manage search engines.  The `%s` in URLs will be 
 Keycode |  Description / Query URL
 ---------- | ---------------------
 `j <ISSUE_ID>` | Goto JIRA Issue page. <br> `https://<yourcompany>.atlassian.net/browse/%s`
-`j <PROJECT_CODE>` | Goto JIRA Issues listing for project. <br> `https://<yourcompany>.atlassian.net/browse/%s`
+`j <PROJECT_ID>` | Goto JIRA Issues listing for project. <br> `https://<yourcompany>.atlassian.net/browse/%s`
 `jpi <PROJECT_ID> <some string>` | Execute a JIRA contextual project text string search. <br> `https://<yourcompany>.atlassian.net/secure/QuickSearch.jspa?searchString=%s`
 `c <PROJECT_ID>` | Open Confluence space for specified project. <br> `https://<yourorg>.atlassian.net/wiki/display/%s`
 `dn <ISSUE_ID>` | Open the specified Issue on drupal.org. <br> `https://www.drupal.org/node/%s`
