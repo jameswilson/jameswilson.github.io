@@ -77,9 +77,9 @@ Keycode |  Description / Query URL
 `j <ISSUE_ID>` | Goto JIRA Issue page. <br> `https://<yourcompany>.atlassian.net/browse/%s`
 `j <PROJECT_CODE>` | Goto JIRA Issues listing for project. <br> `https://<yourcompany>.atlassian.net/browse/%s`
 `jpi <PROJECT_ID> <some string>` | Execute a JIRA contextual project text string search. <br> `https://<yourcompany>.atlassian.net/secure/QuickSearch.jspa?searchString=%s`
-`c <PROJECT_ID>` | Open Confluence space for specified project. <br> `https://<yourcompany>.atlassian.net/wiki/display/%s`
+`c <PROJECT_ID>` | Open Confluence space for specified project. <br> `https://<yourorg>.atlassian.net/wiki/display/%s`
 `dn <ISSUE_ID>` | Open the specified Issue on drupal.org. <br> `https://www.drupal.org/node/%s`
 `da <FUNCTION>` | Search for function name on api.drupal.org. <br>  `https://api.drupal.org/%s`
 `dp <MODULE>` | Goto module page on Drupal.org. <br> `https://www.drupal.org/project/%s`
 `dpi <MODULE>` | Goto issue queue on Drupal.org. <br> `https://www.drupal.org/project/issues/%s`
-`ghb <REPO>` | Open Repo on Company Github account. <br> `https://github.com/BluesparkLabs/%s`
+`ghb <REPO>` | Open Repo on your organization's Github account. <br> `https://github.com/<yourorg>/%s`
