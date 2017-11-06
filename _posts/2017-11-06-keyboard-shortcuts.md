@@ -50,27 +50,30 @@ Note these work in any word processing app, including Terminal, Notes, Mail, Eve
 
 Shortcut | Description
 ----- | -----
-`^A` | Goto beginning of current line. 
-`^E` | Goto end of current line. 
-`^K` | Delete text from current position to end of line. 
+`^A` | Goto beginning of current line. (`⌥↑` sometimes also works).
+`^E` | Goto end of current line. (`⌥↓` sometimes also works).
 `^⇧A` | Select text from current position to beginning of line. 
-`^⇧E` | Select text from current position to end of line. 
+`^⇧E` | Select text from current position to end of line.
 `⇧↑` | Select the line above. 
-`⇧↓` | Select the line below. 
-`⌫` | Delete previous letter. 
+`⇧↓` | Select the line below.
+`⌥→/←` | Goto start/end of current word. (Doesn't work consistently in all applications).
+`⌥⇧→/←` | Select text from current position to start/end of current word. (Doesn't work consistently in all applications).
+`⌫` | Delete previous letter.
 `fn⌫` | Delete next letter.
+`⌥⌫` | Delete text from current position to beginning of line.
+`^K` | Delete text from current position to end of line.
 
 ## Google Chrome (standard shortcuts): 
 
 Shortcut | Description
 ----- | -----
-`⌘⇧⌫` | Delete browser cache. 
+`⌘⇧⌫` | Delete browser cache.
 `⌥⌘I` | Open Chrome Developer Tools panel, then once launched, Fn+F1 opens settings panel to disable Javascript.
 `⌘⇧N` | Open Private Browsing window; useful for testing unauthenticated version of sites while logged in on normal browser session.
 
 ## Google Chrome (custom URL bar shortcodes):
 
-Add/edit these in Settings › Manage search engines.  The `%s` in URLs will be used as substitution for the search string in `<CODE>`. 
+Add/edit these in Settings › Manage search engines.  The `%s` in URLs will be used as substitution for the search string in `<CODE>`.
 
 Keycode |  Description / Query URL
 ---------- | ---------------------
