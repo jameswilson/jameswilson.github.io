@@ -1,6 +1,5 @@
 # Permalinks
 permalink:        /:year-:month-:day-:title.html
-relative_permalinks: true
 
 # Setup
 title:            James Wilson
