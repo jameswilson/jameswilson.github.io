@@ -72,14 +72,14 @@ Shortcut | Description
 
 Add/edit these in Settings › Manage search engines.  The `%s` in URLs will be used as substitution for the search string in `<CODE>`. 
 
-Keycode | Query URL | Description
------ | ----- | -----
-`j <ISSUE_ID>` | `https://bluespark.atlassian.net/browse/%s` | Goto JIRA Issue page. 
-`j <PROJECT_CODE>` | `https://bluespark.atlassian.net/browse/%s` | Goto JIRA Issues listing for project. 
-`jpi <PROJECT_ID> <some string>` | `https://<yourcompany>.atlassian.net/secure/QuickSearch.jspa?searchString=%s` |  Execute a JIRA contextual project text string search.
-`c <PROJECT_ID>` | `https://<yourcompany>.atlassian.net/wiki/display/%s` | Open Confluence space for specified project.
-`dn <ISSUE_ID>` | `https://www.drupal.org/node/%s` | Open the specified Issue on drupal.org.
-`da <FUNCTION>` | `https://api.drupal.org/%s` | Search for function name on api.drupal.org. 
-`dp <MODULE>` | `https://www.drupal.org/project/%s` | Goto module page on Drupal.org. 
-`dpi <MODULE>` | `https://www.drupal.org/project/issues/%s` | Goto issue queue on Drupal.org. 
-`ghb <REPO>` | `https://github.com/BluesparkLabs/%s` | Open Repo on Company Github account.
+Keycode |  Description / Query URL
+---------- | ---------------------
+`j <ISSUE_ID>` | Goto JIRA Issue page. <br> `https://<yourcompany>.atlassian.net/browse/%s`
+`j <PROJECT_CODE>` | Goto JIRA Issues listing for project. <br> `https://<yourcompany>.atlassian.net/browse/%s`
+`jpi <PROJECT_ID> <some string>` | Execute a JIRA contextual project text string search. <br> `https://<yourcompany>.atlassian.net/secure/QuickSearch.jspa?searchString=%s`
+`c <PROJECT_ID>` | Open Confluence space for specified project. <br> `https://<yourcompany>.atlassian.net/wiki/display/%s`
+`dn <ISSUE_ID>` | Open the specified Issue on drupal.org. <br> `https://www.drupal.org/node/%s`
+`da <FUNCTION>` | Search for function name on api.drupal.org. <br>  `https://api.drupal.org/%s`
+`dp <MODULE>` | Goto module page on Drupal.org. <br> `https://www.drupal.org/project/%s`
+`dpi <MODULE>` | Goto issue queue on Drupal.org. <br> `https://www.drupal.org/project/issues/%s`
+`ghb <REPO>` | Open Repo on Company Github account. <br> `https://github.com/BluesparkLabs/%s`
