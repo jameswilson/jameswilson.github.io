@@ -16,7 +16,7 @@ interpretation of "*some*" because most of these I do use on a daily basis.
 
 These shortcuts come standard on all Apple Macintosh machines running OSX or macOS.
 
-Code | Description
+Shortcut | Description
 ----- | -----
 `⌘⇧3` | Take a fullscreen screenshot (I have screenshots setup to save to a custom folder in Bluespark Dropbox). 
 `⌘⇧4` | Cross-hairs to select a screen area for a non-fullscreen screenshot. 
@@ -38,7 +38,7 @@ Custom global shortcuts can be added via  › System Preferences › Keyboard
 App Shortcuts › All Applications.  You need to save the title of the menu item. More information
 can be found in [this KB article on support.apple.com](https://support.apple.com/kb/PH25372).
 
-Code | Description
+Shortcut | Description
 ----- | -----
 `⌥⌘,` | Open System Preferences. Store the menu item as `System Preferences...`
 `^⇧SPACE` | Change keyboard language. 🇺🇸🇪🇸🇫🇷
@@ -48,7 +48,7 @@ Code | Description
 
 Note these work in any word processing app, including Terminal, Notes, Mail, Evernote, Chrome, etc. 
 
-Code | Description
+Shortcut | Description
 ----- | -----
 `^A` | Goto beginning of current line. 
 `^E` | Goto end of current line. 
@@ -62,7 +62,7 @@ Code | Description
 
 ## Google Chrome (standard shortcuts): 
 
-Code | Description
+Shortcut | Description
 ----- | -----
 `⌘⇧⌫` | Delete browser cache. 
 `⌥⌘I` | Open Chrome Developer Tools panel, then once launched, Fn+F1 opens settings panel to disable Javascript.
@@ -70,14 +70,16 @@ Code | Description
 
 ## Google Chrome (custom URL bar shortcodes):
 
-Add/edit these in Settings › Manage search engines.
+Add/edit these in Settings › Manage search engines.  The `%s` in URLs will be used as substitution for the search string in `<CODE>`. 
 
-Code | Description
------ | -----
-`j <ISSUE_ID>` | Goto JIRA Issue page. 
-`j <PROJECT_ID>` | Goto JIRA Issues listing for project. 
-`jpi <PROJECT_ID>` | <some string> Execute a JIRA contextual project text string search. 
-`da <FUNCTION>` | Search for function name on api.drupal.org. 
-`dp <MODULE>` | Goto module page on Drupal.org. 
-`dpi <MODULE>` | Goto issue queue on Drupal.org. 
-`ghb <REPO>` | Goto https://github.com/BluesparkLabs/<REPO>
+Keycode | Query URL | Description
+----- | ----- | -----
+`j <ISSUE_ID>` | `https://bluespark.atlassian.net/browse/%s` | Goto JIRA Issue page. 
+`j <PROJECT_CODE>` | `https://bluespark.atlassian.net/browse/%s` | Goto JIRA Issues listing for project. 
+`jpi <PROJECT_ID> <some string>` | `https://<yourcompany>.atlassian.net/secure/QuickSearch.jspa?searchString=%s` |  Execute a JIRA contextual project text string search.
+`c <PROJECT_ID>` | `https://<yourcompany>.atlassian.net/wiki/display/%s` | Open Confluence space for specified project.
+`dn <ISSUE_ID>` | `https://www.drupal.org/node/%s` | Open the specified Issue on drupal.org.
+`da <FUNCTION>` | `https://api.drupal.org/%s` | Search for function name on api.drupal.org. 
+`dp <MODULE>` | `https://www.drupal.org/project/%s` | Goto module page on Drupal.org. 
+`dpi <MODULE>` | `https://www.drupal.org/project/issues/%s` | Goto issue queue on Drupal.org. 
+`ghb <REPO>` | `https://github.com/BluesparkLabs/%s` | Open Repo on Company Github account.
