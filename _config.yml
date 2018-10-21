@@ -40,8 +40,8 @@ navigation:
     url: /archive
   - title: About
     url: /about
-  - title: Feed
-    url: /atom.xml
+  - title: Search
+    url: /search
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

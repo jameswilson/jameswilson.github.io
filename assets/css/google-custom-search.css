@@ -1,0 +1,125 @@
+:root {
+  --primary-font-family: 'Muli', sans-serif;
+  --secondary-font-family: 'Montserrat', sans-serif;
+  --monospaced-font-family: 'Fira Mono', monospace;
+  --primary-font-color: rgba(51, 51, 51, .8);
+  --secondary-font-color: rgba(51, 51, 51, 1);;
+  --james-blue: #33ccee;
+  --james-red: #f93868;
+}
+
+.gsc-control-cse {
+  font-family: var(--primary-font-family);
+}
+
+.gsc-control-cse tbody tr td,
+.gsc-control-cse tbody tr th {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.gsc-control-cse table {
+  margin: 0;
+  border: 0;
+}
+
+.gsc-input-box,
+.gsc-input-box-hover {
+  border: 2px solid #D9D9D9;
+}
+
+form.gsc-search-box {
+  font-size: 1rem;
+}
+
+.gsc-search-box-tools .gsc-search-box .gsc-input {
+  padding: 0 !important;
+  vertical-align: baseline;
+  margin: 0 .3rem !important;
+  font-size: 1rem;
+  width: calc(100% - .6rem) !important;
+}
+
+.gsc-search-button {
+  margin-left: -1px;
+  border-width: 2px;
+}
+
+.cse .gsc-search-button-v2,
+.gsc-search-button-v2 {
+  height: 38px;
+  vertical-align: top;
+}
+
+.gsc-search-button-v2 svg {
+  width: 18px;
+  height: 18px;
+}
+
+.cse .gsc-control-cse,
+.gsc-control-cse {
+  padding: 0;
+}
+
+.gsst_a .gscb_a {
+  opacity: .7;
+  color: var(--primary-font-color);
+}
+
+.gsst_a:hover .gscb_a,
+.gsst_a:focus .gscb_a {
+  color: var(--primary-font-color);
+  opacity: 1;
+}
+
+.gsc-result-info {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.gsc-control-cse .gs-spelling,
+.gsc-control-cse .gs-result .gs-title,
+.gsc-control-cse .gs-result .gs-title * {
+  font-size: .9rem;
+}
+
+.gs-webResult.gs-result a.gs-title:link,
+.gs-webResult.gs-result a.gs-title:link b,
+.gs-imageResult a.gs-title:link,
+.gs-imageResult a.gs-title:link b {
+  transition: all 2s ease-out;
+}
+
+.gsc-result .gs-title {
+  height: 1.3rem;
+  margin-bottom: .1rem;
+}
+
+.gs-webResult.gs-result a.gs-title:link:hover,
+.gs-webResult.gs-result a.gs-title:link:focus,
+.gs-webResult.gs-result a.gs-title:link:hover b,
+.gs-webResult.gs-result a.gs-title:link:focus b,
+.gs-imageResult a.gs-title:link:hover,
+.gs-imageResult a.gs-title:link:focus,
+.gs-imageResult a.gs-title:link:hover b,
+.gs-imageResult a.gs-title:link:focus b {
+  transition: all .2s ease-out;
+}
+
+.gsc-table-result,
+.gsc-thumbnail-inside,
+.gsc-url-top {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.gsc-results .gsc-cursor-box {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+.gsc-results .gsc-cursor-box .gsc-cursor-page {
+  margin-right: 12px;
+}
