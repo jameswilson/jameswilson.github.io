@@ -7,7 +7,8 @@ tagline:          Web developer. Drupal enthusiast. Surfer and musician. I craft
 url:              http://jameswilson.github.io
 paginate:         3
 markdown:         redcarpet
-baseurl:          /
+highlighter:      pygments
+baseurl:          ""
 author:
   name:           James
   url:            https://twitter.com/jwilson3
@@ -29,3 +30,14 @@ pages_list:
   Twitter: 'http://twitter.com/jwilson3'
   Archive: '/archive.html'
   Feed: '/atom.xml'
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
