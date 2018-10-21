@@ -1,38 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-
-  {% include head.html %}
-
-  <body>
-    {% comment %}
-    {% include sidebar.html %}
-    {% endcomment %}
-    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
-         content to avoid any CSS collisions with our real content. -->
-    <div class="wrap">
-      <div class="masthead">
-        <div class="container">
-        {% comment %}
-          <label for="sidebar-checkbox" class="sidebar-toggle"></label>
-        {% endcomment %}
-          <h3 class="masthead-title">
-            <a href="/" title="Home">{{ site.title }}</a>
-          </h3>
-          <div class="menu">
-          {% for page in site.pages_list %}
-            &nbsp;&nbsp;&nbsp;
-            <a href="{{ page[1]  }}">{{ page[0] }}</a>
-          {% endfor %}
-          </div>
-          <div class="tagline">{{ site.tagline }}</div>
-        </div>
+<html lang="{{ page.lang | default: 'en' }}">
+{% include head.html %}
+<body>
+  <header id="header" role="banner">
+    <div class="card">
+      <a class="logo" href="/" title="Home">
+        {% include assets/logo.svg %}
+      </a>
+      <div>
+        <div class="name">{{ site.title }}</div>
+        <div class="tagline">{{ site.tagline }}</div>
       </div>
-
-      <div class="container content">
-        {{ content }}
-      </div>
-
     </div>
-
-  </body>
+    <nav class="menu">
+      {% include navigation.html %}
+    </nav>
+  </header>
+  <main role="main">
+    {{ content }}
+  </main>
+  {% include footer.html %}
+</body>
 </html>

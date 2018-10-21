@@ -1,0 +1,13 @@
+{% comment %}
+See navigation links defined in _config.yml
+{% endcomment %}
+
+{% for link in site.navigation %}
+  {% assign class = nil %}
+  {% if page.url == link.url %}
+    {% assign class = 'active' %}
+  {% elsif page.url contains link.url and link.url != '/' %}
+    {% assign class = 'active parent' %}
+  {% endif %}
+  <a href="{{link.url}}" class="{{class}}">{{link.title}}</a>
+{% endfor %}

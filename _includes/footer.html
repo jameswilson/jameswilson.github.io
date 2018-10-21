@@ -1,0 +1,14 @@
+<footer id="footer" role="contentinfo">
+  <nav class="footer">
+    {% include navigation.html %}
+  </nav>
+  <nav class="social">
+    {% include social.html %}
+  </nav>
+  {% comment %}
+  <div class="copyright">
+  <small>&copy; 2009 - {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</small>
+  <small><a href="{{ site.github.repo }}" title="GitHub repository">v{{ site.version }}</a></small>
+  </div>
+  {% endcomment %}
+</footer>

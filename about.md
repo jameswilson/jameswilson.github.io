@@ -3,9 +3,9 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! My name is James Wilson.  I'm the lead front-end web developer
-  at Bluespark. I use this space to blog about technical things I work on.
+<p class="intro">
+  James Wilson is the lead front-end web developer
+  at <a href="https://www.bluespark.com" target="_blank">Bluespark</a>. He uses this space to blog about travel, web development, Drupal, open source, mac, and various other topics.
 </p>
 
 You can find me elsewhere online at:

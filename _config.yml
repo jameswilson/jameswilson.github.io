@@ -3,7 +3,10 @@ permalink:        /:year-:month-:day-:title.html
 
 # Setup
 title:            James Wilson
-tagline:          Web developer. Drupal enthusiast. Surfer and musician. I craft bespoke websites at <a href="http://bluespark.com">Bluespark</a>.
+tagline:          Open Source Technologist &amp; Senior Web Developer
+description: >-
+  The personal blog of James Wilson; senior frontend web developer and Open
+  Source enthusiast.
 url:              http://jameswilson.github.io
 paginate:         3
 markdown:         redcarpet
@@ -14,22 +17,32 @@ author:
   url:            https://twitter.com/jwilson3
   email:          jrwilson3@gmail.com
 
+# Reading time, this must be a float for divide_by to work.
+words_per_minute: 180.0
+
+excerpt_separator: <!--more-->
+
 # Disqus config
 disqus:
   enabled:        false
   shortname:      jwilson3-postach-io
 
 # Custom vars
-version:          1.0.0
+version:          2.0.0
 github:
   repo:           https://github.com/jameswilson/jameswilson.github.io
 
-# Main navigation (see _layouts/default.html for usage)
-pages_list:
-  About: '/about.html'
-  Twitter: 'http://twitter.com/jwilson3'
-  Archive: '/archive.html'
-  Feed: '/atom.xml'
+# Main navigation links (see _includes/navigation.html for usage)
+navigation:
+  - title: Blog
+    url: /
+  - title: Archive
+    url: /archive
+  - title: About
+    url: /about
+  - title: Feed
+    url: /atom.xml
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

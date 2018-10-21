@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-<div class="posts">
+<section class="posts">
   {% for post in paginator.posts %}
   <article class="post">
     <h1 class="post-title">
@@ -12,26 +12,46 @@ title: Home
       </a>
     </h1>
 
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
+    <p><small>
+      {% assign current_year = site.time | date: '%Y' %}
+      {% assign post_year = post.date | date: '%Y' %}
+      {% if current_year == post_year %}
+      {% assign format = '%b %-d' %}
+      {% else %}
+      {% assign format = '%b %-d %Y' %}
+      {% endif %}
+      <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date: format }}</time>
+      &middot;
 
-    {{ post.content }}
+      {% assign words = post.content | strip_html | number_of_words %}
+      <span title="{{ words }} words">
+        {% assign minutes = words | divided_by: site.words_per_minute | ceil %}
+        {{ minutes }} min read
+      </span>
+    </small></p>
+
+    {{ post.excerpt }}
   </article>
   {% endfor %}
-</div>
+</section>
 
-<div class="pagination">
+<section class="prevnext">
+  <div class="text-left">
   {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
+    <a class="button" href="/page{{paginator.next_page}}">← Older posts</a>
   {% else %}
-    <span class="pagination-item older">Older</span>
+    <a class="button">← Older posts</a>
   {% endif %}
+  </div>
+  <div class="text-right">
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
+      <a class="button" href="/">Newer posts →</a>
     {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
+      <a class="button" href="/page{{paginator.previous_page}}">Newer posts →</a>
     {% endif %}
   {% else %}
-    <span class="pagination-item newer">Newer</span>
+    <a class="button disabled">Newer posts →</a>
   {% endif %}
-</div>
+  </div>
+</section>
