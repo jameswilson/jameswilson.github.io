@@ -3,6 +3,9 @@ layout: post
 title: Drupal responsive theme frameworks
 ---
 
+Listing of resources for discovery of responsive Drupal theme frameworks.
+
+<!--more-->
 
 ## [What is the best starter theme for responsive web design in Drupal?](http://groups.drupal.org/node/175234) 
 

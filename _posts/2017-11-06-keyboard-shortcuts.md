@@ -1,42 +1,48 @@
 ---
 layout: post
-title: Some useful Keyboard Shortcuts for Developers on Mac
+title: '⚡️ Mac Keyboard Shortcuts for Web Developers'
+description: >-
+    Learning keyboard shortcuts are a quick-win with long-term advantages that
+    reduce context switching between keypad input and mouse input navigation.
 ---
 
-At Bluespark we use [KnowYourCompany.com](https://knowyourcompany.com) to ask interesting questions of team members every week.
+<p class="intro">Learning keyboard shortcuts are a quick-win with long-term advantages that reduce context switching between keypad input and mouse input navigation.</p>
 
-This week's internal team question was a particularly interesting one for me so I decided to share it more widely:
+<!--more-->
 
-> # What are some of your most-used keyboard shortcuts (Mac or Windows)?    
+As a Mac power user, I employ keyboard shortcuts extensively in my daily grind. As a developer I'm hardwired to look for opportunities to automate repetetive tasks.
 
-I use keyboard shortcuts on Mac a lot so prepare yourself for my very liberal
-interpretation of "*some*" because most of these I do use on a daily basis.
+This is why when this week's team question came up in our Wednesday email from [Know Your Company](https://knowyourcompany.com) I was excited to discuss my setup.
 
-## macOS/OSX Standard shortcuts:
+Team question from Know Your Company:
+
+> What are some of your most-used keyboard shortcuts?
+
+Unfortunately these posts are internal only, so I'm sharing my notes here as well. These shortcuts will be most helpful for Web developers running OSX or macOS, however there is something for everybody here, if you're not a developer you may want to skip down to the [word processing shortcuts section](#word-processing-shortcuts)
+
+## Mac system shortcuts
 
 These shortcuts come standard on all Apple Macintosh machines running OSX or macOS.
 
 Shortcut | Description
 ----- | -----
-`⌘⇧3` | Take a fullscreen screenshot (I have screenshots setup to save to a custom folder in Bluespark Dropbox). 
-`⌘⇧4` | Cross-hairs to select a screen area for a non-fullscreen screenshot. 
-`⌘SPACE` | Open Spotlight; used as an app launcher. 
-`⌥⌘SPACE` | Open Finder search. 
-`⌥⌘→/←` | Depends on application, but usually switches tabs within an application. 
-`⌘TAB` | Switch applications (I hide my dock and use this to switch between apps). 
-`^⇧↓` | Show all windows of current app, then use right/left arrows to navigate through and select a window with space bar. 
-`^⇧↑` | Shows all windows on current desktop. 
-`⌘Q` | Quit current app. 
-`⌘W` | Close current window (or tab) without quitting app. 
-`⌘N` | Open new item (depends on app). 
-`⌘T` | Open new tab (depends on app; works on Finder, Chrome, Terminal). 
+`⌘⇧3` | Take a fullscreen screenshot (I have screenshots setup to save to a custom folder in Bluespark Dropbox).
+`⌘⇧4` | Cross-hairs to select a screen area for a non-fullscreen screenshot.
+`⌘SPACE` | Open Spotlight; used as an app launcher.
+`⌥⌘SPACE` | Open Finder search.
+`⌥⌘→/←` | Depends on application, but usually switches tabs within an application.
+`⌘TAB` | Switch applications (I hide my dock and use this to switch between apps).
+`^⇧↓` | Show all windows of current app, then use right/left arrows to navigate through and select a window with space bar.
+`^⇧↑` | Shows all windows on current desktop.
+`⌘Q` | Quit current app.
+`⌘W` | Close current window (or tab) without quitting app.
+`⌘N` | Open new item (depends on app).
+`⌘T` | Open new tab (depends on app; works on Finder, Chrome, Terminal).
 `⌘,` | Open current app preferences.
 
-## macOS/OSX custom curated shortcuts:
+## Customizing Mac shortcuts
 
-Custom global shortcuts can be added via  › System Preferences › Keyboard › Shortcuts ›
-App Shortcuts › All Applications.  You need to save the title of the menu item. More information
-can be found in [this KB article on support.apple.com](https://support.apple.com/kb/PH25372).
+Custom global shortcuts can be added via  › System Preferences › Keyboard › Shortcuts › App Shortcuts › All Applications.  You need to save the title of the menu item. More information can be found in [this KB article on support.apple.com](https://support.apple.com/kb/PH25372).
 
 Shortcut | Description
 ----- | -----
@@ -44,17 +50,19 @@ Shortcut | Description
 `^⇧SPACE` | Change keyboard language. 🇺🇸🇪🇸🇫🇷
 `⌥⌘V` | Paste from [Flycut](https://itunes.apple.com/us/app/flycut-clipboard-manager/id442160987?mt=12) clipboard manager. (Configured directly in app).
 
-## Word processing (standard macOS/OSX shortcuts): 
+## Word processing shortcuts
 
-Note these work in any word processing app, including Terminal, Notes, Mail, Evernote, Chrome, etc. 
+There are a number of standard system shortcuts to help with word processing tasks like moving the cursor around on the line and making text selections.
+
+These work in any word processor application including TextEdit, Mail, Notes, Evernote, Chrome, Terminal, etc. Developers that use Emacs will already be familiar with some of these.
 
 Shortcut | Description
 ----- | -----
 `^A` | Goto beginning of current line. (`⌥↑` sometimes also works).
 `^E` | Goto end of current line. (`⌥↓` sometimes also works).
-`^⇧A` | Select text from current position to beginning of line. 
+`^⇧A` | Select text from current position to beginning of line.
 `^⇧E` | Select text from current position to end of line.
-`⇧↑` | Select the line above. 
+`⇧↑` | Select the line above.
 `⇧↓` | Select the line below.
 `⌥→/←` | Goto start/end of current word. (Doesn't work consistently in all applications).
 `⌥⇧→/←` | Select text from current position to start/end of current word. (Doesn't work consistently in all applications).
@@ -63,7 +71,7 @@ Shortcut | Description
 `⌥⌫` | Delete text from current position to beginning of line.
 `^K` | Delete text from current position to end of line.
 
-## Google Chrome (standard shortcuts): 
+## Google Chrome shortcuts
 
 Shortcut | Description
 ----- | -----
@@ -71,11 +79,11 @@ Shortcut | Description
 `⌥⌘I` | Open Chrome Developer Tools panel, then once launched, Fn+F1 opens settings panel to disable Javascript.
 `⌘⇧N` | Open Private Browsing window; useful for testing unauthenticated version of sites while logged in on normal browser session.
 
-## Google Chrome (custom URL bar shortcodes):
+## Google Chrome shortcodes
 
-Add/edit these in Settings › Manage search engines.  The `%s` in URLs will be used as substitution for the search string in `<CODE>`.
+Short codes let you create auto-expanding URLs, straight from Google Chrome's URL bar. They can be created/edited in Settings › Manage search engines.  The format is `<shortcode> <string>` whereby the `<shortcode>` is a brief (one or two character) code that will be expanded to a full URL. The `<string>` value will be substituted into the URL in place of the `%s` placeholder.
 
-Keycode |  Description / Query URL
+Shortcode |  Description / Query URL
 ---------- | ---------------------
 `j <ISSUE_ID>` | Goto JIRA Issue page. <br> `https://<yourcompany>.atlassian.net/browse/%s`
 `j <PROJECT_ID>` | Goto JIRA Issues listing for project. <br> `https://<yourcompany>.atlassian.net/browse/%s`

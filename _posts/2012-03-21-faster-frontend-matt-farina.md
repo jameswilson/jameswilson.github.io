@@ -3,8 +3,10 @@ layout: post
 title: Notes from Faster Frontend Drupal, Presentation by Matt Farina
 ---
 
-Notes taken from presentation at DrupalCon given by Matt Farina.
+Notes taken from presentation at DrupalCon 2012 given by Matt Farina.
 ([Slideshare](http://www.slideshare.net/mattfarina))
+
+<!--more-->
 
 ## Slideshows for mobile?
 

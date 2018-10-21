@@ -1,58 +1,49 @@
 ---
 layout: post
-title: Los ABC de Multi-idioma
+title: Instalar Drupal 7 en multiples idiomas
+lang: es
+description: >-
+  Este post te guiará con 20 pasos en cómo crear un sitio web en multiples
+  lenguajes utilizando la técnica de *Entity Translation* para Drupal 7.
 ---
 
-Esto es un guía que se puede utilizar para instalar Drupal en multiples
-lenguajes. Fue creado originalmente para un taller de 2 horas en DrupalCamp
-Ecuador el 23 de Octubre de 2014 en Guayaquil, Ecuador.
+Este post te guiará con 20 pasos en cómo crear un sitio web en multiples lenguajes utilizando la técnica de *Entity Translation* para Drupal 7, como alternativa más atractiva de traduccion que la que brinda el módulo de *Content Translation*. Estos apuntes se presentaron en un taller durante DrupalCamp Ecuador el 23 de Octubre de 2014 en Guayaquil, Ecuador.
 
-Como hacer tu sitio múlti-idioma con Entity Translation en Drupal 7.
+<!--more-->
 
-OJO: No vamos a usar Content Translation, sino **Entity Translation.**
+## 1. Instalar Drupal
 
-Instalar Drupal
-===========
-
-* Poner el archivo .po en la ruta: **profiles/standard/translations/**
-* Instalar sitio con "Standard" profile.
-* Escoger instalación en ingles (por defecto) o bien (de preferencia) en español.
-
-Descargar modulos
-==============
-
-Descargar y habilitar todos los módulos que vamos a utilizar:
+*   Poner el archivo .po en la ruta: **profiles/standard/translations/**
+*   Instalar el sitio con "Standard" profile.
+*   Escoger instalación en ingles (por defecto) o mejor en
+    español.
 
 
-Core
+## 2. Modulos adicionales
+
+Descargar y habilitar los siguientes módulos que vamos a utilizar:
 
 * **Locale** (ya habilitado si instalaste en español)
-
-Fields
-Multilingual
-Multilingual - Entity Translation
-Multilingual - Internationalization
-
+* **Fields**
+* **Multilingual**
+* **Multilingual - Entity Translation**
+* **Multilingual - Internationalization**
 * **Internationalization** ([i18n][1]) VERSION DEV (7.x-1.x-dev) para evitar
     [este error][2].
     * **Field translation** (i18n_field submodule)
     * **Menu translation** (i18n_menu submodule)
     * **Variable translation** (i18n_variable submodule)
     * **String translation** (i18n_string submodule)
-
-Variable
-
 * **Variable** ([variable][3])
     * **Variable Realm** (variable_realm submodule)
     * **Variable Store** (variable_store submodule)
 
-Configurar actualizaciones de traducciones.
-================================
+
+## 3. Configurar actualizaciones de traducciones
 
 *   Localization update permite descargar y actualizar traducciones del core
     de Drupal y otros módulos instalados
 *   Debes especificar donde almacenar las traducciones descargados:
-
 
 **Admin » Configuración » Regional e idioma » Idiomas » Actualizaciones de traducciones**
 
@@ -62,8 +53,8 @@ URL: `admin/config/regional/language/update`
 
 ![][4]
 
-Configurar la detección y selección de idioma.
-==========================================
+
+## 4. Configurar la detección y selección de idioma.
 
 **Admin » Configuración » Regional e idioma » Idiomas » Detección y selección**
 
@@ -76,8 +67,7 @@ URL: `admin/config/regional/language/configure`
 
 ![][5]
 
-Agregar otra idioma
-============================
+## 5. Agregar otra idioma
 
 Por ejemplo, agrega la idioma de Frances, y configurar los prefijos de rutas:
 
@@ -89,11 +79,9 @@ URL: `admin/config/regional/language`
 *   Se podría también configurar diferente dominios (example.com, example.es,
     example.fr) o sub-dominios (en.example.com, es.example.com, fr.example.com).
 
-
 ![][6]
 
-Configurar Fecha y Hora.
-============================
+## 6. Configurar fecha y hora
 
 Por defecto Drupal usa mes/día/año (el format común del ingles) lo que hay que
 cambiar a día/mes/año.
@@ -106,7 +94,6 @@ URL: `/admin/config/regional/date-time`
 También se recomienda que creas formatos más comunes en español como "Lunes el
 20 de Octubre de 2012 a las 11:16pm"
 
-
 URL: `/admin/config/regional/date-time/formats`
 Haz clic sobre: Añadir formato de fecha.
 
@@ -116,8 +103,7 @@ Medium: `l j de F Y - h:ga`
 ![][8]
 
 
-Alternador de idioma
-============================
+## 7. Alternador de idioma
 
 **Admin » Estructura » Bloques**
 
@@ -133,8 +119,10 @@ Hay dos opciones:
 * Si tienes muchas idiomas, se recomienda utilizar el módulo **lang_dropdown**.
 * Siempre usar el bloque que es para _Texto de la interfaz del usuario._
 
-Habilitar traducción para Nodos y Taxonomía
-==========================================
+
+## 8. Habilitar traducción de entidades
+
+Necesitamos traducir el contenido del sitio, representado en los nodos y las taxonomías.
 
 **Admin » Configuración » Regional e idioma » Entity translation**
 
@@ -145,8 +133,8 @@ URL: `admin/config/regional/entity_translation`
 Esconder campos que no son por traducir
 ![][11]
 
-Configurar traducción de campos
-==========================================
+
+## 9. Configurar traducción de campos
 
 Habilitar el soporte multi-lenguaje con field translation en todos los tipos de
 contenido.
@@ -163,8 +151,7 @@ Sección: Opciones de publicación
 
 ![][12]
 
-Configurar modulo _Title_
-==========================================
+## 10. Configurar modulo _Title_
 
 Habilitar traducción de los Títulos de contenido.
 
@@ -200,8 +187,7 @@ admin/structure/taxonomy/tags/fields/name_field
 admin/structure/taxonomy/tags/fields/description_field
 ![][18]
 
-Traducir campos
-============================
+## 11. Traducir campos
 
 Habilitar traducción del campo de **body** en **todos los tipos de
 contenido** (Article y Basic Page).
@@ -221,9 +207,8 @@ URL: `admin/structure/types/manage/page/fields`
 **No habilita** traducción para los campos:
 Tags e Imagen.
 
-Crear y revisar contenido!
-============================
 
+## 12. Crear y revisar contenido!
 
 URL: `/node/add/article`
 
@@ -231,8 +216,8 @@ URL: `/node/add/article`
 
 ![][22]
 
-Traducir etiquetas de los Campos:
-============================
+
+## 13. Traducir etiquetas de los campos
 
 Si mostras las etiquetas de campos como "Tags:" en el Front-end, tienes que
 traducirles con el modulo _Field Translation_ (i18n_field)
@@ -250,8 +235,7 @@ URL: `admin/structure/types/manage/article/fields/field_tags/translate`
 
 ![][26]
 
-Traducir términos:
-============================
+## 14. Traducir términos
 
 **Admin » Estructura » Taxonomía » Lista**
 
@@ -261,8 +245,7 @@ URL: `admin/structure/taxonomy/tags`
 
 ![][28]
 
-Traducir variables (Site Name, Slogan, etc):
-==========================================
+## 15. Traducir variables (Site Name, Slogan, etc):
 
 **Admin » Configuración » Regional e idioma » Multilingual settings » Variables**
 
@@ -276,8 +259,8 @@ URL: `admin/config/system/site-information`
 
 ![][30]
 
-Menus
-==============
+
+## 16. Menus
 
 Escoger una metodologia para traducción de los menus.
 
@@ -296,8 +279,7 @@ Cada enlace debe tener una idioma:
 ![][32]
 Debes traducir y vincular cada enlace en cada idioma.![][33]
 
-Bloques
-==============
+## 17. Bloques
 
 Escoger una metodologia para traducir bloques:
 
@@ -311,8 +293,7 @@ Escoger una metodologia para traducir bloques:
 *   Nodos con Entity Translation.
 *   Boxes con i18n_boxes + i18n_string.
 
-Views
-==============
+## 18. Views
 
 Views no require modificación con Entity Translate, pero por defecto si un nodo
 no tiene traducción, se mostrará el contenido en la idioma madre (source
@@ -328,8 +309,7 @@ contenido mezclado, puedes usar un filtro:
 ![][35]
 
 
-Actualizar traducciones
-============================
+## 19. Actualizar traducciones
 
 **Admin » Configuración » Regional e idioma » Traducir interfaz » Actualizar**
 
@@ -341,15 +321,14 @@ tiempo, para estar al día con las traducciones del interfaz, contribuido por la
 comunidad.
 
 
-Buscar y traducir interfaz
-============================
+## 20. Buscar y traducir interfaz
 
 **Admin » Configuración » Regional e idioma » Traducir interfaz » Traducir**
 
 URL: `admin/config/regional/translate/translate`
 
-Otros módulos
-==============
+
+## Otros módulos
 
 *   [Localization Client][36] (l10n_client) -
     Facilita traducción de cadenas de texto del interfaz en tu sitio y
@@ -361,9 +340,6 @@ Otros módulos
     Cuando uno va a traducir el contenido de un nodo, el interfaz de
     administración se cambia al lenguaje del destino. Usar este modulo para
     dejar el backend en tu lenguaje preferida.
-
-Referencias
-==============
 
 [1]: https://www.drupal.org/project/i18n
 [2]: https://www.drupal.org/node/2227523

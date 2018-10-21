@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Crear un sitio multi-idioma con Drupal 8
+description: >-
+  Esto es un guía que se puede utilizar para instalar Drupal en multiples
+  idiomas. Fue creado originalmente para un taller de 1 hora en DrupalCamp
+  Ecuador el 16 de Octubre de 2015 en Quito, Ecuador.
 ---
 
 Esto es un guía que se puede utilizar para instalar Drupal en multiples
@@ -9,40 +13,41 @@ Ecuador el 16 de Octubre de 2015 en Quito, Ecuador.
 
 Para crear un sitio multi-idioma en Drupal 7 revisa mi post del año pasado: [Los ABC de Multi-idioma en Drupal 7][1].
 
+<!--more-->
 
 Puedes encontrar los diapositivos aquí: [/slides/multilenguaje-drupal-8.html](/slides/multilenguaje-drupal-8.html).
 
-1. Crear un Sitio
---------------
+## 1. Crear un Sitio
+
 * Abrir una cuenta en [Pantheon.io][2].
 * Crear un sitio en el Dashboard de Pantheon.
 * Instalar Drupal 8 RC-1.
 
 
-2. Instalar Drupal
---------------
+## 2. Instalar Drupal
+
 - Selecciona español como lenguaje predeterminado.
 - Crear cuenta de Administrador.
 
 
-3. Agregar idioma
---------------
+## 3. Agregar idioma
+
 - Ingresar como Administrador.
 - Administrar > Configuración > Regional e idioma > Idiomas<br>
   URL: `admin/config/regional/language`
 - Click botón: *Agregar idioma* y selecciona el inglés.
 
 
-4. Detección y selección
----------------------
+## 4. Detección y selección
+
 Qué idioma utilizar y cuándo?
 
 - Administrar > Configuración > Regional e idioma > Idiomas: Detección y selección
 - Habilitar "URL" como método principal de detección.
 
 
-5. Alternador de idiomas
--------------------
+## 5. Alternador de idiomas
+
 Colocar el bloque del alternador de idiomas en la primera barra lateral del sitio.
 
 - Administrar > Estructura > Diseño de bloques<br>
@@ -53,8 +58,8 @@ Colocar el bloque del alternador de idiomas en la primera barra lateral del siti
 - *Regresar al sitio* para visualizar el Alternador.
 
 
-6. Configurar fecha y hora
---------------------------
+## 6. Configurar fecha y hora
+
 Por defecto Drupal usa mes/día/año (el format común del ingles) lo que hay que cambiar a día/mes/año.
 
 URL: `/admin/config/regional/date-time`
@@ -72,8 +77,8 @@ También se recomienda crear formatos más comunes en español como:
   `d/m/Y - h:i a`
 
 
-7. Habilitar módulos para traducción
-------------------------------------
+## 7. Habilitar módulos para traducción
+
 - Administrar > Extender<br>
   URL: `admin/modules`
   - *Dejar deshabilitado Configuration Translation. <sup><a href="#fn">1</a></sup>*
@@ -91,8 +96,8 @@ También se recomienda crear formatos más comunes en español como:
       - No hay un solo lugar para ver todas las traducciones de contenido. La gestión se encuentra como pestaña en la configuración de cada entidad creado en tu sitio.
 
 
-8. Habilitar traducción de Entidades
----------------------------------
+## 8. Habilitar traducción de Entidades
+
 - Administrar > Configuración > Regional e idioma > Content language and translation<br>
   URL: `admin/config/regional/content-language`
 - Seleccionar las siguientes entidades:
@@ -107,8 +112,8 @@ También se recomienda crear formatos más comunes en español como:
 - Click botón: Guardar configuración
 
 
-9. Crear página con enlace de menú y traducirlo
---------------------------------------------
+## 9. Crear página con enlace de menú y traducirlo
+
 - Administrar > Contenido: Agregar contenido: Página básica<br>
   URL: `node/add/page`
 - Titulo: `Acerca de`
@@ -126,8 +131,8 @@ También se recomienda crear formatos más comunes en español como:
 - Seleccionar operación: *Traducir* para el enlace de "Acerca de" y proporcionar una traducción al inglés: `About us`
 
 
-10. Crear artículo con categoría e imagen y traducirlo
---------------------------------------------------
+## 10. Crear artículo con categoría e imagen y traducirlo
+
 - Administrar > Contenido: Agregar contenido: Página básica<br>
   URL: `node/add/article`
   - Titulo: `Un artículo`
@@ -144,8 +149,8 @@ También se recomienda crear formatos más comunes en español como:
   - Alternative Text: `Drupal Eight`.
 
 
-11. Traducir etiqueta 'Noticias' al inglés
---------------------------------------
+## 11. Traducir etiqueta 'Noticias' al inglés
+
 - Administrar > Estructura > Taxonomía<br>
   Cliquear *Lista de términos* para el vocabulario *Etiquetas*.<br>
   URL: `admin/structure/taxonomy/manage/tags/overview`
@@ -154,8 +159,8 @@ También se recomienda crear formatos más comunes en español como:
 - *Regresar al sitio* y busca la version en inglés del artículo para verificar que esta traducido.
 
 
-12. Agregar un bloque personalizado
--------------------------------
+## 12. Agregar un bloque personalizado
+
 - Administrar > Estructura > Diseño de bloques<br>
   URL: `admin/structure/blocks`
 - Colocar bloque > Añadir bloque personalizado
@@ -171,8 +176,7 @@ También se recomienda crear formatos más comunes en español como:
   - Click botón: *Save*
 
 
-13. Personalizar y traducir el nombre del sitio y slogan
--------------------------------------
+## 13. Personalizar y traducir el nombre del sitio y slogan
 
 - Abrir: `admin/config/system/site-information`
   - Nombre de sitio: `D8 Multilenguaje`
@@ -187,12 +191,7 @@ También se recomienda crear formatos más comunes en español como:
   - *Guardar traducción*.
 
 
-Extras
-======
-
-
-1. Alternador de idiomas como menú desplegable
--------------------------------------------
+## 14. Extra: Alternador de idiomas como menú desplegable
 
 OJO: parece que esta funcionalidad está fallando en Pantheon.
 
@@ -207,13 +206,9 @@ Subir el módulo descomprimido dentro de la carpeta `/modules` mediante SFTP o G
 
 <sub id="fn">Notas al pie:</sub>
 
-<sub>
-1, 3. Actualmente hay un error del PHP Runtime en la gestión de tipos de contenido cuando instalas Drupal en español y habilitas el modulo de *Configuration Translation*. Ver [Issue #2584603](https://www.drupal.org/node/2584603).
-</sub>
+<sub>1, 3. Actualmente hay un error del PHP Runtime en la gestión de tipos de contenido cuando instalas Drupal en español y habilitas el modulo de *Configuration Translation*. Ver [Issue #2584603](https://www.drupal.org/node/2584603).</sub>
 
-<sub>
-2. El campo de la *Descripción del bloque* tiene un problema en la traducción y por lo tanto la versión traducido del cuerpo del bloque siempre saldrá con el título en el idioma original.
-</sub>
+<sub>2. El campo de la *Descripción del bloque* tiene un problema en la traducción y por lo tanto la versión traducido del cuerpo del bloque siempre saldrá con el título en el idioma original.</sub>
 
 
 [1]: /2014-10-23-los-abc-de-multi-idioma-en-drupal-7.html

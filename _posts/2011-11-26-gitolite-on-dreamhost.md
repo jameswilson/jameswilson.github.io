@@ -3,11 +3,16 @@ layout: post
 title: Install Gitolite on Dreamhost
 ---
 
+How-to guide to installing Gitolite on Dreamhost.
+
+<!--more-->
+
 ## Part 1: Installation
 
 1.  In the Dreamhost control panel, create new user `mygitoliteuser` and ensure
-    that *shell access* is enabled.  Write the password down, or copy it to your
-    clipboard, and wait for the user to be installed by the Dreamhost robot.
+    that *shell access* is enabled.  Write the password down, or copy it to
+    your clipboard, and wait for the user to be installed by the Dreamhost
+    robot.
 
 
 2.  While you're waiting for the user to be installed by the Dreamhost robot,

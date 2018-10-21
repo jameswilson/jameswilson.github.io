@@ -3,15 +3,16 @@ layout: post
 title: 2014 Sticky Footer Solutions
 ---
 
-We’re working on a Drupal distribution of sorts that offers a number of
-different themes included, and I needed to do some research into to the cleanest
-solution for including a generic, reusable and inheritable Sticky Footer to be
-packaged in a base theme, and easily turned on or off in sub-themes as
-necessary.
+While working on a Drupal distribution of sorts that offers a number of
+different themes included, I needed to look for a clean, generic, reusable and
+inheritable Sticky Footer to be packaged in a base theme. The feature needed
+to be toggleable on or off in sub-themes as necessary.
 
-Searching Google always turns up a number of solutions, so I thought I would
-condense the options down into a list of 4 basic options, and list the pros and
-cons of each.
+Searching Google always turns up a number of competing solutions, so I've
+consolidated the research here in a list of 4 basic options presenting the
+pros and cons of each.
+
+<!--more-->
 
 ## 1. The Classic CSS Sticky Footer  (html5 version here):
 
@@ -25,10 +26,10 @@ Cons:
 *   Requires the footer height be known, and set to a fixed value in CSS.
 *   Requires non-semantic HTML code structure changes.
 *   Doesn't work well when using dynamic content such as from a CMS.
-*   Doesn't work well for responsive designs, where height may change dynamically
-    based on contents and width of screen.
+*   Doesn't work well for responsive designs, where height may change
+    dynamically based on contents and width of screen.
 
-## 2. A Responsive Sticky Footer CSS solution using display:table-row
+## 2. A Responsive Sticky Footer CSS solution using `display:table-row`
 
 Pros:
 
@@ -37,7 +38,7 @@ Pros:
 
 Cons:
 
-*   Could be considered a hack, due to CSS use of {{display:table-row}}.
+*   Could be considered a hack, due to CSS use of `display:table-row`.
 *   Can cause layout/display issues or break the site design of some sites,
     requiring more time and attention to fix.
 

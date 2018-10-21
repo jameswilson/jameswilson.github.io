@@ -3,6 +3,8 @@ layout: post
 title: That feeling you get when...
 ---
 
+<!--more-->
+
 ...you check your [Drupal.org][1] Posts list for the first time in three months:
 
 ![][2]

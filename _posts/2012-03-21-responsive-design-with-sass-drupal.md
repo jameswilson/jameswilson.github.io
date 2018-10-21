@@ -1,7 +1,11 @@
 ---
 layout: post
-title: Responsive Design with SASS/Compass
+title: Responsive Design with Sass and Compass
 ---
+
+Notes from DrupalCon 2012 from a session I attended about Responsive Design with Sass and Compass
+
+<!--more-->
 
 Design in browser.
 
@@ -18,7 +22,7 @@ image wrapper for xml.
     * some gradients, drop shadows, ff pixelates svgs.
     * svg sprites don't work in firefox.
 
-turn icons into fonts, and embed fonts.  suffers from  blurry edges if they
+Turn icons into fonts, and embed fonts.  suffers from  blurry edges if they
 don't render at a specific pixel size. easy to throw in icon fonts. quick to
 done. monochrome only.
 

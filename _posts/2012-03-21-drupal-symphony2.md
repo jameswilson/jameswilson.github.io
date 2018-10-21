@@ -3,6 +3,10 @@ layout: post
 title: Drupal on Symphony2
 ---
 
+Notes from DrupalCon 2012 from a session I attended about Symfony2
+
+<!--more-->
+
 Some symphony components will come preinstalled in Drupal 8.
 
 ### ClassLoader
@@ -71,7 +75,6 @@ Matching incoming requests, to know which code (controller) should handle the re
 
 ```php
 $route = new Route('node/{id}', array('_controller' => 'SomeClass:someMethod'));
-
 $routes = new RouteCollection();
 $routes->add(…
 ```
@@ -90,7 +93,7 @@ Implements a lightweight of the observer design pattern.
 
 Like hook system.
 
-```
+```php
 $dispatcher  = new EventDispatcher()
 
 callable = function (Event $event) {
@@ -104,7 +107,7 @@ $dispather->addListener('event_name', $callable);
 
 standard way to handle requests and ensure request gets sent back to browser.
 
-```
+```php
 interface HttpKernelInterface {
      function handle(Request $request, $type = self::MASTER_REquest, $catch) {}
 }
@@ -123,7 +126,7 @@ Experiation (Cache-Control, Expires header)
 
 Validation:  Last-Modified, If-Modified-Since, ETag.
 
-```
+```php
 $response->setTtl(10);
 $response->setClientTtl(10);
 ```

@@ -10,11 +10,12 @@ bookmarklet.
 However I found that neither of the latest versions 1.3 and 1.4 of Firebug
 Lite work in Internet Explorer 7, but **version 1.2 does work**.
 
-http://getfirebug.com/wiki/index.php/Firebug_Lite_1.2
+<p class="text-center">
+<a href="http://getfirebug.com/wiki/index.php/Firebug_Lite_1.2" class="button">Firebug Lite version 1.2</a>
+</p>
 
-Bookmarklet text, in case you want to roll your own bookmarklet:
+Also, the following bookmarklet can be used to roll your own, or just drag this link to your bookmark bar: [🚀](javascript:var%20firebug=document.createElement('script');firebug.setAttribute('src','http://getfirebug.com/releases/lite/1.2/firebug-lite-compressed.js');document.body.appendChild(firebug);(function(){if(window.firebug.version){firebug.init();}else{setTimeout(arguments.callee);}})();void(firebug);).
 
-    javascript:var%20firebug=document.createElement('script');firebug.setAttribute('
-    src','http://getfirebug.com/releases/lite/1.2/firebug-lite-compressed.js');docum
-    ent.body.appendChild(firebug);(function(){if(window.firebug.version){firebug.ini
-    t();}else{setTimeout(arguments.callee);}})();void(firebug);
+```javascript
+javascript:var%20firebug=document.createElement('script');firebug.setAttribute('src','http://getfirebug.com/releases/lite/1.2/firebug-lite-compressed.js');document.body.appendChild(firebug);(function(){if(window.firebug.version){firebug.init();}else{setTimeout(arguments.callee);}})();void(firebug);
+```

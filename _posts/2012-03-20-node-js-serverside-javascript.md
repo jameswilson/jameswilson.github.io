@@ -69,7 +69,7 @@ The reason it can do this is that anything that leaves v8 takes a callback.
 
 In node js these ^ look different than typical PHP processing.
 
-```
+```javascript
 var fs = require('fs');
 fs.readfile('/etc/passwd', function (err, data) {
 if (err) throw err;
@@ -128,14 +128,14 @@ NPM: 7976 (and is only 2 years old!)
 
 node.js is bad for:
 
-*   computationally heavy tasks (e.g., crypto) things that tend to occupy all the
-    memory.
+*   computationally heavy tasks (e.g., crypto) things that tend to occupy all
+    the memory.
 *   databases
 
 node.js is awesome for:
 
-*   interacting with other services, like: databases, mail servers, web services,
-    web clients…
+*   interacting with other services, like: databases, mail servers, web
+    services, web clients…
 
 
 
