@@ -9,7 +9,6 @@ description: >-
   Source enthusiast.
 url:              http://jameswilson.github.io
 paginate:         3
-markdown:         redcarpet
 highlighter:      rouge
 baseurl:          ""
 author:
