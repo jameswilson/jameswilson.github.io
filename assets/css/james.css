@@ -10,7 +10,7 @@
   --secondary-font-color: rgba(var(--rgb-darkgray), 1);
   --tertiary-font-color: rgba(var(--rgb-darkgray), .9);
   --bg-gray: rgba(var(--rgb-ltgray), .2);
-  --border-gray: rgba(var(--rgb-medgray), .2);
+  --border-gray: rgba(var(--rgb-medgray), .3);
   --james-blue: #33ccee;
   --james-red: #f93868;
   --james-light-red: #dd6677;
@@ -437,17 +437,33 @@ pre code {
 }
 
 .button {
+  color: var(--james-red);
   border: 2px solid;
   padding: .2em 1.2em;
   text-decoration: none;
   display: inline-block;
   line-height: 1.2;
+  font-size: 1.2rem;
 }
 
 .button.disabled {
   border-color: var(--border-gray);
   color: var(--primary-font-color);
   opacity: .4;
+}
+
+[type="text"],
+[type="email"] {
+  border: 2px solid var(--border-gray);
+  color: var(--secondary-font-color);
+  font-size: 1.2rem;
+  line-height: 1.2;
+  padding: .2em .4em;
+  display: inline-block;
+}
+
+input:focus {
+  z-index: 10;
 }
 
 @media only screen and (min-width: 480px) {

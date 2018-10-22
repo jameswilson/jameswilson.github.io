@@ -5,6 +5,26 @@ permalink: 404.html
 ---
 
 <div class="page">
-  <h1 class="page-title">404: Page not found</h1>
-  <p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <a href="{{ site.baseurl }}">Head back home</a> to try finding it again.</p>
+  <h1>404: Page not found</h1>
+  <p class="intro">Sorry! You found a broken link — this URL doesn't exist.</p>
+  <p><a href="/">Head to the homepage</a> or try the search below:</p>
+  <br>
+  <form action="/search" method="GET" style="display:flex;">
+    <input type="text" name="q" id="q" value="" style="flex: 1 1 auto">
+    <button type="submit" class="button" style="margin-left:-2px">Search</button>
+  </form>
 </div>
+
+<script>
+  /* populate search form's text input from URL. */
+  var search_text_from_url = window.location.pathname
+    // remove dates in the url of the form yyyy-mm-dd
+    .replace(/\d{4}-\d{2}-\d{2}/g, '')
+    // remove .html
+    .replace(/\.html$/g, '')
+    // replace non-letters with spaces.
+    .replace(/\W/g, ' ')
+    // trim leading whitespace.
+    .replace(/(^\s+|\s+$)/g, '');
+  document.getElementById("q").value = search_text_from_url;
+</script>
