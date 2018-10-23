@@ -26,8 +26,7 @@ You can connect with James elsewhere online at:
 
 This blog has existed and evolved through many technology stacks over the years. The current incantation is a return to simplicity and speed.
 
-* Current version v{{ site.version}}.
-* Open sourced codebase available for review and forking online at GitHub [{{site.github.repository_name}}]({{site.github.repository_url}}).
+* Current version v{{ site.version}} is available under the [MIT License](/LICENSE.md) and may be viewed and forked online at GitHub [{{site.repository}}](https://github.com/{{site.repository}}).
 * Runs on the [Jekyll](https://jekyllrb.com/showcase/) framework, a static-site generator written in Ruby; inspired by the [Poole](http://getpoole.com/) implementation for Jekyll.
 * Hosted for free on [GitHub Pages](https://pages.github.com).
 * Coded with ❤️ in [Sublime Text](http://sublimetext.com), an amazing code editor.
