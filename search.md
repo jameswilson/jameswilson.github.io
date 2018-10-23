@@ -5,9 +5,8 @@ title: Search James' Blog
 
 <link rel="stylesheet" href="/assets/css/google-custom-search.css">
 <script>
-/* https://cse.google.com/cse/setup/basic?cx=005468932483752946890:jvbt67gzrjm */
   (function() {
-    var cx = '005468932483752946890:jvbt67gzrjm';
+    var cx = '{{ site.google.search_engine_id }}';
     var gcse = document.createElement('script');
     gcse.type = 'text/javascript';
     gcse.async = true;

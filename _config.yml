@@ -30,6 +30,9 @@ analytics:
   enabled:        true
   tracking_id:    UA-45354089-1
 
+google:
+  search_engine_id: 005468932483752946890:jvbt67gzrjm
+
 # Global author
 author:
   name:           James
