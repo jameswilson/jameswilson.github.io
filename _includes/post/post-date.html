@@ -1,0 +1,13 @@
+{% comment %}
+Please note: the Jekyll site must be regenerated at least once per year
+on January 1st for the previous year to be visible.
+{% endcomment %}
+{% assign current_year = site.time | date: '%Y' %}
+{% assign post_year = post.date | date: '%Y' %}
+{% if current_year == post_year %}
+{% assign format = '%b %-d' %}
+{% else %}
+{% assign format = '%b %-d %Y' %}
+{% endif %}
+
+<time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: format }}</time>

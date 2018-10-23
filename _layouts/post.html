@@ -7,63 +7,23 @@ comments: true
   <h1 class="post-title">{{ page.title }}</h1>
 
   {% assign post = page %}
-  <p>
-    <small>
-    {% include post/date.html %}
-    &middot;
-    {% include post/word_count.html %}
-    </small>
-  </p>
+  <p>{% include post/post-meta.html %}</p>
 
   {{ content }}
 </article>
 
 <section class="share">
-  {% include twitter_plug.html %}
+  {% include page/share.html %}
 </section>
 
 <section class="prevnext">
-  {% if page.previous %}
-    {% assign previous = page.previous %}
-  {% else %}
-    {% assign previous = site.posts[0] %}
-  {% endif %}
-  <div class="text-left">
-    <a class="button" href="{{site.baseurl}}{{previous.url}}" title="Previous post: {{previous.title}}">
-      <small><small>← PREVIOUS POST</small></small><br>
-      {{previous.title}}
-    </a>
-  </div>
-
-  {% if page.next %}
-    {% assign next = page.next %}
-  {% else %}
-    {%comment%}
-      As the array index start at zero we substract 1 to the total count,
-      we then get the last post index in the site.posts array
-    {%endcomment%}
-    {% assign last lastPostIndex = site.posts | size | minus: 1 %}
-    {% assign next = site.posts[lastPostIndex] %}
-  {% endif %}
-  <div class="text-right">
-    <a class="button" href="{{site.baseurl}}{{next.url}}" title="Next post: {{next.title}}">
-      <small><small>NEXT POST →</small></small><br>
-      {{next.title}}
-    </a>
-  </div>
+  {% include page/prevnext.html %}
 </section>
 
 <section class="comments">
-  {% include comments.html %}
+  {% include page/comments.html %}
 </section>
 
 <aside class="related">
-  <h2>Related Posts</h2>
-  <ol class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-    <li>
-      {% include related_post.html %}
-    </li>
-    {% endfor %}
-  </ol>
+  {% include page/related.html %}
 </aside>

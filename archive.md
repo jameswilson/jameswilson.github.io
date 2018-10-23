@@ -5,10 +5,10 @@ title: Blog archive
 
 Posts sorted in reverse chronological order.
 
-<ol class="related-posts">
+<ol>
 {% for post in site.posts %}
   <li>
-    {% include related_post.html %}
+    {% include post/linked-post.html %}
   </li>
 {% endfor %}
 </ol>

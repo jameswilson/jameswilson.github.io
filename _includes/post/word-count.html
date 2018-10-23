@@ -1,0 +1,5 @@
+{% assign words = post.content | strip_html | number_of_words %}
+{% assign minutes = words | divided_by: site.words_per_minute | ceil %}
+<span class="word-count" title="{{ words }} words">
+  {{ minutes }} min read
+</span>

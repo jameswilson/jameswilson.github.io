@@ -410,11 +410,6 @@ pre code {
   transition: fill .2s ease-out;
 }
 
-.related-posts h3 {
-  margin: 0;
-  display: inline;
-}
-
 .prevnext {
   display: flex;
   justify-content: space-between;
