@@ -18,7 +18,7 @@ tagline:          Open Source Technologist &amp; Senior Web Developer
 description: >-   # Used in homepage metatag and RSS feed description.
   The personal blog of James Wilson; senior frontend web developer at Bluespark and Open
   Source enthusiast.
-url:              http://jameswilson.github.io
+url:              https://jameswilson.github.io
 baseurl:          ""  # change to /subdir if the site is located in a subfolder
 permalink:        /:year-:month-:day-:title
 paginate:         3
