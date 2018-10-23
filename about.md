@@ -10,7 +10,7 @@ title: About James
 
 After graduating in Computer Science at North Carolina State University, and a few brief stints of corporate work, James left for an extended sabatical to travel the world. He ended up settling in Cuenca, Ecuador in 2006 with his partner Carola.
 
-James turned to web development to sustain his travels and began learning the emerging Web standards of the day. In 2007/08, as the number of website projects steadily increased, he carefully compiled his ideas into a custom <abbr title="Content Management System">CMS</abbr> written in Classic ASP VBScript attempting.
+James turned to web development to sustain his travels and began learning the emerging Web standards of the day. In 2007/08, as the number of website projects steadily increased, he carefully compiled his ideas into a custom <abbr title="Content Management System">CMS</abbr> written in Classic ASP VBScript.
 
 As the inevitable frustration grew with being the sole maintainer of a codebase written in an aging language, he turned to PHP, Drupal, and the thriving open source community —  embracing the concept of <em>standing on the shoulders of giants</em> instead of writing everything from scratch.
 
