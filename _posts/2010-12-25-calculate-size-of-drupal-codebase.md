@@ -3,29 +3,60 @@ layout: post
 title: Calculating the size of the Drupal Codebase.
 ---
 
+This post demonstrates how to calculate the lines of PHP, JavaScript, and CSS code between Drupal 6 and 7, leveraging [cloc]() a “command line tool that counts blank lines, comment lines, and physical lines of source code in many programming languages.”
 
-Reference:
-http://journal.uggedal.com/django-vs-rails-code-size
+<!--more-->
+
+## td;lr
+
+The codebase has generally trippled in size between Drupal 6 and Drupal 7. CSS
+and PHP code has doubled.  Javascript code has quadrupled — a nod to the clear
+importance of Javascript and the growing Jquery library and JS dependencies
+included in Drupal core.  The vast majority of the size increase comes from
+code comments.
+
+Criteria                | Drupal 6.20    | Drupal 7.0
+----------------------- | -------------- | --------------
+PHP files               |  204           |  484
+Javascript files        |  23            |  84
+CSS files               |  59            |  116
+Ignored files           |  15            |  33
+**Total files**         |  **345**       |  **852**
+PHP comments            |  22,792        |  79,315
+JS comments             |  936           |  2,808
+CSS comments            |  409           |  1,098
+**Total comments**      |  **24,182**    |  **83,224**
+PHP lines of code       |  48,091        |  161,322
+JS lines of code        |  2,347         |  5,085
+CSS lines of code       |  4,305         |  8,909
+**Total lines of code** |  **55,410**    |  **178,290**
+----------------------- | -------------- | --------------
+**3rd Gen Equivalent**  | **178,130.60** | **589,530.79**
+
+Note: The cloc documentation page says that the *3rd gen. equiv.* value should be "taken with a large grain of salt."
 
 
+## Background and procedure
+
+Thanks to [this post comparing Django to Rails](http://journal.uggedal.com/django-vs-rails-code-size) for inspiration, the basic procedure is to download and install `cloc` a command line tool that calculate lines of code, comments, etc.
+
+### 1. Install `cloc` command line tool.
+
+You can use homebrew or download the source (perl script) from [Sourceforge](http://cloc.sourceforge.net/).
+
+### 2. Download Drupal 6.20 and 7.0
+
+```bash
+$ drush dl drupal-6.20
+$ drush dl drupal-7.0
 ```
-# drush dl drupal
-Project drupal (6.20) downloaded to                                  [success]
-/Users/jameswilson/Sites/Drupal6/drupal-6.20.
-Project drupal contains:                                             [success]
- - 1 profile: default
- - 6 themes: pushbutton, minnelli, garland, marvin, chameleon,
-bluemarine
- - 33 modules: user, upload, update, trigger, translation, tracker,
-throttle, taxonomy, system, syslog, statistics, search, profile,
-poll, ping, php, path, openid, node, menu, locale, help, forum,
-filter, dblog, contact, comment, color, book, blogapi, blog, block,
-aggregator
 
+### 3. Calculate lines of code of Drupal 6
 
-# cloc --force-lang=PHP,install --force-lang=PHP,module --force-lang=PHP,inc \
---force-lang=PHP,test --force-lang=PHP,profile --force-lang=Make,info -3 \
-drupal-6.20/
+```bash
+$ cloc --force-lang=PHP,install --force-lang=PHP,module --force-lang=PHP,inc --force-lang=PHP,test --force-lang=PHP,profile --force-lang=Make,info -3 drupal-6.20/
+```
+```
      345 text files.
      345 unique files.
       15 files ignored.
@@ -43,28 +74,15 @@ Perl                  1        26        42       127 x   4.00 =         508.00
 -------------------------------------------------------------------------------
 SUM:                330      7761     24182     55410 x   3.21 =      178130.60
 -------------------------------------------------------------------------------
+```
 
 
+### 4. Calculate lines of code of Drupal 7
 
-# drush dl drupal-7.0
-Project drupal (7.0) downloaded to                                   [success]
-/Users/jameswilson/Sites/Drupal7/drupal-7.0.
-Project drupal contains:                                             [success]
- - 3 profiles: testing, standard, minimal
- - 4 themes: stark, seven, garland, bartik
- - 47 modules: drupal_system_listing_incompatible_test,
-drupal_system_listing_compatible_test, user, update, trigger,
-translation, tracker, toolbar, taxonomy, system, syslog, statistics,
-simpletest, shortcut, search, rdf, profile, poll, php, path, overlay,
-openid, node, menu, locale, image, help, forum, filter, file,
-field_ui, text, options, number, list, field_sql_storage, field,
-dblog, dashboard, contextual, contact, comment, color, book, blog,
-block, aggregator
-
-
-# cloc --force-lang=PHP,install --force-lang=PHP,module --force-lang=PHP,inc \
---force-lang=PHP,test --force-lang=PHP,profile --force-lang=Make,info -3 \
-drupal-7.0/
+```bash
+$ cloc --force-lang=PHP,install --force-lang=PHP,module --force-lang=PHP,inc --force-lang=PHP,test --force-lang=PHP,profile --force-lang=Make,info -3 drupal-7.0/
+```
+```
      852 text files.
      847 unique files.
       33 files ignored.
