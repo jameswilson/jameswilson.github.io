@@ -26,9 +26,9 @@ paginate:         3
 # og:image metatag default (override this per post/page in post's front matter)
 image:            https://i.imgur.com/UNe5t4v.jpg
 
-google_analytics:
+analytics:
   enabled:        true
-  ua_code:        UA-45354089-1
+  tracking_id:    UA-45354089-1
 
 # Global author
 author:
