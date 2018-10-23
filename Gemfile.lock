@@ -243,7 +243,8 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll-feed (~> 0.6)
+  jekyll-feed
+  jekyll-github-metadata
   tzinfo-data
 
 BUNDLED WITH

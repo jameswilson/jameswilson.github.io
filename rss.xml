@@ -1,0 +1,26 @@
+---
+layout: null
+---
+
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xml:base="{{ site.url }}">
+<channel>
+  <title>{{ site.title }}</title>
+  <link>{{ site.url }}</link>
+  <description>{{ site.description }}</description>
+  <generator>Jekyll</generator>
+  <copyright>{{ site.time | date: '%Y'}} {{ site.title }}. The text and image content of this website is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+  <language>en</language>
+  <lastBuildDate>{{ site.time | date_to_xmlschema }}</lastBuildDate>
+  {% for post in site.posts limit:10 %}
+  <item>
+    <title>{{ post.title }}</title>
+    <link>{{ site.url }}/{{ post.url }}</link>
+    <description>{{ post.content | xml_escape }}
+    </description>
+    <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+    <dc:creator><a href="{{ site.author.url }}" hreflang="en">{{ site.author.name }}</a></dc:creator>
+    <guid isPermaLink="false">{{ site.url }}{{ post.id }}</guid>
+  </item>
+  {% endfor %}
+</channel>

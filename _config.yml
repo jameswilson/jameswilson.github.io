@@ -2,6 +2,11 @@
 github:           [metadata]
 highlighter:      rouge
 
+# Enable the following Github Pages optional Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-github-metadata
+
 # Repository configuration
 repository:       jameswilson/jameswilson.github.io
 version:          2.0.0
@@ -38,6 +43,10 @@ excerpt_separator: <!--more-->
 disqus:
   enabled:        false
   shortname:      jwilson3-postach-io
+
+# Jekyll Feed plugin options
+feed:
+  path: atom.xml  # override the default /feed.xml
 
 # Main navigation links.
 # See _includes/navigation.html for usage.
