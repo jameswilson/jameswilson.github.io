@@ -20,7 +20,7 @@ description: >-   # Used in homepage metatag and RSS feed description.
   Source enthusiast.
 url:              http://jameswilson.github.io
 baseurl:          ""  # change to /subdir if the site is located in a subfolder
-permalink:        /:year-:month-:day-:title.html
+permalink:        /:year-:month-:day-:title
 paginate:         3
 
 # Global author
