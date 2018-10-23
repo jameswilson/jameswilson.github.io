@@ -42,8 +42,8 @@ excerpt_separator: <!--more-->
 # Disqus comment configuration.
 # See _include/comments.html for usage.
 disqus:
-  enabled:        false
-  shortname:      jwilson3-postach-io
+  enabled:        true
+  shortname:      jameswilson-blog
 
 # Jekyll Feed plugin options
 feed:
