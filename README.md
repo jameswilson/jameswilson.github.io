@@ -47,7 +47,11 @@ $ bundle exec jekyll serve
 
 3. Open `_config.yml` and modify the Jekyll configurations to match your repository.  You'll want to modify the repository, title, tagline, description, and url.  Optionally, create a Disqus account and configure / enable it in `_config.yml`. Change other settings at your own risk.
 
-4. See [Customizing GitHub Pages](https://help.github.com/categories/customizing-github-pages/) for further details.
+4. Enable optional plugins
+
+Review and enable any of the [available optional plugins](https://help.github.com/articles/configuring-jekyll-plugins/#optional-plugins) in your `_config.yml`.
+
+5. See [Customizing GitHub Pages](https://help.github.com/categories/customizing-github-pages/) for further details.
 
 
 ## 6. Configure Travis CI
@@ -59,18 +63,15 @@ $ bundle exec jekyll serve
 * Update the Build Status icon in this README to match your repository.
 
 
-## 7. Enable optional plugins
+## 7. Staying up-to-date with github-pages
 
-Review and enable any of the [available optional plugins](https://help.github.com/articles/configuring-jekyll-plugins/#optional-plugins) in your `_config.yml`.
-
-
-## 8. Stay up-to-date
-
-Update GitHub pages gem on your local environment to stay in sync with the latest.
+You may update the GitHub Pages gem on your local environment to stay in sync with the latest.
 
 ```bash
 $ bundler update github-pages
 ```
+
+Be sure to review, commit, and push the changes to `Gemfile.lock` if required.
 
 ## License
 
