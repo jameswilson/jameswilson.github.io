@@ -419,6 +419,10 @@ pre code {
   width: 33%;
 }
 
+.prevnext .button {
+  font-size: 1rem;
+}
+
 .text-left {
   text-align: left;
 }
