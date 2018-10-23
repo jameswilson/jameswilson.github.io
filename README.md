@@ -6,7 +6,7 @@ Repository | Version | Build Status
 ---------- | ------- | ------------
 {{site.repository}} | {{site.version}} | [![Build Status](https://travis-ci.org/jameswilson/jameswilson.github.io.svg?branch=master)](https://travis-ci.org/jameswilson/jameswilson.github.io)
 
-## How to copy this website
+## Setting up your site
 
 ### 1. Fork it on GitHub
 
@@ -68,15 +68,29 @@ Then open <http://127.0.0.1:4000> in your browser, and test your site.
 * Update the Build Status icon in this README to match your repository.
 
 
-### 7. Staying up-to-date with github-pages
+## Maitaining your site
+
+
+## 1. Ensuring previous year is displayed
+
+This site design has custom logic to hide the year from archived posts
+if the post was made in the current year. This means that Jekyll must be
+regenerated at least once per year on January 1st for the previous year
+to be visible on the "Related Posts" block and on the /archive page.
+
+
+### 2. Staying up-to-date with github-pages
 
 You may update the GitHub Pages gem on your local environment to stay in sync with the latest.
 
 ```bash
 $ bundler update github-pages
+$ github-pages health-check
 ```
 
 Be sure to review, commit, and push the changes to `Gemfile.lock` if required.
+
+
 
 ## License
 
