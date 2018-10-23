@@ -17,6 +17,13 @@ baseurl:          ""  # change to /subdir if the site is located in a subfolder
 permalink:        /:year-:month-:day-:title.html
 paginate:         3
 
+# Global author
+author:
+  name:           James
+  twitter:        jwilson3
+  url:            https://twitter.com/jwilson3
+  email:          jrwilson3@gmail.com
+
 # Calculate post reading time based on number of words.
 # A floating point number is required for the divide_by calcuation.
 words_per_minute: 180.0
