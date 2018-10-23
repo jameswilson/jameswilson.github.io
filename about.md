@@ -26,6 +26,8 @@ You can connect with James elsewhere online at:
 
 This blog has existed and evolved through many technology stacks over the years. The current incantation is a return to simplicity and speed.
 
-* Built with the [Jekyll](https://jekyllrb.com/showcase/) framework, a static-site generator written in Ruby; the code structure is heavily inspired by the [Poole](http://getpoole.com/) implementation.
+* Current version v{{ site.version}}.
+* Open sourced codebase available for review and forking online at GitHub [{{site.github.repository_name}}]({{site.github.repository_url}}).
+* Runs on the [Jekyll](https://jekyllrb.com/showcase/) framework, a static-site generator written in Ruby; inspired by the [Poole](http://getpoole.com/) implementation for Jekyll.
 * Hosted for free on [GitHub Pages](https://pages.github.com).
 * Coded with ❤️ in [Sublime Text](http://sublimetext.com), an amazing code editor.
