@@ -1,0 +1,9 @@
+{%- if google_analytics.enabled %}
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-45354089-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ google_analytics.ua_code }}');
+</script>
+{%- endif %}

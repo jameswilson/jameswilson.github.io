@@ -1,0 +1,35 @@
+{%- comment -%}
+Setup window <title> tag. The homepage shows site name and tag line while internal pages show the page title and the site name.
+{%- endcomment -%}
+{%- capture window_title %}{{ page.title }} &middot; {{ site.title }}{% endcapture -%}
+{%- if page.title == "Home" -%}
+{%- capture window_title %}{{ site.title }} &middot; {{ site.tagline }}{% endcapture -%}
+{%- endif -%}
+
+{%- comment -%}
+Setup og:title metatag
+{%- endcomment -%}
+{%- assign og_title = page.title -%}
+{%- if page.title == "Home" -%}
+{%- assign og_title = site.title -%}
+{%- endif -%}
+
+{%- comment -%}
+Setup og:description metatag
+{%- endcomment -%}
+{%- assign og_description = nil -%}
+{%- if page.title == "Home" -%}
+{%- assign og_description = site.description -%}
+{%- elsif page.description -%}
+{%- assign og_description = page.description -%}
+{%- endif -%}
+
+{%- comment -%}
+Setup og:image metatag
+{%- endcomment -%}
+{%- assign og_image = nil -%}
+{%- if page.image -%}
+{%- assign og_image = page.image -%}
+{%- elsif site.image -%}
+{%- assign og_image = site.image -%}
+{%- endif -%}

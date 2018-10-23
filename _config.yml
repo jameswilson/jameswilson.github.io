@@ -23,6 +23,13 @@ baseurl:          ""  # change to /subdir if the site is located in a subfolder
 permalink:        /:year-:month-:day-:title
 paginate:         3
 
+# og:image metatag default (override this per post/page in post's front matter)
+image:            https://i.imgur.com/UNe5t4v.jpg
+
+google_analytics:
+  enabled:        true
+  ua_code:        UA-45354089-1
+
 # Global author
 author:
   name:           James
