@@ -6,6 +6,7 @@ highlighter:      rouge
 plugins:
   - jekyll-feed
   - jekyll-github-metadata
+  - jekyll-sitemap
 
 # Repository configuration
 repository:       jameswilson/jameswilson.github.io

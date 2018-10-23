@@ -245,6 +245,7 @@ DEPENDENCIES
   github-pages
   jekyll-feed
   jekyll-github-metadata
+  jekyll-sitemap
   tzinfo-data
 
 BUNDLED WITH
