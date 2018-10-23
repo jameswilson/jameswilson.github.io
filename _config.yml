@@ -16,7 +16,7 @@ version:          2.0.0
 title:            James Wilson
 tagline:          Open Source Technologist &amp; Senior Web Developer
 description: >-   # Used in homepage metatag and RSS feed description.
-  The personal blog of James Wilson; senior frontend web developer and Open
+  The personal blog of James Wilson; senior frontend web developer at Bluespark and Open
   Source enthusiast.
 url:              http://jameswilson.github.io
 baseurl:          ""  # change to /subdir if the site is located in a subfolder
