@@ -3,7 +3,7 @@ layout: post
 title: Codebase growth between Drupal 6, 7 and 8
 ---
 
-In 2010 I made a post to [Calculate the size of the Drupal codebase][1], where I compared lines of PHP, JavaScript, and CSS code between Drupal 6 and 7.  This is a follow-up that adds Drupal 8 to the comparison matrix.
+In 2010 I made a post to [Calculate the size of the Drupal codebase][1] by comparing lines of PHP, JavaScript, and CSS code between Drupal 6 and 7.  This is a follow-up that adds Drupal 8 to the comparison matrix.
 
 <!--more-->
 
