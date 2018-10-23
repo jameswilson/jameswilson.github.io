@@ -1,37 +1,39 @@
-# Permalinks
-permalink:        /:year-:month-:day-:title.html
+# Github Pages preferences (do not change)
+github:           [metadata]
+highlighter:      rouge
 
-# Setup
+# Repository configuration
+repository:       jameswilson/jameswilson.github.io
+version:          2.0.0
+
+# Jekyll site configuration
 title:            James Wilson
 tagline:          Open Source Technologist &amp; Senior Web Developer
-description: >-
+description: >-   # Used in homepage metatag and RSS feed description.
   The personal blog of James Wilson; senior frontend web developer and Open
   Source enthusiast.
 url:              http://jameswilson.github.io
+baseurl:          ""  # change to /subdir if the site is located in a subfolder
+permalink:        /:year-:month-:day-:title.html
 paginate:         3
-highlighter:      rouge
-baseurl:          ""
-author:
-  name:           James
-  url:            https://twitter.com/jwilson3
-  email:          jrwilson3@gmail.com
 
-# Reading time, this must be a float for divide_by to work.
+# Calculate post reading time based on number of words.
+# A floating point number is required for the divide_by calcuation.
 words_per_minute: 180.0
 
+# Post excerpts
+# Remove or comment out the following line tells Jekyll to use the first
+# paragraph of each post as the excerpt.
 excerpt_separator: <!--more-->
 
-# Disqus config
+# Disqus comment configuration.
+# See _include/comments.html for usage.
 disqus:
   enabled:        false
   shortname:      jwilson3-postach-io
 
-# Custom vars
-version:          2.0.0
-github:           [metadata]
-repository:       jameswilson/jameswilson.github.io
-
-# Main navigation links (see _includes/navigation.html for usage)
+# Main navigation links.
+# See _includes/navigation.html for usage.
 navigation:
   - title: Blog
     url: /
