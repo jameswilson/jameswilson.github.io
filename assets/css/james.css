@@ -300,6 +300,25 @@ article img {
   margin: 0 0 1.6em;
 }
 
+figure {
+  margin: 3rem 0;
+}
+
+figure > p,
+article figure img,
+figcaption p {
+  margin: 0;
+}
+
+figcaption {
+  font-style: oblique;
+  font-size: .9rem;
+}
+
+figcaption p + p {
+  margin-top: 1.2rem;
+}
+
 /* Tables */
 table {
   margin-bottom: 1rem;
