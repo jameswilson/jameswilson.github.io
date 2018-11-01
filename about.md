@@ -9,17 +9,18 @@ title: About James
   at <a href="https://www.bluespark.com" target="_blank">Bluespark</a>. He uses this space to blog about travel, web development, Drupal, open source, mac, and various other topics.
 </p>
 
-After graduating in Computer Science at North Carolina State University, and a few brief stints of corporate work, James left for an extended sabatical to travel the world. He ended up settling in Cuenca, Ecuador in 2006 with his partner Carola.
+After graduating in Computer Science at North Carolina State University, and a few brief stints of corporate work, I left for an extended sabatical to travel the world and ended up settling in Cuenca, Ecuador in 2006.
 
-James turned to web development to sustain his travels and began learning the emerging Web standards of the day. In 2007/08, as the number of website projects steadily increased, he carefully compiled his ideas into a custom <abbr title="Content Management System">CMS</abbr> written in Classic ASP VBScript.
+I turned to web development to sustain my travels and began learning the emerging Web standards of the day. In 2007 and '08, as the number of website projects steadily increased, I began compiling my ideas into a reusable custom <abbr title="Content Management System">CMS</abbr> written in Classic ASP VBScript.
 
-As the inevitable frustration grew with being the sole maintainer of a codebase written in an aging language, he turned to PHP, Drupal, and the thriving open source community —  embracing the concept of <em>standing on the shoulders of giants</em> instead of writing everything from scratch.
+As the inevitable frustration grew with being the sole maintainer of a codebase written in an aging *closed-source* programming language, I turned to PHP, Drupal, and the thriving open source community —  embracing the concept of <em>standing on the shoulders of giants</em> instead of writing everything from scratch.
 
-Today James contributes to various Open Source projects on [GitHub.com](https://www.github.com/jameswilson) and [Drupal.org](https://www.drupal.org/u/jwilson3).
+Today I contribute to various Open Source projects on [GitHub.com](https://www.github.com/jameswilson) and [Drupal.org](https://www.drupal.org/u/jwilson3).
 
-You can connect with James elsewhere online at:
+You can also find me here:
 
-* [Twitter.com](https://twitter.com/jwilson3)
+* [Bluespark team page](https://www.bluespark.com/team/james-wilson)
+* [jwilson3 on Twitter.com](https://twitter.com/jwilson3)
 * [LinkedIn.com](https://www.linkedin.com/in/jamesrwilson3)
 * [Facebook.com](https://www.facebook.com/james.r.wilson.iii)
 
