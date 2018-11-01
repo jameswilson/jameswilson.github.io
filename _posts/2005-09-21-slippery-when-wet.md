@@ -1,0 +1,12 @@
+---
+categories:
+- motorcycle
+- capoeira
+- nothing
+layout: post
+title: Slippery when wet
+created: 1127334455
+---
+Yesterday was my first ride in the rain.   after a decent ride home from work, I proceeded to the dojo where i get my daily fill of <em>capoeira</em> on the other side of town, without a second thought to the impending thunderstorms that loomed to the north.  As a matter of fact, i was in such a great mood to start the workout i left behind any kind of rain gear i might have normally tried to wear.  as it was, the rain began to fall with cat-n-dog intensity half way through class, drowning out the instructors voice, and the <em>berimbau</em> on the tape deck.  I broke out of an <em>esquiva de frente</em> to bring in my helmet that I left hanging upside-down on my bike already filling up with water.  The rest of class I pondered the fact that I'll be riding home in the rain for the first time in my life.  After class, the rain intensity had not tapered, so I threw my caution to the wind, my right leg over the saddle and had parting words with my instructor. "God willing nothing should happen, but if it does, please call me", he said.  With a look of confidence and chivalry I rode off into the storm, grinning from ear to ear.  The experience was great.  I started off quite conservatively under the speed limit. As I realized that I'd be getting wet either way, I picked up the pace.... but still decided to avoid the belt-line freeway.
+
+So I rode right down Highway 1 all the way through the capital city towards home.  The feeling of water seeping into my boots and down the crack of my ass was interesting, but admittedly not very comfortable. By the time I reached a certain stoplight  downtown my feet were swimming in their own private puddle held in by my leather boots, my denim jeans were completely water weighted and saturated to the core.  At home, I pealed off my clothes piece by piece leaving a puddle of water on the bathroom floor.  I've always thought of Autumn in hurricane alley as my favorite time of the year, with all of the changing colors,  warm days and cool nightly breeze,  and of course the spontaneous shower (read, hurricane-induced knock-down-drag-out) to stir the soil.
