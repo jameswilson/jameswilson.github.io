@@ -4,6 +4,7 @@ title: About James
 ---
 
 <p class="intro">
+  <img src="/assets/img/3.jpg" alt="Picture of {{ site.author.name }}" class="offwidth"/>
   James Wilson is the lead front-end web developer
   at <a href="https://www.bluespark.com" target="_blank">Bluespark</a>. He uses this space to blog about travel, web development, Drupal, open source, mac, and various other topics.
 </p>

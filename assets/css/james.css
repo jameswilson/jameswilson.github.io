@@ -74,6 +74,12 @@ img.avatar {
   margin-right: 20px;
 }
 
+img.offwidth {
+  max-width: 111%;
+  margin-left: -5.5%;
+  margin-right: -5.5%;
+}
+
 nav.menu {
   margin: .5rem 0;
 }
@@ -557,5 +563,11 @@ input:focus {
     margin-left: -3.175rem;
     margin-right: -3.175rem;
     padding-left: 1.15rem;
+  }
+
+  img.offwidth {
+    margin-left: -3.175rem;
+    margin-right: -3.175rem;
+    max-width: calc(100% + 6.35rem);
   }
 }
