@@ -186,14 +186,9 @@ h6,
 }
 
 
+article>footer,
 p {
   margin: 0 0 1.6rem 0;
-}
-
-p.author {
-  text-align: left;
-  font-size: .75rem;
-  margin: 1.45em 0;
 }
 
 p.intro {

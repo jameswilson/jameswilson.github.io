@@ -2,11 +2,15 @@
 layout: default
 ---
 
-<article class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
+<article class="post" role="article">
+  <header>
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
 
-  {% assign post = page %}
-  <p>{% include post/post-meta.html %}</p>
+  <footer>
+    {% assign post = page %}
+    {% include post/post-meta.html %}
+  </footer>
 
   {{ content }}
 </article>
