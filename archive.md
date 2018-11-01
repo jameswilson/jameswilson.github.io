@@ -3,7 +3,7 @@ layout: page
 title: Blog archive
 ---
 
-Posts sorted in reverse chronological order.
+This list of blog posts is sorted in reverse chronological order, with the most recent articles appearing first.
 
 <ol>
 {% for post in site.posts %}
