@@ -7,6 +7,8 @@ title: Using Git dude with Growl on Mac OS X
 repositories installed on your local development environment and then notifies
 you when your colleagues make commits and push to remote.
 
+<!--more-->
+
 To set up nice integration into Mac OS X with [Growl][growl], a global
 notification system and pop-up notification implementation for the Mac OS X and
 Windows operating systems.

@@ -11,6 +11,8 @@ on a tag.  We use drush (version 4.4) to do much of the heavy lifting.  In
 order to use drush during the upgrade procedure, you will need to have access
 to an internet connection.
 
+<!--more-->
+
 I partially followed the instructions here:
 
 (http://drupal.org/node/938430#comment-4250344)
@@ -20,34 +22,44 @@ I partially followed the instructions here:
 First thing's first. We need to ensure all our D6 site's modules (including
 core and contrib modules) are up-to-date.  In our case we're runing the -dev
 version of cck and mobile_tools, and so these were the only modules that
- were updated:
+were updated:
 
-    $ cd /path/to/local/d6
-    $ drush up -y
+```bash
+$ cd /path/to/local/d6
+$ drush up -y
+```
 
 Commit these changes to your source control repository,  take a database
 snapshot, and tag them (we use subversion).
 
-    $ svn ci -m "Updated modules XYZ to latest -dev snapshot".
-    $ svn /// tag command here ... fill this out later
+```bash
+$ svn ci -m "Updated modules XYZ to latest -dev snapshot".
+$ svn /// tag command here ... fill this out later
+```
 
 We want to run the upgrade using drush, let's see if drush can tell us how
 to do that:
 
-    $ drush help
+```bash
+$ drush help
+```
 
 I see that there is a command  `drush site-upgrade`  (or `drush sup` for
 short). Let's try that.
 
-    $ drush sup
-    Missing argument: target
+```bash
+$ drush sup
+  Missing argument: target
+```
 
-Hrm.... ok,  RTFM:  `drush help sup` shows me that I need to specify a @target, and i can do this using a drush alias. Let's copy the example alias file provided by drush to our webroot and implement a simple alias like the one they recommend.  I'm going to put it in a different folder to start with than the current d6 folder.
+Hrm.... ok,  RTFM:  `drush help sup` shows me that I need to specify a @target, and I can do this using a drush alias. Let's copy the example alias file provided by drush to our webroot and implement a simple alias like the one they recommend.  I'm going to put it in a different folder to start with than the current d6 folder.
 
 
-    $ sudo cp /path/to/drush/examples/example.aliases.drushrc.php aliases.drushrc.php
-    $ sudo chmod 777 aliases.drushrc.php
-    $ vim aliases.drushrc.php
+```bash
+$ sudo cp /path/to/drush/examples/example.aliases.drushrc.php aliases.drushrc.php
+$ sudo chmod 777 aliases.drushrc.php
+$ vim aliases.drushrc.php
+```
 
 I uncomment the lines that define the "dev"  alias (near the very bottom of the file), and duplicate them, creating an "onward"  alias:
 
@@ -64,7 +76,7 @@ $aliases['onward'] = array(
 
 Ok, let's try it:
 
-```
+```bash
 $ cd /path/to/local/d6
 $ drush sup @onward
 ```
@@ -225,8 +237,8 @@ a) aren't supported by Druapl 7 yet,
 b) have been subsumed into Drupal 7 core, or
 c) will require additional steps in order to ensure correct update.
 
-Drush provides me with some links for further information so Let's check that out
-first.
+Drush provides me with some links for further information so Let's check that
+out first.
 
 http://drupal.org/project/cck -- upgrade procedures for cck.
 http://drupal.org/node/895314 -- upgrade procedures for filefield.
@@ -253,8 +265,10 @@ $aliases['onward'] = array(
 
 With a correct database setting you may see an error message like this:
 
-    ERROR 1044 (42000) at line 1: Access denied for user 'd6'@'localhost' to
-    database 'd7'
+```
+ERROR 1044 (42000) at line 1: Access denied for user 'd6'@'localhost' to
+database 'd7'
+```
 
 This is a known issue for drush may be disregarded.
 
@@ -296,11 +310,9 @@ Finally, I proceeded to check the `update.php` in a browser to ensure the
 updates had actually executed, and found that there were still 22 pending
 updates. So I ran them, and got the following error:
 
-<div class="message">
-The update process was aborted prematurely while running update #6201 in
+> The update process was aborted prematurely while running update #6201 in
 imagecache_canvasactions.module. All errors have been logged. You may need to
 check the watchdog database table manually.
-</div>
 
 The actual error message was:
 
@@ -340,11 +352,11 @@ proceeded to dig into the actual error, by reading the module code.
 *   Another thing to consider is do I really need this module anymore?
 
 In this case, I took a look at the d6 site, and realized that the only reason
-the imagecache_actions existed was to put a 4 pixel grey (#595959) border around
-a 'thumbnail'  preset (via the imagecache_canvasactions sub-module).  (Hey, who
-the heck built this site anyway!?!)  Borders can be easily done in CSS! Perfect!
-Modify the preset, disable "Imagecache Canvas Actions" on the D6 site and
-potential problem resolved!  The theming will be handled later.
+the imagecache_actions existed was to put a 4 pixel grey (#595959) border
+around a 'thumbnail'  preset (via the imagecache_canvasactions sub-module).
+(Hey, who the heck built this site anyway!?!)  Borders can be easily done in
+CSS! Perfect! Modify the preset, disable "Imagecache Canvas Actions" on the D6
+site and potential problem resolved!  The theming will be handled later.
 
 
 I'll mention here quickly that yesterday while running through upgrades, I found and submitted a patch to fix an error in the upgrade procedure for backup_migrate module:
@@ -412,8 +424,8 @@ After a bit of digging, it turned out that this was a drush error in the site-
 upgrade, which created some condition where the module wasn't loaded while
 running the module's update script.  I ran drush updatedb by hand and did not
 get this error again, and after disabling the skinr module on the D7 install,
-was able to get through a drush updatedb cleanly and the site finally loaded for
-the first time in D7!  Yay!
+was able to get through a drush updatedb cleanly and the site finally loaded
+for the first time in D7!  Yay!
 
 
 Visiting the D7 site public pages, some notable things are missing:
@@ -430,8 +442,10 @@ I proceeded to set up a new branch for Drupal 7 <!--at
 https://svn.bluesparklabs.com/bluespark/branches/drupal7 --> and checked that
 out to the folder where drush downloaded and created the Drupal 7 site locally.
 
-    $ cd /path/to/d7
-    $ svn co https://svn.bluesparklabs.com/bluspark/branches/drupal7 .
+```bash
+$ cd /path/to/d7
+$ svn co https://svn.bluesparklabs.com/bluspark/branches/drupal7 .
+```
 
 (The period at the end is required).
 
@@ -441,59 +455,71 @@ convention we had in place for Drupal 6: placing custom modules in
 sites/all/modules/custom  and contrib modules from drupal.org in
 sites/all/modules/contrib.
 
-    $ mv sites/all/modules sites/all/contrib
-    $ mkdir -P sites/all/modules/custom
-    $ mv sites/all/contrib sites/all/modules
+
+```bash
+$ mv sites/all/modules sites/all/contrib
+$ mkdir -P sites/all/modules/custom
+$ mv sites/all/contrib sites/all/modules
+```
 
 At that point, I added all the core Drupal files and folders...
 
-    $ svn add *.* profiles/ misc/ modules/ themes/ includes/ scripts/ .htaccess
-    $ svn add -N sites
-    $ svn add -N sites/all
-    $ svn add -N sites/all/modules
-    $ svn add -N sites/all/modules/contrib
-    $ svn add -N sites/all/modules/custom
-    $ svn add -N sites/all/themes
-    $ chmod 775 sites/default && svn add sites/default
-    $ svn add sites/example.sites.php
-    $ svn add all/README.txt all/themes/README.txt all/modules/README.txt
-    $ svn commit -m "D7 Upgrade: initial commit of Drupal 7 core codebase."
+```bash
+$ svn add *.* profiles/ misc/ modules/ themes/ includes/ scripts/ .htaccess
+$ svn add -N sites
+$ svn add -N sites/all
+$ svn add -N sites/all/modules
+$ svn add -N sites/all/modules/contrib
+$ svn add -N sites/all/modules/custom
+$ svn add -N sites/all/themes
+$ chmod 775 sites/default && svn add sites/default
+$ svn add sites/example.sites.php
+$ svn add all/README.txt all/themes/README.txt all/modules/README.txt
+$ svn commit -m "D7 Upgrade: initial commit of Drupal 7 core codebase."
+```
 
 Previously I had replaced a couple of the modules downloaded by drush with a
-version straight out of the git.drupal.org, so i decided to look first for any
+version straight out of the git.drupal.org, so I decided to look first for any
 git repos to make sure those dont get committed.  That needs special handling
 during the `svn add` step.
 
-    $ cd sites/all/modules/contrib
-    $ find . -name '.git'
-    ./backup_migrate/.git
+```bash
+$ cd sites/all/modules/contrib
+$ find . -name '.git'
+./backup_migrate/.git
+```
 
 Backup & Migrate was the only module that I ended up submitting a patch for
 (so far) so I'll handle this special case first.  I should have set this up
 before working on patches.
 
-    $ svn add -N backup_migrate
-    $ svn propset svn:ignore ".git" backup_migrate
-    $ svn add backup_migrate/*
-    $ svn commit -m "Added Backup_Migrate latest 7.x dev snapshot."
-
+```bash
+$ svn add -N backup_migrate
+$ svn propset svn:ignore ".git" backup_migrate
+$ svn add backup_migrate/*
+$ svn commit -m "Added Backup_Migrate latest 7.x dev snapshot."
+```
 
 Then, one by one I began adding in each module, noting the version in the
 commit statement.
 
-    $ svn add admin
-    $ svn commit -m "Added Admin 7.x-2.0-beta3"
-    $ svn add admin_menu
-    $ svn commit -m "Added Admin_Menu 7.x-3.0-rc1"
 
+```bash
+$ svn add admin
+$ svn commit -m "Added Admin 7.x-2.0-beta3"
+$ svn add admin_menu
+$ svn commit -m "Added Admin_Menu 7.x-3.0-rc1"
+```
 [...]
 
 I also re-created the BSP_Tools module,  adding in a few update scripts to
 update the Tokens to fit the changes made in D7.
 
-    variable_set('page_title_default', '[current-page:title] | [site:name]');
-    variable_set('page_title_front', '[site:name] | [site:slogan]');
-    variable_set('page_title_pager_pattern', '[current-page:title] (page [current-page:page-number]) | [site:name]');
+```php
+variable_set('page_title_default', '[current-page:title] | [site:name]');
+variable_set('page_title_front', '[site:name] | [site:slogan]');
+variable_set('page_title_pager_pattern', '[current-page:title] (page [current-page:page-number]) | [site:name]');
+```
 
 
 Some of the Patterns for pathauto also need to change:
@@ -504,37 +530,40 @@ As we all know,  many concepts that were wrapped up in Content Construction Kit
 (including 'fields') have been added to Drupal 7 core. However, only a few of
 the fields from CCK in Drupal 6 will migrate out of the box.  In order to
 migrate to Drupal 7, some fields require specific migration scripts to update
-the data to the new format for Drupal 7.  First, you need to download and enable
-the content_migrate module (which comes packaged inside the CCK project for
-Drupal 7). Most general CCK fields like text fields and lists are upgradable
-without any add-on modules.  However, some may require you to obtain and enable
-extra modules to complete the migration.  Visit the Content Migration
-administration page: /admin/structure/content_migrate   to see which fields are
-available and unavailable for upgrade, and download the necessary add-on
-modules.
+the data to the new format for Drupal 7.  First, you need to download and
+enable the content_migrate module (which comes packaged inside the CCK project
+for Drupal 7). Most general CCK fields like text fields and lists are
+upgradable without any add-on modules.  However, some may require you to
+obtain and enable extra modules to complete the migration.  Visit the Content
+Migration administration page: /admin/structure/content_migrate  to see which
+fields are available and unavailable for upgrade, and download the necessary
+add-on modules.
 
 In our case I had to download and enable the link module,  and enabling the new
 core 'image' module.
 
-    $ cd path/to/d7
-    $ drush en content_migrate
-    $ drush dl link
-    $ drush en link
-    $ drush en image
-
+```bash
+$ cd path/to/d7
+$ drush en content_migrate
+$ drush dl link
+$ drush en link
+$ drush en image
+```
 Upon clicking through the migration I recieved the following error:
 
-    Field migration has encountered an error.
-    Please continue to  the error page
+```
+  Field migration has encountered an error.
+  Please continue to  the error page
 
-    An AJAX HTTP error occurred. HTTP Result Code: 200 Debugging information
-    follows. Path: /batch?id=31&op=do StatusText: OK ResponseText:
-    Fatal error: Unsupported operand types in
-    ~/Sites/BluesparkLabs/d7/modules/field/field.crud.inc on line 601
+  An AJAX HTTP error occurred. HTTP Result Code: 200 Debugging information
+  follows. Path: /batch?id=31&op=do StatusText: OK ResponseText:
+  Fatal error: Unsupported operand types in
+  ~/Sites/BluesparkLabs/d7/modules/field/field.crud.inc on line 601
 
-    The field that was not upgraded was:
+  The field that was not upgraded was:
 
-    field_portfolio_short_desc text_long Portfolio
+  field_portfolio_short_desc text_long Portfolio
+```
 
 On the second try,  the remaining field did migrate successfully.
 
@@ -557,13 +586,13 @@ display settings and replicated them as best I could in Drupal 7.
 ## Step 3: Tweak Imagecache  (Image Styles)
 
 Image styles were not migrated from the Drupa 6 imagecache module.  But this
-could be because we had exported the imagecache presets to code in the bsp_tools
-module before hand.  Honestly this is ok, because we'd need to probably modify
-the sizes anyway for the new theme. And potentially we could get rid of some of
-the presets.
+could be because we had exported the imagecache presets to code in the
+bsp_tools module before hand.  Honestly this is ok, because we'd need to
+probably modify the sizes anyway for the new theme. And potentially we could
+get rid of some of the presets.
 
-User profile images were not migrated to a field (from core profile module image
-support).
+User profile images were not migrated to a field (from core profile module
+image support).
 
 Upon enabling the profile module, I got the following PHP warning from drush.
 
@@ -580,7 +609,9 @@ build the Drupal 7 custom theme. The fusion theme doesnt have an official
 release, and this is supposedly only because of the missing skinr module
 functionality.
 
-    $ drush dl fusion
+```bash
+$ drush dl fusion
+```
 
 After consideration, I ended up starting from a custom Bartik subtheme, since
 it was stable, part of core, and will be easy to override and customize.

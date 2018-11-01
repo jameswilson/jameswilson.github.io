@@ -3,6 +3,9 @@ layout: post
 title: Node JS - Serverside javascript.
 ---
 
+Notes from DrupalCon 2012 session.
+
+<!--more-->
 
 Server side javascript, in V8 -- Chromes javascript engine.
 

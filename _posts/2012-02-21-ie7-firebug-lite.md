@@ -5,10 +5,10 @@ title: Firebug Lite for IE7
 
 In cases where I need to debug dom or javascript on older browsers, I've used
 Firebug Lite, which can be installed (in theory) on any browser with just a
-bookmarklet.
+bookmarklet. However I found that neither of the latest versions 1.3 and 1.4
+of Firebug Lite work in Internet Explorer 7, but **version 1.2 does work**.
 
-However I found that neither of the latest versions 1.3 and 1.4 of Firebug
-Lite work in Internet Explorer 7, but **version 1.2 does work**.
+<!--more-->
 
 <p class="text-center">
 <a href="http://getfirebug.com/wiki/index.php/Firebug_Lite_1.2" class="button">Firebug Lite version 1.2</a>

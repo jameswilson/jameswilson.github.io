@@ -3,6 +3,10 @@ layout: post
 title: Install git on Verve hosting.
 ---
 
+Steps to install git on Verve hosting.
+
+<!--more-->
+
 1.  Login via ssh access to the verve hosting server:
 
        $ ssh user@host.verve.com

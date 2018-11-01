@@ -3,11 +3,14 @@ layout: post
 title: Mamp virtual host configuration
 ---
 
-My MAMP Pro demo expired, so i decided it was time to setup my MAMP installation
-just like i had my old apache configured.  It required a couple of changes to my
-custom user.conf file but here is the result:
+My MAMP Pro demo expired, so I decided it was time to setup the basic MAMP
+installation just like I had my old Apache that came with the Mac configured.
 
-```
+<!--more-->
+
+The setup required a couple of changes to my custom user.conf file but here is the result:
+
+```bash
 $ cat /Applications/MAMP/conf/apache/jameswilson.conf
 ```
 

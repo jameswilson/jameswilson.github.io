@@ -3,6 +3,9 @@ layout: post
 title: Migrating to git on Dreamhost with svn2git
 ---
 
+Step-by-step instructions on how to use svn2git to migrate repositories on Dreamhost.
+
+<!--more-->
 
 1.  Figure out the users in the repo:
 

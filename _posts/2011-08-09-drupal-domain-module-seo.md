@@ -1,7 +1,12 @@
 ---
 layout: post
 title: Domain module investigation
+description: a brief investigation about viability of the Domain module for Drupal 7.
 ---
+
+The following is a brief investigation about viability of the Domain module for Drupal 7.
+
+<!--more-->
 
 ### 1) Sharing / Restricting views:
 
@@ -14,8 +19,8 @@ view, to remove the link to the actual product page.
 
 ### 2) SEO impact of domain module.
 
-We need to be weary of negative impacts of SEO from the domain module, there are
-two potential ways i can see the module negatively impacting SEO:
+We need to be weary of negative impacts of SEO from the domain module, there
+are two potential ways I can see the module negatively impacting SEO:
 
 *   no canonical urls are shown for content that is published to both domains.
 *   no canonical urls are shown for views that are accessible on both domains.
