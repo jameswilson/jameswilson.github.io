@@ -73,6 +73,12 @@ navigation:
   - title: Search
     url: /search
 
+# Process pages in the following additional custom subfolders.
+# Note these pages must use the 'permalink' parameter in yaml front matter
+# in order for Jekyll to place them correctly into the site's url structure.
+include:
+  - _pages
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

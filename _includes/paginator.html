@@ -1,0 +1,20 @@
+<section class="prevnext">
+  <div class="text-left">
+  {% if paginator.next_page %}
+    <a class="button" href="/page{{paginator.next_page}}">← Older posts</a>
+  {% else %}
+    <a class="button disabled">← Older posts</a>
+  {% endif %}
+  </div>
+  <div class="text-right">
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="button" href="/">Newer posts →</a>
+    {% else %}
+      <a class="button" href="/page{{paginator.previous_page}}">Newer posts →</a>
+    {% endif %}
+  {% else %}
+    <a class="button disabled">Newer posts →</a>
+  {% endif %}
+  </div>
+</section>

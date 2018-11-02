@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<section class="posts">
+  {% for post in paginator.posts %}
+    {% include post/post-teaser.html %}
+  {% endfor %}
+</section>
+
+{% include paginator.html %}

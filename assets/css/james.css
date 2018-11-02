@@ -524,6 +524,11 @@ input:focus {
   text-align: center;
 }
 
+.post-list-item {
+  margin: 0;
+  display: inline;
+}
+
 @media only screen and (min-width: 480px) {
   h1,
   .h1 {

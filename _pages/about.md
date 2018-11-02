@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About James
+permalink: /about
 ---
 
 <p class="intro">
