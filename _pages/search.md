@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Search James' Blog
+permalink: /search
 ---
 
 <link rel="stylesheet" href="/assets/css/google-custom-search.css">
