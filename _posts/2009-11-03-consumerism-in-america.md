@@ -2,7 +2,7 @@
 tags:
     - asides
     - awareness
-layout: post
+layout: note
 title: Consumerism in America
 created: 1257265538
 ---

@@ -2,7 +2,7 @@
 tags:
     - asides
     - awareness
-layout: post
+layout: note
 title: Triumph of Evil
 created: 1128285225
 ---

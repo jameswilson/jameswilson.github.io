@@ -2,7 +2,7 @@
 tags:
     - asides
     - awareness
-layout: post
+layout: note
 title: Priceless
 created: 1128976133
 ---

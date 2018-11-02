@@ -2,7 +2,7 @@
 tags:
     - asides
     - awareness
-layout: post
+layout: note
 title: Paradise lost
 created: 1129839975
 ---

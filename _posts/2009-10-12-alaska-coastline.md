@@ -2,7 +2,7 @@
 tags:
     - asides
     - awareness
-layout: post
+layout: note
 title: Alaska coastline
 created: 1255404517
 ---

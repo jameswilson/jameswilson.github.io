@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<article class="note" role="article">
+  <header>
+    <h1 class="note-title">{{ page.title }}</h1>
+  </header>
+
+  <footer>
+    {% assign post = page %}
+    {% include post/post-meta.html %}
+  </footer>
+
+  {{ content }}
+</article>
+
+<section class="prevnext">
+  {% include page/prevnext.html type="Note" %}
+</section>
