@@ -251,17 +251,17 @@ em {
 }
 
 ul {
-  margin: 1.6em 0;
+  margin: 1.45em 0 1.6em;
   padding: 0 0 0 1.6rem;
   list-style: square;
 }
 
 ol {
-  margin: 1.6em 0;
+  margin: 1.45em 0 1.6em;
   padding: 0 0 0 1.6rem;
 }
 
-li+li {
+li {
   margin-top: .25em;
 }
 
@@ -289,6 +289,8 @@ ul > li:before {
   content: "";
   margin: 0 0.66666666666em .2em -1em;
   background: var(--james-blue);
+  position: absolute;
+  top: .6666666666em;
 }
 /* End faux square bullets */
 
