@@ -99,6 +99,32 @@ nav.menu a.active {
   text-decoration: underline;
 }
 
+nav.menu.browse,
+nav.menu.archives {
+  padding: .8rem .5rem;
+  border: 5px solid var(--border-gray);
+  background: var(--bg-gray);
+  text-align: center;
+  margin: 0;
+}
+
+nav.menu.browse {
+  border-top: 0;
+}
+
+nav.menu.archives {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+nav.menu.archives:after {
+  display: block;
+  content: "";
+  margin: .8rem auto 0;
+  border-top: 3px solid var(--border-gray);
+  width: 49%;
+}
+
 main {
   padding: 0 0 2rem;
   max-width: 39rem;

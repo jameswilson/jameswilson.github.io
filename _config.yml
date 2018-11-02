@@ -66,8 +66,8 @@ feed:
 navigation:
   - title: Blog
     url: /
-  - title: Archive
-    url: /archive
+  - title: Archives
+    url: /archives
   - title: About
     url: /about
   - title: Search

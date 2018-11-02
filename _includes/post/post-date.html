@@ -10,4 +10,4 @@ on January 1st for the previous year to be visible.
 {% assign format = '%b %-d %Y' %}
 {% endif %}
 
-<time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: format }}</time>
+<time class="post-date" datetime="{{ post.date | date_to_xmlschema }}" aria-label="posted on {{ post.date | date: '%A, %e of %B, %Y' }}">{{ post.date | date: format }}</time>
