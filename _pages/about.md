@@ -23,6 +23,7 @@ You can also find me here:
 * [Bluespark team page](https://www.bluespark.com/team/james-wilson)
 * [GitHub user page](https://www.github.com/jameswilson)
 * [Drupal user page](https://www.drupal.org/u/jwilson3)
+* [StackExchange user page](https://stackexchange.com/users/180306/jameswilson?tab=accounts)
 * [jwilson3 on Twitter](https://twitter.com/jwilson3)
 * [LinkedIn](https://www.linkedin.com/in/jamesrwilson3)
 * [Facebook](https://www.facebook.com/james.r.wilson.iii)
