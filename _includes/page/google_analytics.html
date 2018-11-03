@@ -1,9 +1,11 @@
 {%- if jekyll.environment == 'production' and site.analytics.enabled %}
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.tracking_id }}"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.tracking_ids[0] }}"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', '{{ site.analytics.tracking_id }}');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+{%- for tracking_id in site.analytics.tracking_ids %}
+gtag('config', '{{ tracking_id }}');
+{%- endfor %}
 </script>
 {%- endif %}

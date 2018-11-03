@@ -29,7 +29,9 @@ image:            https://i.imgur.com/UNe5t4v.jpg
 
 analytics:
   enabled:        true
-  tracking_id:    UA-45354089-1
+  tracking_ids:
+    - UA-1191719-1
+    - UA-45354089-1
 
 google:
   search_engine_id: 005468932483752946890:jvbt67gzrjm
