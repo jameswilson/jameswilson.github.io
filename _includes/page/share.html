@@ -1,5 +1,6 @@
+{% include page/metadata.inc.html %}
 If you liked this post,
-<a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&amp;text={{ page.title }}&amp;via={{ site.author.twitter }}"
+<a href="https://twitter.com/intent/tweet?url={{ site.url | cgi_escape }}{{ page.url | cgi_escape }}&amp;text={{ og_title | cgi_escape }}&amp;via={{ site.author.twitter | cgi_escape }}"
    target="_blank">
   share it with your followers</a>
 or
