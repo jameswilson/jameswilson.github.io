@@ -1,4 +1,6 @@
 ---
+categories:
+    - Web development
 layout: post
 title: '⚡️ Mac Keyboard Shortcuts for Web Developers'
 description: >-

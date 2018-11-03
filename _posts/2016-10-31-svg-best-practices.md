@@ -1,4 +1,8 @@
 ---
+categories:
+    - Web development
+tags:
+    - frontend
 layout: post
 title: SVG Optimization Best Practices
 description: Grab-bag of tips and tricks to improve SVGs for the web using Sketch, Adobe Illustrator, and SVGO.

@@ -1,4 +1,8 @@
 ---
+categories:
+    - Web development
+tags:
+    - frontend
 layout: post
 title: 2014 Sticky Footer Solutions
 ---

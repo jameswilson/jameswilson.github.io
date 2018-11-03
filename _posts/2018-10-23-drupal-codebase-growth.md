@@ -1,4 +1,8 @@
 ---
+categories:
+    - Web development
+tags:
+    - Drupal
 layout: post
 title: Codebase growth between Drupal 6, 7 and 8
 ---

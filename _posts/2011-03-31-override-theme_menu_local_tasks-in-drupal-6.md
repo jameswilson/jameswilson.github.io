@@ -1,4 +1,8 @@
 ---
+categories:
+    - Web development
+tags:
+    - Drupal
 layout: post
 title: Override Theme Menu Local Tasks in Drupal 6
 ---

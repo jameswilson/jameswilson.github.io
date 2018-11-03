@@ -1,4 +1,8 @@
 ---
+categories:
+    - Web development
+tags:
+    - Drupal
 layout: post
 title: Upgrade Drupal 6 to Drupal 7, a practical example with Drush.
 ---

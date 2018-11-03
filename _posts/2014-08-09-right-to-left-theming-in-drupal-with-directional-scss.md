@@ -1,4 +1,8 @@
 ---
+categories:
+    - Web development
+tags:
+    - frontend
 layout: post
 title: Right-To-Left Theming in Drupal with Directional SCSS
 ---

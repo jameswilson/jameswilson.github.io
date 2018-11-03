@@ -1,4 +1,8 @@
 ---
+categories:
+    - Web development
+tags:
+    - devops
 layout: post
 title: Migrating to git on Dreamhost with svn2git
 ---

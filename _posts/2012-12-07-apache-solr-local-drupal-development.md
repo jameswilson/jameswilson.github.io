@@ -1,4 +1,8 @@
 ---
+categories:
+    - Web development
+tags:
+    - devops
 layout: post
 title: Installing Apache Solr for local multi-project Drupal development on a Mac
 ---
