@@ -4,8 +4,8 @@
   {% assign previous = site.posts[0] %}
 {% endif %}
 <div class="text-left">
-  <a class="button" href="{{site.baseurl}}{{previous.url}}" title="Previous post: {{previous.title}}">
-    <small><small>← PREVIOUS POST</small></small><br>
+  <a class="button" href="{{site.baseurl}}{{previous.url}}" title="Previous {{include.type}}: {{previous.title}}">
+    <small><small>← PREVIOUS {{include.type|upcase}}</small></small><br>
     {{previous.title}}
   </a>
 </div>
@@ -21,8 +21,8 @@
   {% assign next = site.posts[lastPostIndex] %}
 {% endif %}
 <div class="text-right">
-  <a class="button" href="{{site.baseurl}}{{next.url}}" title="Next post: {{next.title}}">
-    <small><small>NEXT POST →</small></small><br>
+  <a class="button" href="{{site.baseurl}}{{next.url}}" title="Next {{include.type}}: {{next.title}}">
+    <small><small>NEXT {{include.type|upcase}} →</small></small><br>
     {{next.title}}
   </a>
 </div>

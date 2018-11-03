@@ -4,7 +4,7 @@ categories:
 tags:
     - Drupal
     - aside
-layout: post
+layout: note
 title: That feeling you get when...
 ---
 
