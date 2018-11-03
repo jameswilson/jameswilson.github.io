@@ -78,6 +78,7 @@ navigation:
 # in order for Jekyll to place them correctly into the site's url structure.
 include:
   - _pages
+  - _redirect
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
