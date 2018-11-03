@@ -10,6 +10,12 @@ permalink: /about
   at <a href="https://www.bluespark.com" target="_blank">Bluespark</a>. He uses this space to blog about travel, web development, Drupal, open source, mac, and various other topics.
 </p>
 
+## Hi, I'm James. This is my blog.
+
+I write about varied topics here, including everything from cuisine, to programming, to travel. I’ve been traveling and living in various places around the world for several years. These are my stories.
+
+## How I got here
+
 After graduating in Computer Science at North Carolina State University, and a few brief stints of corporate work, I left for an extended sabatical to travel the world and ended up settling in Cuenca, Ecuador in 2006.
 
 I turned to web development to sustain my travels and began learning the emerging Web standards of the day. In 2007 and '08, as the number of website projects steadily increased, I began compiling my ideas into a reusable custom <abbr title="Content Management System">CMS</abbr> written in Classic ASP VBScript.
@@ -18,7 +24,7 @@ As the inevitable frustration grew with being the sole maintainer of a codebase 
 
 Today I contribute primarily to Drupal and various other Open Source projects on GitHub.
 
-You can also find me here:
+## Find me online
 
 * [Bluespark team page](https://www.bluespark.com/team/james-wilson)
 * [GitHub user page](https://www.github.com/jameswilson)
