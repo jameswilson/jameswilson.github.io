@@ -16,14 +16,16 @@ I turned to web development to sustain my travels and began learning the emergin
 
 As the inevitable frustration grew with being the sole maintainer of a codebase written in an aging *closed-source* programming language, I turned to PHP, Drupal, and the thriving open source community —  embracing the concept of <em>standing on the shoulders of giants</em> instead of writing everything from scratch.
 
-Today I contribute to various Open Source projects on [GitHub.com](https://www.github.com/jameswilson) and [Drupal.org](https://www.drupal.org/u/jwilson3).
+Today I contribute primarily to Drupal and various other Open Source projects on GitHub.
 
 You can also find me here:
 
 * [Bluespark team page](https://www.bluespark.com/team/james-wilson)
-* [jwilson3 on Twitter.com](https://twitter.com/jwilson3)
-* [LinkedIn.com](https://www.linkedin.com/in/jamesrwilson3)
-* [Facebook.com](https://www.facebook.com/james.r.wilson.iii)
+* [GitHub user page](https://www.github.com/jameswilson)
+* [Drupal user page](https://www.drupal.org/u/jwilson3)
+* [jwilson3 on Twitter](https://twitter.com/jwilson3)
+* [LinkedIn](https://www.linkedin.com/in/jamesrwilson3)
+* [Facebook](https://www.facebook.com/james.r.wilson.iii)
 
 ## About the blog
 
