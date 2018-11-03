@@ -10,7 +10,7 @@ plugins:
 
 # Repository configuration
 repository:       jameswilson/jameswilson.github.io
-version:          2.1.1
+version:          2.2.0
 
 # Jekyll site configuration
 title:            James Wilson
