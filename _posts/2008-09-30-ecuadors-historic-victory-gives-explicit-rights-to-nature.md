@@ -1,12 +1,9 @@
 ---
 excerpt: 'Ecuador''s new constitution gives explicit rights to Nature. '
-categories:
-- renewable resources
-- politics
-- constitution
-- politics
-- environment
-- activism
+tags:
+    - politics
+    - Ecuador
+    - awareness
 layout: post
 title: Ecuador's "Historic Victory" Gives Explicit Rights to Nature
 created: 1222780883

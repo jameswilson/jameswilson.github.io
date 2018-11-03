@@ -1,6 +1,7 @@
 ---
-categories:
-- asides
+tags:
+    - asides
+    - awareness
 layout: post
 title: Consumerism in America
 created: 1257265538

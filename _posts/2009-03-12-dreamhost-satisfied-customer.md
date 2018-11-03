@@ -1,19 +1,17 @@
 ---
 categories:
-- internet
-- dreamhost
-- web development
+    - Web development
 layout: post
 title: Dreamhost satisfied customer
 created: 1236893926
 ---
 While <a href="http://www.dreamhost.com/r.cgi?107284">DreamHost</a> certainly has its problems, I prefer them over a host of other web hosting providers for a variety of reasons, but it mainly boils down to turn around time. A colleague of mine, <a href="http://twitter.com/matthewskeith">Matt Keith</a>, had emailed me asking why I prefer DreamHost over Verve hosting, and my response got so long I decided to just turn it into a blog post. It ended up not so much being a DreamHost versus verve comparison, but a statement on why I prefer to roll with DH.
 
-<em>Disclaimer: I'm part of the DreamHost affiliate program and if you end up registering after clicking one of my links, then I get a credit for the referral.</em>
+*Disclaimer: I'm part of the DreamHost affiliate program and if you end up registering after clicking one of my links, then I get a credit for the referral.*
 
-<!--break-->
+<!--more-->
 
-I normally get my webmastering tasks done in a timely fashion with DreamHost, but when clients go with other shared website hosting service providers like Media Temple, Verve or Bluehost, I increasingly find myself confused and end up wasting time due to their quirky setups. Certainly these unique setups are part of the nature of shared server hosting and something you have to deal with between each different host,  as there is no <em>de-facto</em> or even industry standard way to provide affordable, shared services. Hosting servers configurations vary from the very bottom, up... starting at the hardware and OS version, and all the way up to the web server software (eg Apache) configurations and limitations, database configurations, and -- perhaps most importantly -- the <strong>control panel </strong>interface. Its cumbersome to administer client sites spread across various providers where the features, terminology, and navigation systems vary widely in structure, presentation and function. Sometimes functionality that I take as a 'given' (like administering ftp and ssh accounts), one company provides as standard  while another requires a tech support request. Its sad to realize this only after having scourged through the entire panel to find the functionality doesn exist.
+I normally get my webmastering tasks done in a timely fashion with DreamHost, but when clients go with other shared website hosting service providers like Media Temple, Verve or Bluehost, I increasingly find myself confused and end up wasting time due to their quirky setups. Certainly these unique setups are part of the nature of shared server hosting and something you have to deal with between each different host,  as there is no *de-facto* or even industry standard way to provide affordable, shared services. Hosting servers configurations vary from the very bottom, up... starting at the hardware and OS version, and all the way up to the web server software (eg Apache) configurations and limitations, database configurations, and -- perhaps most importantly -- the <strong>control panel </strong>interface. Its cumbersome to administer client sites spread across various providers where the features, terminology, and navigation systems vary widely in structure, presentation and function. Sometimes functionality that I take as a 'given' (like administering ftp and ssh accounts), one company provides as standard  while another requires a tech support request. Its sad to realize this only after having scourged through the entire panel to find the functionality doesn exist.
 
 Well, here's an up-close and personal look at some of the things I particularly like about DreamHost:
 
@@ -29,7 +27,7 @@ Well, here's an up-close and personal look at some of the things I particularly 
 
 The control panel setup is more logical and friendly from a linux-system-admin-slash-web-developer point of view on DH than on any other host I've ever seen. They pay attention to their clients' feedback and feature requests.  DreamHost is constantly rolling out new and often complex panel features that really save webmasters lots of time and they keep their software packages up-to-date.
 
-<em>Test drive the Dreamhost Demo Control Panel for yourself:</em>
+*Test drive the Dreamhost Demo Control Panel for yourself:*
 
 <a href="http://demo.dreamhost.com/" target="_blank"> http://demo.dreamhost.com/</a>
 
@@ -41,7 +39,7 @@ Password: demo
 
 <strong></strong>There are tons of people using DreamHost and therefore developers and sys admins can find lots of contributed solutions for non-standard configurations or cutting edge technologies that do not come "pre-installed".  <strong>DreamHost provides an excellent but suometimes dated </strong><a href="http://kb.dreamhost.com" target="_blank"><strong>knowledge base</strong></a><strong> and an even better </strong><a href="http://wiki.dreamhost.com" target="_blank"><strong>community-driven wiki</strong></a><strong>.</strong> 
 
-The wiki provides both employee contributions as well as officially approved and some unofficial/unsupported community contributed solutions to MANY problems you encounter in your life as a shared hosting client. If you cant find it on the wiki, a web search for any issues that turns up during development and server configuration can be refined by adding the word '<em>dreamhost</em>' to your Google search terms. You'll be surprised to find the number of results -- typically from programmers' and web developers' personal blogs --  for just about any situation or error message imaginable. You'll often get the solution as well as some comments from other users encountering the same.
+The wiki provides both employee contributions as well as officially approved and some unofficial/unsupported community contributed solutions to MANY problems you encounter in your life as a shared hosting client. If you cant find it on the wiki, a web search for any issues that turns up during development and server configuration can be refined by adding the word '*dreamhost*' to your Google search terms. You'll be surprised to find the number of results -- typically from programmers' and web developers' personal blogs --  for just about any situation or error message imaginable. You'll often get the solution as well as some comments from other users encountering the same.
 
 <strong>4) "Beyond" shared hosting...?</strong>
 
@@ -75,4 +73,4 @@ To elaborate on that last point a little bit,  what you end up getting on your b
 
 Some might argue that this kinda setup a good idea as backup / mock-up system while developing sites or something. But I think having this the default setup is odd. I could do this if I needed to easily on dreamhost as will with a symlink.
 
-On a last positive note about Verve, I <em>was</em> actually able to get what I needed to get done fairly quickly in the verve panel, even though its kinda clunky at times, and it took me a little bit of time to get familiar with the setup/layout/organization/link titles/terminology.  In fact, I'd say the turn around was much faster than for learning the Media Temple and Bluehost panels.  I also should mention dont have any long term experience with Verve hosting's technical support or with trying to install non-standard technologies, so cant really offer a comparison there.
+On a last positive note about Verve, I *was* actually able to get what I needed to get done fairly quickly in the verve panel, even though its kinda clunky at times, and it took me a little bit of time to get familiar with the setup/layout/organization/link titles/terminology.  In fact, I'd say the turn around was much faster than for learning the Media Temple and Bluehost panels.  I also should mention dont have any long term experience with Verve hosting's technical support or with trying to install non-standard technologies, so cant really offer a comparison there.

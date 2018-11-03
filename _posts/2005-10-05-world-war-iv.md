@@ -1,6 +1,7 @@
 ---
-categories:
-- asides
+tags:
+    - asides
+    - awareness
 layout: post
 title: World War IV
 created: 1128544197

@@ -1,7 +1,6 @@
 ---
-categories:
-- climate change
-- environment
+tags:
+    - awareness
 layout: post
 title: Gore wins one for the planet
 created: 1192225493

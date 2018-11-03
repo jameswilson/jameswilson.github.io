@@ -1,9 +1,8 @@
 ---
 categories:
-- learn
-- internet
-- history
-- technology
+    - Web development
+tags:
+    - awareness
 layout: post
 title: The History of teh Internets
 created: 1232037105

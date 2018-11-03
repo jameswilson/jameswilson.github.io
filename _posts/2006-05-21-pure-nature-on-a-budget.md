@@ -1,8 +1,9 @@
 ---
 categories:
-- travel
-- ecuador
-- galapagos
+    - Travel
+tags:
+    - Ecuador
+    - Galapagos
 layout: post
 title: Pure nature on a budget
 created: 1148268261
@@ -25,42 +26,40 @@ days). And thats doing things bare bones; heres somewhat of a breakdown accordin
 
 Galapagos in the past.
 
-<strong>1. Getting There </strong>
+## 1. Getting There
 
-<strong></strong>The cheapest flight you can find is from Guayaquil to the islands at approx. $300 per person. One other option to arrive in the islands (if your time schedule is less rigid then your budget) is to take a 5 day trip by boat from Guayaquil, but I'm not sure of the price.
+The cheapest flight you can find is from Guayaquil to the islands at approx. $300 per person. One other option to arrive in the islands (if your time schedule is less rigid then your budget) is to take a 5 day trip by boat from Guayaquil, but I'm not sure of the price.
 
-<strong>2. Fees </strong>The entrance fee to the islands is US$100 per person for foreigners.
+## 2. Fees
 
-<strong>3. Rooms </strong>Once you are there, you can find affordable hotels starting around $15 per person.
+The entrance fee to the islands is US$100 per person for foreigners.
 
-<strong>4. Board</strong> Nicer gringo meals starting around $5 to $8 per person, whereas local (and equally filling and delicious) meals start at $1.50 for an almuerzo.
+## 3. Rooms
 
-<strong>5. Getting Around</strong>
+Once you are there, you can find affordable hotels starting around $15 per person.
+
+## 4. Board
+
+Nicer gringo meals around town starting around $5 to $8 per person, whereas local (and equally filling and delicious) meals start at $1.50 for an *almuerzo*.
+
+## 5. Getting Around
 
 You'll find boats in the bays that can take you between islands for perhaps $5-20 dollars per person. Not sure about overland travel but I don't believe it to be very common there. However, just for your general information, prices in ecuador for pubic bus transport go for between $1.00 and $1.50 per hour of travel (depending on the bus' condition and comfort level).
 
-<strong>6. Sightseeing</strong> You can reportedly find tours there for $20 per day.
+## 6. Sightseeing
 
-Sorry for this potentially disturbing news about the extremely high prices (to put it in perspective for <em>Ecuadorians</em> its $10 dollars to enter the park and $150 dollar flight, an all inclusive trip for them might be $500 per person). However, one must realize that this is a very unique place on earth and moreover this country is in need of every penny it can get from tourism (especially now with the the Oxy petroleum scandal and the recent disputes that have interrupted the negotiations of a South American Free Trade Agreement) who knows what aid the US will end up taking away after that pans out.  Ninety percent of all revenue generated from tourism in Ecuador is through the Galapagos, though that can hardly make up for the possible revenues lost to foreign oil exploiters.
+You can reportedly find tours there for $20 per day.
 
-> The transnational Occidental Petroleum, a US owned corporation, has been [legally] robbing the country [under signed contract with the Ecuadorian government] by hoarding 88% of total earnings of oil for the past twenty years.  Imagine having to pay only 12% to use the countries most important natural resource, its virtually all profit for them!  The Ecuadorian government recently found Oxy guilty of breaching the exclusive contract and has decided to seize their oil-fields and wells until an accord can be reached between the governments.
+Sorry for this potentially disturbing news about the extremely high prices (to put it in perspective for *Ecuadorians* its $10 dollars to enter the park and $150 dollar flight, an all inclusive trip for them might be $500 per person). However, one must realize that this is a very unique place on earth and moreover this country is in need of every penny it can get from tourism (especially now with the the Oxy petroleum scandal and the recent disputes that have interrupted the negotiations of a South American Free Trade Agreement) who knows what aid the US will end up taking away after that pans out.  Ninety percent of all revenue generated from tourism in Ecuador is through the Galapagos, though that can hardly make up for the possible revenues lost to foreign oil exploiters.
+
+> The transnational Occidental Petroleum, a US owned corporation, has been legally robbing the country under signed contract with the Ecuadorian government by hoarding 88% of total earnings of oil for the past twenty years.  Imagine having to pay only 12% to use the countries most important natural resource, its virtually all profit for them!  The Ecuadorian government recently found Oxy guilty of breaching the exclusive contract and has decided to seize their oil-fields and wells until an accord can be reached between the governments.
 
 Back to the subject though; all said and done, the Galapagos Islands are well worth a visit if you can work it into your budget. In my humble opinion, a life changing experience for you and your kids is better than any theme park or Zoo in the grand US of A if for no other reason than that the animals are living in peace in their natural habitat.
 
-<blockquote><em>&gt;Do you have any contacts on Galapagos?  I know
-
-&gt;we're coming during the busy (i.e., expensive) season,
-
-&gt;but there must be a way for a teacher to see the sites
-
-&gt;without using all of his savings. Any advice would be
-
-&gt;appreciated. Thanks.</em></blockquote>
+> Do you have any contacts on Galapagos?  I know we're coming during the busy (i.e., expensive) season, but there must be a way for a teacher to see the sites without using all of his savings. Any advice would be appreciated. Thanks.
 
 To answer your other questions, I do not have any contacts in the Galapagos right now. And yes, you can bet your teachers savings that you will be there in peak tourist season with MANY american and european (but mainly American) tourists running around on super deluxe package tours.... it must be nice.  My advice: go to the islands while you are here, because who knows the next time you will be able to organize a trip to this part of the world with your beautiful family.
 
-<blockquote><em>&gt;By the way, our plan is see the islands first and then
+> By the way, our plan is see the islands first and then head for Quito.
 
-&gt;head for Quito</em></blockquote>
-
-Lastly, since you mentioned you would go to Quito after galapagos, perhaps you could look into finding a flight from US to Quito, then go Quito -&gt; Galapagos -&gt; Quito. However, alternatively, you could get your flight in and out of Guayaquil, and get conecting flights in between Quito and Guayaquil for $65 (one-way on TAME).
+Lastly, since you mentioned you would go to Quito after galapagos, perhaps you could look into finding a flight from US to Quito, then go Quito → Galapagos → Quito. However, alternatively, you could get your flight in and out of Guayaquil, and get conecting flights in between Quito and Guayaquil for $65 one-way on Ecuadorian state-run airline TAME.

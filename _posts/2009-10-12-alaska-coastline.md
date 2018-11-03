@@ -1,6 +1,7 @@
 ---
-categories:
-- asides
+tags:
+    - asides
+    - awareness
 layout: post
 title: Alaska coastline
 created: 1255404517

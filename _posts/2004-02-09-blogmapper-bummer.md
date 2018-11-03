@@ -1,6 +1,6 @@
 ---
 categories:
-- travel
+    - Travel
 layout: post
 title: Blogmapper bummer
 created: 1076313154
@@ -9,4 +9,4 @@ created: 1076313154
 
 Apparently you have to have a Blogger Pro account to get an RSS feed.  The catch is that they are currently not accepting orders for upgrades (once again crap!).
 
-In the mean time, I'm looking into MapBureau's other solutions...  <br />
+In the mean time, I'm looking into MapBureau's other solutions...

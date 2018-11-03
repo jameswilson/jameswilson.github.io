@@ -1,11 +1,7 @@
 ---
-excerpt: 'Everybody''s favorite command line script comes to the web: introducing
-  fortune.php.  Including Stephen Wright aphorisms. '
+excerpt: 'Everybody''s favorite command line script comes to the web: introducing fortune.php.  Including Stephen Wright aphorisms.'
 categories:
-- php
-- for fun
-- web development
-- for fun
+    - Web development
 layout: post
 title: Steven Wright Aphorisms
 created: 1220912923

@@ -1,6 +1,6 @@
 ---
 categories:
-- travel
+    - Travel
 layout: post
 title: Ready,  Set,  Go!
 created: 1076307184
