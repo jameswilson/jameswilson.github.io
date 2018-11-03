@@ -1,7 +1,10 @@
 ---
+categories:
+    - Web development
+tags:
+    - Drupal
 layout: post
 title: /unsubscribe
-lang: es
 description: >-
   Why I've decided to unsubscribe from the Drupal Development email lists.
 ---

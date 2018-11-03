@@ -1,4 +1,8 @@
 ---
+categories:
+    - Web development
+tags:
+    - Javascript
 layout: post
 title: Node JS - Serverside javascript.
 ---

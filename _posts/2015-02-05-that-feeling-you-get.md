@@ -1,4 +1,9 @@
 ---
+categories:
+    - Web development
+tags:
+    - Drupal
+    - aside
 layout: post
 title: That feeling you get when...
 ---

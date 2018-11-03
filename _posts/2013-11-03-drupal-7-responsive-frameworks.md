@@ -1,4 +1,9 @@
 ---
+categories:
+    - Web development
+tags:
+    - Drupal
+    - frontend
 layout: post
 title: Drupal responsive theme frameworks
 ---

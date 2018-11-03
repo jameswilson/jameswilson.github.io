@@ -1,4 +1,8 @@
 ---
+categories:
+    - Web development
+tags:
+    - devops
 layout: post
 title: Mamp virtual host configuration
 ---

@@ -1,7 +1,10 @@
 ---
+categories:
+    - Web development
+tags:
+    - Drupal
 layout: post
 title: Contributing the Drupal 7 Navbar Dashboard icon
-lang: es
 description: >-
   How I contributed an icon for the Dashboard module in the  Navbar module
   backported to Drupal 7.

@@ -1,4 +1,8 @@
 ---
+categories:
+    - Web development
+tags:
+    - devops
 layout: post
 title: Install git on Verve hosting.
 ---

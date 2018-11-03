@@ -1,4 +1,8 @@
 ---
+categories:
+    - Web development
+tags:
+    - frontend
 layout: post
 title: Responsive Design with Sass and Compass
 ---

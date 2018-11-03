@@ -1,4 +1,8 @@
 ---
+categories:
+    - Web development
+tags:
+    - Drupal
 layout: post
 title: Instalar Drupal 7 en multiples idiomas
 lang: es

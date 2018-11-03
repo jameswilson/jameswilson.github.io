@@ -1,4 +1,9 @@
 ---
+categories:
+    - Web development
+tags:
+    - Drupal
+    - frontend
 layout: post
 title: How to add Source Maps to Omega 4.x projects
 ---

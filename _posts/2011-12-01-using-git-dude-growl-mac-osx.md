@@ -1,4 +1,8 @@
 ---
+categories:
+    - Web development
+tags:
+    - devops
 layout: post
 title: Using Git dude with Growl on Mac OS X
 ---

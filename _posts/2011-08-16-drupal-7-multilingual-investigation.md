@@ -1,4 +1,8 @@
 ---
+categories:
+    - Web development
+tags:
+    - Drupal
 layout: post
 title: Drupal 7 multilingual investigation
 ---

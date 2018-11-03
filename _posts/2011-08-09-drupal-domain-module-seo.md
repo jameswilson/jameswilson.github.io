@@ -1,4 +1,8 @@
 ---
+categories:
+    - Web development
+tags:
+    - Drupal
 layout: post
 title: Domain module investigation
 description: a brief investigation about viability of the Domain module for Drupal 7.

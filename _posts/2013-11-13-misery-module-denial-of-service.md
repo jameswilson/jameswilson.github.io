@@ -1,7 +1,10 @@
 ---
+categories:
+    - Web development
+tags:
+    - Drupal
 layout: post
 title: The Misery Drupal module caused a DOS
-lang: es
 description: >-
  Some irony today from the Drupal Security mailing list radar.
 ---

@@ -1,4 +1,8 @@
 ---
+categories:
+    - Web development
+tags:
+    - Drupal
 layout: post
 title: Custom Date Formats for Drupal 7 Multi-language sites
 ---

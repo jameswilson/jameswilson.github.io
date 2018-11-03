@@ -1,4 +1,8 @@
 ---
+categories:
+    - Web development
+tags:
+    - Drupal
 layout: post
 title: Crear un sitio multi-idioma con Drupal 8
 description: >-

@@ -1,4 +1,8 @@
 ---
+categories:
+    - Web development
+tags:
+    - frontend
 layout: post
 title: Firebug Lite for IE7
 ---
