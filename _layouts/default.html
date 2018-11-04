@@ -2,6 +2,11 @@
 <html lang="{{ page.lang | default: 'en' }}">
 {% include head.html %}
 <body>
+  <nav id="skipnav">
+    <a href="#content">Skip to Content</a>
+    <a href="#nav-main">Skip to Main Navigation</a>
+    <hr>
+  </nav>
   <header id="header" role="banner">
     <div class="card">
       <a class="logo" href="/" title="Home">
@@ -12,11 +17,11 @@
         <div class="tagline">{{ site.tagline }}</div>
       </div>
     </div>
-    <nav class="menu">
+    <nav class="menu" id="nav-main">
       {% include navigation.html %}
     </nav>
   </header>
-  <main role="main">
+  <main role="main" id="content">
     {{ content }}
   </main>
   {% include footer.html %}

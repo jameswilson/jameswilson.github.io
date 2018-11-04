@@ -28,6 +28,28 @@ body {
   margin: 0
 }
 
+#skipnav {
+  height: 0;
+  overflow: hidden;
+  width: 0;
+}
+
+#skipnav a {
+  background: #fff;
+  left: -9999px;
+  position: absolute;
+  text-align: center;
+  top: -9999px;
+  width: 12.5em;
+  z-index: 999;
+}
+
+#skipnav a:active,
+#skipnav a:focus {
+  left: 0;
+  top: 0;
+}
+
 #header {
   text-align: center;
   max-width: 46rem;
