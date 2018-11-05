@@ -1,5 +1,6 @@
 ---
 title: README
+description: Software installation and maintenance instructions
 ---
 
 Repository | Version | Build Status

@@ -1,5 +1,6 @@
 ---
 title: LICENSE
+description: This website's content and software licenses
 ---
 
 ## Content license
@@ -21,7 +22,7 @@ Under the following terms:
 
 ## Software License
 
-The underlying website software and codebase including the Jekyll/Liquid/HTML/XML templates, CSS and Javascript is hereby released under the **MIT license** included below. The codebase may be forked from GitHub [{{ site.repository }}](https://github.com/{{ site.repository }}).
+The underlying website software and codebase including the Jekyll/Liquid/HTML/XML templates, CSS and Javascript is hereby released under the **MIT license** included below. The codebase may be forked from GitHub [jameswilson/jameswilson.github.io](https://github.com/jameswilson/jameswilson.github.io).
 
 ![MIT License, Copyright (c) 2018 James Wilson](https://upload.wikimedia.org/wikipedia/commons/f/f8/License_icon-mit-88x31-2.svg)
 
