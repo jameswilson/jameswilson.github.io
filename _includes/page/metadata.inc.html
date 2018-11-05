@@ -15,14 +15,33 @@ Setup og:title metatag
 {%- endif -%}
 
 {%- comment -%}
+Setup og:keywords metatag
+{%- endcomment -%}
+{%- assign page_categories = page.categories | join: ',' -%}
+{%- assign page_tags = page.tags | join: ',' -%}
+{%- capture og_keywords -%}
+{% if page_categories != "" and page_tags != "" -%}
+{{ page_categories }},{{ page_tags }}
+{%- elsif page_categories -%}
+{{ page_categories }}
+{%- elsif page_tags -%}
+{{ page_tags }}
+{%- endif -%}
+{%- endcapture -%}
+
+{%- comment -%}
 Setup og:description metatag
 {%- endcomment -%}
-{%- assign og_description = nil -%}
-{%- if page.path == "index.html" -%}
-{%- assign og_description = site.description -%}
-{%- elsif page.description -%}
+{%- if page.description -%}
 {%- assign og_description = page.description -%}
+{%- elsif page.excerpt -%}
+{%- assign og_description = page.excerpt -%}
+{%- elsif page.content -%}
+{%- assign og_description = page.content | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' -%}
+{%- else %}
+{%- assign og_description = site.description -%}
 {%- endif -%}
+{%- assign og_description = og_description | strip_newlines | strip_html | strip | truncate: 200 -%}
 
 {%- comment -%}
 Setup og:image metatag
@@ -32,4 +51,26 @@ Setup og:image metatag
 {%- assign og_image = page.image -%}
 {%- elsif site.image -%}
 {%- assign og_image = site.image -%}
+{%- endif -%}
+
+{%- comment -%}
+Setup article:published_time metatag in ISO 8106 format.
+{%- endcomment -%}
+{%- assign og_published_time = nil -%}
+{%- if page.date -%}
+{%- assign og_published_time = page.date -%}
+{%- elsif post.date -%}
+{%- assign og_published_time = post.date -%}
+{%- endif -%}
+
+{%- comment -%}
+Setup og:updated_time and article:modified_time metatags in ISO 8106 format.
+{%- endcomment -%}
+{%- assign og_updated_time = nil -%}
+{%- if page.last_modified_at -%}
+{%- assign og_updated_time = page.last_modified_at -%}
+{%- elsif post.last_modified_at -%}
+{%- assign og_updated_time = post.last_modified_at -%}
+{%- else -%}
+{%- assign og_updated_time = og_published_time -%}
 {%- endif -%}

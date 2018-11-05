@@ -3,6 +3,7 @@ tags:
     - awareness
 layout: post
 title: Gore wins one for the planet
+description: The United States Former Vice President, Al Gore, has won the 2007 Nobel Peace Prize.
 created: 1192225493
 ---
 <p>Living as an uninformed expat for the past two years, the American media hype (dross, drivel, spin, or whatever your personal flavor of the day may be) typically arrives months or sometime years late--if it arrives at all.&nbsp; Today, however began with a pleasant and rather timely headline. Former US Vice President, Al Gore, has won this year's Nobel Peace Prize. This is a great day for our planet, and could prove to be an essential turning point, if Gore can channel this latest success in a meaningful way. He's already promised to donate his share of the prize to the non-profit Alliance for Climate Protection.</p>

@@ -1,0 +1,120 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": {{ page.schema_type | jsonify }},
+  "url": "{{ site.url }}{{ page.url }}",
+  "name": {{ og_title | jsonify }},
+  {%- capture jsonld_image -%}
+  {%- if og_image -%}
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ og_image }}"
+  },
+  {%- endif %}
+  {%- endcapture %}
+  {%- capture jsonld_author -%}
+    "@type": {{ site.author.schema_type | jsonify }},
+    "name": {{ site.author.name | jsonify }},
+    {%- if site.author.schema_type == 'Person' %}
+    "givenName": {{ site.author.first_name | jsonify }},
+    "familyName": {{ site.author.last_name | jsonify }},
+    {%- endif %}
+    "alternateName": {{ site.author.twitter | jsonify }},
+    "description": {{ site.author.description | jsonify }},
+    "email": {{ site.author.email | jsonify }},
+    {%- if page.type == 'authorpage' and page.image or site.author.image %}
+    "image": {
+      "@type": "ImageObject",
+      {%- if page.type == 'authorpage' and page.image %}
+      "url": {{ page.image | jsonify }}
+      {%- elsif site.author.image %}
+      "url": {{ site.author.image | jsonify }}
+      {%- endif %}
+    },
+    {%- endif %}
+    {%- if site.author.links and page.type == 'authorpage' %}
+    "sameAs": [
+      {%- for link in site.author.links %}
+      {{ link | jsonify }}{% if forloop.last == false %},{% endif %}
+      {%- endfor %}
+    ],
+    {%- else %}
+    "sameAs": "{{ site.url }}/about",
+    {%- endif %}
+    "publishingPrinciples": "{{ site.url }}/about"
+  {%- endcapture %}
+  {%- capture jsonld_publisher -%}
+    "@type": "Organization",
+    "name": {{ site.title | jsonify }},
+    "url": "{{ site.url }}",
+    {%- if site.image %}
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.image }}"
+    },
+    {%- endif %}
+    "publishingPrinciples": "{{ site.url }}/about"
+  {%- endcapture -%}
+{%- case page.type -%}
+{%- when 'authorpage' %}
+  "mainEntity": {
+    {{ jsonld_author }}
+  },
+  "publisher": {
+    {{ jsonld_publisher }}
+  },
+{%- when 'homepage' %}
+  "description": {{ og_description | jsonify }},
+  {{ jsonld_image }}
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{ site.url }}/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "author": {
+    {{ jsonld_author }}
+  },
+  "publisher": {
+    {{ jsonld_publisher }}
+  },
+{%- when 'page' %}
+  "description": {{ og_description | jsonify }},
+  "text": {{ page.content | markdownify | strip_html | replace: '  ', ' ' | strip | jsonify }},
+  "datePublished": {{ og_published_time | jsonify }},
+  "isAccessibleForFree": "True",
+  "inLanguage": {{ page.lang | default: 'en-US' | jsonify }},
+  {{ jsonld_image }}
+  "author": {
+    {{ jsonld_author }}
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url }}"
+  },
+{%- when 'post' %}
+  "headline": {{ og_title | jsonify }},
+  "keywords": {{ og_keywords | jsonify }},
+  "description": {{ og_description | jsonify }},
+  "articleBody": {{ page.content | markdownify | strip_html | replace: '  ', ' ' | strip | jsonify }},
+  "datePublished": {{ og_published_time | jsonify }},
+  "dateModified": {{ og_updated_time | jsonify }},
+  "isAccessibleForFree": "True",
+  "inLanguage": {{ page.lang | default: 'en-US' | jsonify }},
+  {{ jsonld_image }}
+  "author": {
+    {{ jsonld_author }}
+  },
+  "publisher": {
+    {{ jsonld_publisher }}
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url }}"
+  },
+{%- when 'searchresultspage' %}
+  "description": {{ og_description | jsonify }},
+  {{ jsonld_image }},
+{%- endcase %}
+  "license": "{{ site.url }}/LICENSE"
+}
+</script>

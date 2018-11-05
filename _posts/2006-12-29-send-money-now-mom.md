@@ -7,7 +7,11 @@ layout: post
 title: Send money now, Mom!
 created: 1167420967
 ---
-Part One of my series on <a title="South America, Galapagos, and Ecuador FAQ" href="/2006-12-29-sagefaq">South America, Galapagos, and Ecuador FAQ</a> tries to help solve your money problems... no,  we're not giving away free money ;)
+
+The first installment of several posts addressing <a title="South America, Galapagos, and Ecuador FAQ" href="/2006-12-29-sagefaq">frequently asked questions about South America, Galapagos, and Ecuador</a> covers money issues while traveling abroad.
+
+<!--more-->
+
 
 **Money Issues**
 

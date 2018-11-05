@@ -1,5 +1,5 @@
 ---
-excerpt: 'Everybody''s favorite command line script comes to the web: introducing fortune.php.  Including Stephen Wright aphorisms.'
+excerpt: 'A simple PHP script that wraps the linux fortune command to provide a random quote from american comedian Stephen Wright.'
 categories:
     - Web development
 layout: post

@@ -36,8 +36,13 @@ analytics:
 google:
   search_engine_id: 005468932483752946890:jvbt67gzrjm
 
+facebook:
+  app_id:         1123868284446462
+  profile_id:     778599837
+
 # Global author
 author:
+  schema_type:    Person # or Organization (see schema.org)
   name:           James Wilson
   first_name:     James
   last_name:      Wilson
@@ -50,6 +55,18 @@ author:
     technical strategy, devops &amp; automation, and building complex,
     performant, accessible websites.  He is a senior technical strategist
     and the lead frontend developer at Bluespark.
+  links:
+    - https://about.me/jrwilson3
+    - https://twitter.com/jwilson3
+    - https://facebook.com/james.r.wilson.iii
+    - https://instagram.com/jrwilson3
+    - https://linkedin.com/in/jamesrwilson3
+    - https://github.com/jameswilson
+    - https://drupal.org/u/jwilson3
+    - https://bluespark.com/team/james-wilson
+    - https://stackexchange.com/users/180306/jameswilson?tab=accounts
+    - https://open.spotify.com/user/125643039
+    - https://plus.google.com/+JamesWilsonIII
 
 # Calculate post reading time based on number of words.
 # A floating point number is required for the divide_by calcuation.
@@ -81,6 +98,58 @@ navigation:
     url: /about
   - title: Search
     url: /search
+
+# Defaults
+defaults:
+  # all posts
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      type: post
+      schema_type: BlogPosting
+      og_type: article
+  # all pages
+  -
+    scope:
+      path: ""
+      type: pages
+    values:
+      type: page
+      schema_type: CreativeWork
+      og_type: article
+  # homepage
+  -
+    scope:
+      path: "index.html"
+    values:
+      type: homepage
+      schema_type: Blog # or WebSite  (see schema.org)
+      og_type: website
+  # authorpage provides special Structured Data about the author.
+  # Modify the "scope.path" as necessary to match whatever you use for the
+  # site's author biography page.
+  -
+    scope:
+      path: "_pages/about.md"
+    values:
+      type: authorpage
+      schema_type: AboutPage
+      og_type: article
+  # search results page
+  -
+    scope:
+      path: "_pages/search.md"
+    values:
+      type: searchresultspage
+      schema_type: SearchResultsPage
+  # archive pages (by year, categories, tags)
+  -
+    scope:
+      type: archive
+    values:
+      schema_type: CollectionPage
 
 # Process pages in the following additional custom subfolders.
 # Note these pages must use the 'permalink' parameter in yaml front matter

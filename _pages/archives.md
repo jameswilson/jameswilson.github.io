@@ -1,5 +1,6 @@
 ---
 layout: page
+type: archives
 title: Blog posts by year
 permalink: /archives
 ---
