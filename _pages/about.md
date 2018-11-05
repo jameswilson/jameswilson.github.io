@@ -39,8 +39,8 @@ Today I contribute primarily to Drupal and various other Open Source projects on
 This blog has existed and evolved through many technology stacks over the years. The current incantation is a return to simplicity and speed.
 
 * The website's *current version* is [v{{ site.version}}](https://github.com/{{site.repository}}/releases).
-* The website's *codebase* is opens sourced under the [MIT License](/LICENSE), the [README](/README) may be viewed online and the codebase may be forked from GitHub [{{site.repository}}](https://github.com/{{site.repository}}).
-* The website's *content* is licensed under [Creative Commons Attribution-ShareAlike (CC BY-SA)](https://creativecommons.org/licenses/by-sa/4.0/).
+* The website's *content* is released under the [Creative Commons Attribution-ShareAlike (CC BY-SA)](/LICENSE#content-license) license.
+* The website's *software* is released under the [MIT License](/LICENSE#software-license), the [README](/README) may be viewed online and the codebase may be forked from GitHub [{{site.repository}}](https://github.com/{{site.repository}}).
 * Runs on the [Jekyll](https://jekyllrb.com/showcase/) framework, a static-site generator written in Ruby; inspired by and forked from the [Poole](http://getpoole.com/) implementation for Jekyll by Mark Otto.
 * Hosted for free on [GitHub Pages](https://pages.github.com).
 * Coded with ❤️ in [Sublime Text](http://sublimetext.com), an amazing code editor.

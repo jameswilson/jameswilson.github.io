@@ -6,9 +6,9 @@ Repository | Version | Build Status
 ---------- | ------- | ------------
 {{site.repository}} | {{site.version}} | [![Build Status](https://travis-ci.org/jameswilson/jameswilson.github.io.svg?branch=master)](https://travis-ci.org/jameswilson/jameswilson.github.io)
 
-## Setting up your site
+## Installation
 
-### 1. Fork it on GitHub
+### 1. Fork the repository on GitHub
 
 In the GitHub UI, fork this repsotory to your own account and rename it to `yourusername.github.io`
 
@@ -19,7 +19,9 @@ $ git clone git@github.com:yourusername/yourusername.github.io.git mysite
 ```
 
 
-### 2. Install Ruby, Jekyll, and dependencies.
+### 2. Install dependencies
+
+Jekyll depends on Ruby.  Use RVM to lock in the Ruby version and Bundler to install Jekyll and lock in the Ruby Gems that Jekyll depends on.
 
 ```bash
 $ cd mysite
@@ -30,16 +32,18 @@ $ bundle install
 ```
 
 
-### 3. Confirm Github Pages gem is installed and reports no errors.
+### 3. Perform a health check
+
+Ensure that the github-pages ruby gem is installed and reporting no errors.
 
 ```bash
 $ github-pages health-check
 ```
 
 
-### 4. Confirm Jekyll is installed and runs locally.
+### 4. Test your site locally
 
-Execute jekyll using bundler:
+Execute Jekyll using bundler:
 
 ```bash
 $ bundle exec jekyll serve
@@ -48,7 +52,7 @@ $ bundle exec jekyll serve
 Then open <http://127.0.0.1:4000> in your browser, and test your site.
 
 
-### 5. Configure Jekyll.
+### 5. Configure Jekyll
 
 1. If hosting at a custom domain create a file in the repository root called `CNAME` and point it to your [custom domain name](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages). Otherwise, if you're not using a custom domain name, **modify the `baseurl` in `_config.yml`** to point to your GitHub Pages URL. Example: for a repo at `github.com/username/repo`, use `http://username.github.io/repo/`. **Be sure to include the trailing slash.**
 
@@ -68,7 +72,7 @@ Then open <http://127.0.0.1:4000> in your browser, and test your site.
 * Update the Build Status icon in this README to match your repository.
 
 
-## Maitaining your site
+## Maintenance
 
 
 ## 1. Ensuring previous year is displayed
@@ -94,5 +98,5 @@ Be sure to review, commit, and push the changes to `Gemfile.lock` if required.
 
 ## License
 
-* The website's codebase, including the CSS, Javascript, and HTML templates is open sourced under the [MIT license](LICENSE.md).
-* The website's content, including static page content and post content is licensed under [Creative Commons Attribution-ShareAlike (CC BY-SA)](https://creativecommons.org/licenses/by-sa/4.0/).
+* The website's software—including the CSS, Javascript, and HTML/Liquid templates—is released under the open source [MIT license](/LICENSE#software-license).
+* The website's content, including static page content and post content is licensed under [Creative Commons Attribution-ShareAlike (CC BY-SA)](/LICENSE#content-license).
