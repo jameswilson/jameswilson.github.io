@@ -44,3 +44,12 @@ This blog has existed and evolved through many technology stacks over the years.
 * Runs on the [Jekyll](https://jekyllrb.com/showcase/) framework, a static-site generator written in Ruby; inspired by and forked from the [Poole](http://getpoole.com/) implementation for Jekyll by Mark Otto.
 * Hosted for free on [GitHub Pages](https://pages.github.com).
 * Coded with ❤️ in [Sublime Text](http://sublimetext.com), an amazing code editor.
+
+## Thanks
+
+If you've found anything I've made useful, please consider paying for my tea via a PayPal donation.
+
+<div class="text-center">
+<div style="font-size:5rem">🍵</div>
+<a href="https://paypal.me/jrwilson3/4.50" class="button">Buy James tea</a>
+</div>
