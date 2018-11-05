@@ -38,11 +38,18 @@ google:
 
 # Global author
 author:
-  name:           James
+  name:           James Wilson
+  first_name:     James
+  last_name:      Wilson
   twitter:        jwilson3
-  url:            https://twitter.com/jwilson3
+  url:            https://www.elementalidad.com/about
   email:          jrwilson3@gmail.com
   image:          https://i.imgur.com/aXOJjYr.png
+  description:    >-
+    James is a software developer with interests in travel, photography,
+    technical strategy, devops &amp; automation, and building complex,
+    performant, accessible websites.  He is a senior technical strategist
+    and the lead frontend developer at Bluespark.
 
 # Calculate post reading time based on number of words.
 # A floating point number is required for the divide_by calcuation.
