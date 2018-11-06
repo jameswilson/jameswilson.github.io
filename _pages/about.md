@@ -33,6 +33,9 @@ Today I contribute primarily to Drupal and various other Open Source projects on
 * [jwilson3 on Twitter](https://twitter.com/jwilson3)
 * [LinkedIn](https://www.linkedin.com/in/jamesrwilson3)
 * [Facebook](https://www.facebook.com/james.r.wilson.iii)
+* [Pinterest](https://pinterest.com/jrwilson3)
+* [Spotify](https://open.spotify.com/user/125643039)
+* [Google+](https://plus.google.com/+JamesWilsonIII)
 
 ## About the blog
 

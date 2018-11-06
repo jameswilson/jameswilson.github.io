@@ -60,6 +60,9 @@
 {%- if site.facebook.profile_id %}
 <meta property="fb:profile_id" content="{{ site.facebook.profile_id }}">
 {%- endif %}
+{%- if site.pinterest.domain_verify %}
+<meta name="p:domain_verify" content="{{ site.pinterest.domain_verify }}">
+{%- endif %}
 
 {% include page/structured-data.html %}
 </head>

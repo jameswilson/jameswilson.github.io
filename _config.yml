@@ -40,6 +40,10 @@ facebook:
   app_id:         1123868284446462
   profile_id:     778599837
 
+pinterest:
+  account:        jrwilson3
+  domain_verify:  44c8ca43cf69c61e16d65e70aa643105
+
 # Global author
 author:
   schema_type:    Person # or Organization (see schema.org)
@@ -61,6 +65,7 @@ author:
     - https://facebook.com/james.r.wilson.iii
     - https://instagram.com/jrwilson3
     - https://linkedin.com/in/jamesrwilson3
+    - https://pinterest.com/jrwilson3
     - https://github.com/jameswilson
     - https://drupal.org/u/jwilson3
     - https://bluespark.com/team/james-wilson
