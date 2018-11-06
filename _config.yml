@@ -19,7 +19,7 @@ tagline:          Open Source Technologist &amp; Senior Web Developer
 description: >-   # Used in homepage metatag and RSS feed description.
                   The personal blog of James Wilson; senior web developer
                   at Bluespark and avid Open Source enthusiast.
-url:              https://jameswilson.github.io
+url:              https://www.elementalidad.com
 baseurl:          # the subpath of your site, e.g. "/blog"
 permalink:        /:year-:month-:day-:title
 paginate:         3
