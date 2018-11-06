@@ -38,9 +38,10 @@ Setup og:description metatag
 {%- assign og_description = page.excerpt -%}
 {%- elsif page.content -%}
 {%- assign og_description = page.content | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' -%}
-{%- else %}
-{%- assign og_description = site.description -%}
 {%- endif -%}
+{%- if og_description | strip_newlines | strip_html | strip = "" %}
+{%- assign og_description = site.description -%}
+{%- endif %}
 {%- assign og_description = og_description | strip_newlines | strip_html | strip | truncate: 200 -%}
 
 {%- comment -%}
