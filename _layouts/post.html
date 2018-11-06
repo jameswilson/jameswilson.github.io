@@ -9,7 +9,7 @@ layout: default
 
   <footer>
     {% assign post = page %}
-    {% include post/post-meta.html %}
+    {% include post/post-meta.html categories=true tags=true %}
   </footer>
 
   {{ content }}

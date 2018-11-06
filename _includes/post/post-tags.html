@@ -1,0 +1,4 @@
+{% for tag in post.tags %}
+<span aria-hidden="true">&middot;</span>
+<a href="/tags#{{ tag | slugify }}" class="post-tag"><span class="visually-hidden">view posts classified under </span>{{ tag }}</a>
+{% endfor %}

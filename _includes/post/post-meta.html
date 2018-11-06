@@ -2,4 +2,10 @@
 {% include post/post-date.html %}
 <span aria-hidden="true">&middot;</span>
 {% include post/word-count.html %}
+{%- if include.categories %}
+{% include post/post-categories.html %}
+{%- endif %}
+{%- if include.tags %}
+{% include post/post-tags.html %}
+{%- endif %}
 </small>
