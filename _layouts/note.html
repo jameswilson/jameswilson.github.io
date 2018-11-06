@@ -12,7 +12,7 @@ layout: default
     {% include post/post-meta.html categories=true tags=true %}
   </footer>
 
-  {{ content }}
+  {{ content | markdownify | replace: '<p>','<p class="intro">' }}
 </article>
 
 <section class="prevnext">
