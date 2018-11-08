@@ -24,6 +24,22 @@ As the inevitable frustration grew with being the sole maintainer of a codebase 
 
 Today I contribute primarily to Drupal and various other Open Source projects on GitHub.
 
+<!-- github-calendar contributions -->
+<script
+  src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"
+></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"
+/>
+<div class="calendar">
+    Loading James' open source contributions calendar.
+</div>
+<script>
+    GitHubCalendar(".calendar", "jameswilson");
+</script>
+
+
 ## Find me online
 
 * [Bluespark team page](https://www.bluespark.com/team/james-wilson)
