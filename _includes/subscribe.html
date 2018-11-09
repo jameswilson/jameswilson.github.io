@@ -1,0 +1,8 @@
+<p class="h2">Sign up to receive notifications via email when new content is published.</p>
+<form action="{{ site.mailchimp.url }}/subscribe/post?u={{ site.mailchimp.user_id }}&amp;id={{ site.mailchimp.list_id }}" method="post" name="mce-FORM" id="mce-FORM" class="mce-FORM">
+  <label for="mce-EMAIL" class="visually-hidden">Enter your email address</label>
+  <input type="email" value="" name="EMAIL" class="mce-EMAIL" id="mce-EMAIL" placeholder="Your email address" required>
+  <div  class="visually-hidden" aria-hidden="true"><input type="text" name="b_{{ site.mailchimp.user_id }}_{{ site.mailchimp.list_id }}" tabindex="-1" value=""></div>
+  <input type="submit" value="Subscribe" name="subscribe" id="mce-SUBMIT" class="button mce-SUBMIT">
+</form>
+<div><small><br>By clicking subscribe, you acknowledge that your information will be transferred to Mailchimp for processing. Learn more about <a href="https://mailchimp.com/legal/" target="_blank">Mailchimp's privacy practices here</a>.</small></div>

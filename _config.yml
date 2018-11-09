@@ -44,6 +44,11 @@ pinterest:
   account:        jrwilson3
   domain_verify:  44c8ca43cf69c61e16d65e70aa643105
 
+mailchimp:
+  url:            https://elementalidad.us19.list-manage.com
+  user_id:        7457c00561f9e1cd9a49455fc
+  list_id:        b5c08ef710
+
 # Global author
 author:
   schema_type:    Person # or Organization (see schema.org)

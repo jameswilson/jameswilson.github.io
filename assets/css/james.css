@@ -429,6 +429,41 @@ pre code {
   margin-bottom: 0;
 }
 
+.colophon {
+  background: #f0f0f0;
+  padding: 2rem 0 6rem;
+}
+.colophon aside {
+  max-width: 39rem;
+  margin: 0 auto;
+}
+
+.mce-FORM {
+  text-align: center;
+}
+
+.mce-EMAIL {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.mce-SUBMIT {
+  margin: 1.6rem auto 0;
+}
+
+@media (min-width: 570px) {
+  .mce-FORM {
+    display: flex;
+  }
+  .mce-EMAIL {
+    flex: 1 1 auto;
+    margin-right: -2px;
+  }
+  .mce-SUBMIT {
+    margin-top: 0;
+  }
+}
+
 #footer {
   background-color: #333;
   color: rgba(var(--rgb-fff), .4);
