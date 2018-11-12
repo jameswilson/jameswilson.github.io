@@ -436,6 +436,7 @@ pre code {
 .colophon aside {
   max-width: 39rem;
   margin: 0 auto;
+  padding: 0 5%;
 }
 
 .mce-FORM {
