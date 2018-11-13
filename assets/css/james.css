@@ -1,18 +1,15 @@
 :root {
-  --rgb-darkgray: 51, 51, 51;
-  --rgb-medgray: 128, 128, 128;
-  --rgb-ltgray: 230, 230, 230;
-  --rgb-fff: 255, 255, 255;
   --primary-font-family: 'Muli', sans-serif;
   --secondary-font-family: 'Montserrat', sans-serif;
   --monospaced-font-family: 'Fira Mono', monospace;
-  --primary-font-color: rgba(var(--rgb-darkgray), .8);
-  --secondary-font-color: rgba(var(--rgb-darkgray), 1);
-  --tertiary-font-color: rgba(var(--rgb-darkgray), .9);
-  --bg-gray: rgba(var(--rgb-ltgray), .1);
-  --border-gray: rgba(var(--rgb-medgray), .2);
+  --primary-font-color: rgba(0, 0, 0, .64);
+  --secondary-font-color: rgba(0, 0, 0, .84);
+  --tertiary-font-color: rgba(0, 0, 0, .74);
+  --bg-gray: rgba(0, 0, 0, .04);
+  --border-gray: rgba(0, 0, 0, .1);
   --james-blue: #0b7f99;
   --james-red: #d20539;
+  --rgb-fff: 255, 255, 255;
 }
 
 html {
@@ -80,13 +77,22 @@ body {
 
 .logo svg path {
   fill: var(--james-blue);
-  transition: fill 2s ease-out;
+  transition: fill .4s ease-out;
 }
 
 .logo:hover svg path,
 .logo:focus svg path {
-  fill: var(--james-red);
+  fill: transparent;
   transition: fill .2s ease-out;
+}
+
+.logo image {
+  transition: clip-path .4s ease-out;
+  clip-path: circle(0 at 256px 256px);
+}
+
+.logo:hover image {
+  clip-path: circle(500px at 256px 256px);
 }
 
 img.avatar {
@@ -392,7 +398,7 @@ pre,
 code {
   padding: .25em .5em;
   font-size: 85%;
-  color: var(--james-red);
+  color: var(--secondary-font-color);
 }
 
 div.highlight {
