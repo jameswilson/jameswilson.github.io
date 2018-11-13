@@ -2,7 +2,7 @@
 <html lang="{{ page.lang | default: 'en' }}">
 {% include head.html %}
 <body>
-  <nav id="skipnav">
+  <nav id="skipnav" aria-label="skip links">
     <a href="#content">Skip to Content</a>
     <a href="#nav-main">Skip to Main Navigation</a>
     <hr>
@@ -17,7 +17,7 @@
         <div class="tagline">{{ site.tagline }}</div>
       </div>
     </div>
-    <nav class="menu" id="nav-main">
+    <nav class="menu" id="nav-main" aria-label="main navigation">
       {% include navigation.html %}
     </nav>
   </header>
