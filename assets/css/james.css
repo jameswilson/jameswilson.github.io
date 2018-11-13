@@ -153,8 +153,8 @@ nav.menu.archives::after {
 }
 
 main {
-  padding: 0 0 2rem;
-  max-width: 39rem;
+  padding: 0 5% 2rem;
+  max-width: 36rem;
   margin: 0 auto;
 }
 
@@ -164,7 +164,6 @@ main > section,
 main > article {
   margin: 2rem auto;
   box-sizing: border-box;
-  padding: 0 5%;
 }
 
 main > article,
@@ -433,13 +432,12 @@ pre code {
 
 .colophon {
   background: #f0f0f0;
-  padding: 2rem 0 6rem;
+  padding: 2rem 5% 6rem;
 }
 
 .colophon aside {
-  max-width: 39rem;
+  max-width: 36rem;
   margin: 0 auto;
-  padding: 0 5%;
 }
 
 .mce-FORM {
