@@ -8,7 +8,7 @@
     {{previous.title}}
   </a>
   {% else %}
-  <a class="button disabled"><small><small>← PREVIOUS {{include.type|upcase}}</small></small></a>
+  <a class="button" aria-disabled="true"><small><small>← PREVIOUS {{include.type|upcase}}</small></small></a>
   {% endif %}
 </div>
 
@@ -22,6 +22,6 @@
     {{next.title}}
   </a>
   {% else %}
-  <a class="button disabled"><small><small> NEXT {{include.type|upcase}} →</small></small></a>
+  <a class="button" aria-disabled="true"><small><small> NEXT {{include.type|upcase}} →</small></small></a>
   {% endif %}
 </div>

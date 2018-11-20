@@ -570,7 +570,7 @@ pre code {
   font-size: 1.2rem;
 }
 
-.button.disabled {
+.button[aria-disabled] {
   border-color: var(--border-gray);
   color: var(--primary-font-color);
   opacity: .4;

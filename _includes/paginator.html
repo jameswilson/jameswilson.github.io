@@ -3,7 +3,7 @@
   {% if paginator.next_page %}
     <a class="button" href="/page{{paginator.next_page}}">← Older posts</a>
   {% else %}
-    <a class="button disabled">← Older posts</a>
+    <a class="button" aria-disabled="true">← Older posts</a>
   {% endif %}
   </div>
   <div class="text-right">
@@ -14,7 +14,7 @@
       <a class="button" href="/page{{paginator.previous_page}}">Newer posts →</a>
     {% endif %}
   {% else %}
-    <a class="button disabled">Newer posts →</a>
+    <a class="button" aria-disabled="true">Newer posts →</a>
   {% endif %}
   </div>
 </section>
