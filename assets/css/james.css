@@ -1,7 +1,4 @@
 :root {
-  --primary-font-family: 'Muli', sans-serif;
-  --secondary-font-family: 'Montserrat', sans-serif;
-  --monospaced-font-family: 'Fira Mono', monospace;
   --primary-font-color: rgba(0, 0, 0, .64);
   --secondary-font-color: rgba(0, 0, 0, .84);
   --tertiary-font-color: rgba(0, 0, 0, .74);
@@ -83,7 +80,7 @@ html {
 }
 
 body {
-  font-family: var(--primary-font-family);
+  font-family: 'Muli', sans-serif;
   color: var(--primary-font-color);
   padding: 4vw 0 0;
   line-height: 1.65;
@@ -267,7 +264,7 @@ h6
 .h5,
 .h6 {
   color: var(--secondary-font-color);
-  font-family: var(--secondary-font-family);
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: 1.2;
@@ -454,7 +451,7 @@ tbody tr:nth-child(odd) th {
 code,
 pre,
 .highlight {
-  font-family: var(--monospaced-font-family);
+  font-family: 'Fira Mono', monospace;
   background-color: var(--bg-gray);
   border: 1px solid var(--border-gray);
   border-radius: 3px;
