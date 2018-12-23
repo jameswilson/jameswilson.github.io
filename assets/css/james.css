@@ -1,15 +1,30 @@
 :root {
-  --primary-font-color: rgba(0, 0, 0, .64);
-  --secondary-font-color: rgba(0, 0, 0, .84);
-  --tertiary-font-color: rgba(0, 0, 0, .74);
-  --primary-bg-color: #fff;
-  --secondary-bg-color: #f0f0f0;
-  --footer-bg: #333;
-  --bg-gray: rgba(0, 0, 0, .04);
-  --border-gray: rgba(0, 0, 0, .1);
-  --james-blue: #0b7f99;
-  --james-red: #d20539;
+  --primary-font-color: hsla(0, 0%, 0%, .64);
+  --secondary-font-color: hsla(0, 0%, 0%, .84);
+  --tertiary-font-color: hsla(0, 0%, 0%, .74);
+  --primary-bg-color: hsla(0, 0%, 100%, 1);
+  --secondary-bg-color: hsla(0, 0%, 94%, 1);
+  --footer-bg: hsla(0, 0%, 20%, 1);
+  --bg-gray: hsla(0, 0%, 0%, .04);
+  --border-gray: hsla(0, 0%, 0%, .1);
+  --james-blue: hsla(191, 87%, 32%, 1);
+  --james-red: hsla(345, 95%, 42%, 1);
   --rgb-fff: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-font-color: hsla(0, 0%, 75%, .64);
+    --secondary-font-color: hsla(0, 0%, 75%, .84);
+    --tertiary-font-color: hsla(0, 0%, 75%, .74);
+    --primary-bg-color: hsla(0, 0%, 10%, 1);
+    --secondary-bg-color: hsla(0, 0%, 16%, 1);
+    --footer-bg: hsla(0, 0%, 20%, 1);
+    --bg-gray: hsla(0, 0%, 75%, .04);
+    --border-gray: hsla(0, 0%, 75%, .1);
+    --james-blue: hsla(191, 50%, 75%, 1);
+    --james-red: hsla(345, 50%, 75%, 1);
+  }
 }
 
 /* https://fonts.googleapis.com/css?family=Montserrat:700|Muli:400,700|Fira+Mono */
