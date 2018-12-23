@@ -2,6 +2,9 @@
   --primary-font-color: rgba(0, 0, 0, .64);
   --secondary-font-color: rgba(0, 0, 0, .84);
   --tertiary-font-color: rgba(0, 0, 0, .74);
+  --primary-bg-color: #fff;
+  --secondary-bg-color: #f0f0f0;
+  --footer-bg: #333;
   --bg-gray: rgba(0, 0, 0, .04);
   --border-gray: rgba(0, 0, 0, .1);
   --james-blue: #0b7f99;
@@ -82,6 +85,7 @@ html {
 body {
   font-family: 'Muli', sans-serif;
   color: var(--primary-font-color);
+  background: var(--primary-bg-color);
   padding: 4vw 0 0;
   line-height: 1.65;
   margin: 0
@@ -94,7 +98,7 @@ body {
 }
 
 #skipnav a {
-  background: #fff;
+  background: var(--primary-bg-color);
   left: -9999px;
   position: absolute;
   text-align: center;
@@ -494,7 +498,7 @@ pre code {
 }
 
 .colophon {
-  background: #f0f0f0;
+  background: var(--secondary-bg-color);
   padding: 2rem 5% 6rem;
 }
 
@@ -532,7 +536,7 @@ pre code {
 }
 
 #footer {
-  background-color: #333;
+  background-color: var(--footer-bg);
   color: rgba(var(--rgb-fff), .4);
   text-align: center;
   padding: 60px 5%;
@@ -625,6 +629,7 @@ pre code {
 
 .button {
   color: var(--james-red);
+  background: transparent;
   border: 2px solid;
   padding: .2em 1.2em;
   text-decoration: none;
@@ -642,6 +647,7 @@ pre code {
 [type='text'],
 [type='email'] {
   border: 2px solid var(--border-gray);
+  background: var(--primary-bg-color);
   color: var(--secondary-font-color);
   font-size: 1.2rem;
   line-height: 1.2;
