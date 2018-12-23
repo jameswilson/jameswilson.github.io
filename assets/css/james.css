@@ -196,7 +196,8 @@ nav.menu a.active {
 nav.menu.browse,
 nav.menu.archives {
   padding: .8rem .5rem;
-  border: 5px solid var(--border-gray);
+  border: 5px solid;
+  border-color: var(--border-gray);
   background: var(--bg-gray);
   text-align: center;
   margin: 0;
@@ -215,7 +216,8 @@ nav.menu.archives::after {
   display: block;
   content: '';
   margin: .8rem auto 0;
-  border-top: 3px solid var(--border-gray);
+  border-top: 3px solid;
+  border-color: var(--border-gray);
   width: 49%;
 }
 
@@ -252,7 +254,8 @@ a:focus {
 abbr[title],
 acronym[title] {
   text-decoration: none;
-  border-bottom: 2px dashed var(--james-blue);
+  border-bottom: 2px dashed;
+  border-color: var(--james-blue);
 }
 
 h1,
@@ -437,14 +440,16 @@ figcaption p + p {
 table {
   margin-bottom: 1rem;
   width: 100%;
-  border: 1px solid var(--border-gray);
+  border: 1px solid;
+  border-color: var(--border-gray);
   border-collapse: collapse;
 }
 
 td,
 th {
   padding: .25rem .5rem;
-  border: 1px solid var(--border-gray);
+  border: 1px solid;
+  border-color: var(--border-gray);
 }
 
 tbody tr:nth-child(odd) td,
@@ -457,7 +462,8 @@ pre,
 .highlight {
   font-family: 'Fira Mono', monospace;
   background-color: var(--bg-gray);
-  border: 1px solid var(--border-gray);
+  border: 1px solid;
+  border-color: var(--border-gray);
   border-radius: 3px;
 }
 
@@ -499,6 +505,8 @@ pre code {
 
 .colophon {
   background: var(--secondary-bg-color);
+  border-top: 1px solid;
+  border-color: var(--secondary-bg-color);
   padding: 2rem 5% 6rem;
 }
 
@@ -537,6 +545,8 @@ pre code {
 
 #footer {
   background-color: var(--footer-bg);
+  border-top: 1px solid;
+  border-color: var(--footer-bg);
   color: rgba(var(--rgb-fff), .4);
   text-align: center;
   padding: 60px 5%;
@@ -646,7 +656,8 @@ pre code {
 
 [type='text'],
 [type='email'] {
-  border: 2px solid var(--border-gray);
+  border: 2px solid;
+  border-color: var(--border-gray);
   background: var(--primary-bg-color);
   color: var(--secondary-font-color);
   font-size: 1.2rem;
@@ -662,7 +673,8 @@ input:focus {
 .post-author {
   margin: 3rem auto;
   padding: 1.6rem;
-  border: 4px solid var(--border-gray);
+  border: 4px solid;
+  border-color: var(--border-gray);
   font-size: .8rem;
   background: var(--bg-gray);
   color: var(--secondary-font-color);
