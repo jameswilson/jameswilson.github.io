@@ -1,4 +1,5 @@
-<h3>Related Posts</h3>
+{% if site.related_posts %}
+<h3>Recent Posts</h3>
 <ol>
   {% for post in site.related_posts limit: 3 %}
   <li>
@@ -6,3 +7,4 @@
   </li>
   {% endfor %}
 </ol>
+{% endif %}
