@@ -1,5 +1,4 @@
 {% if jekyll.environment == 'production' and site.disqus.enabled %}
-<h3>Comments</h3>
 <div id="disqus_thread"></div>
 <button class="button load-comments" onclick="load_comments(this)">
   Load Comments
@@ -22,6 +21,5 @@ function load_comments(btn) {
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 {% elsif jekyll.environment != 'production' and site.disqus.enabled %}
-<h3>Comments</h3>
 <p>Disqus comments will appear here, but have been disabled on non-production environments to avoid mis-indexing them with the non-production domain name.</p>
 {% endif %}
