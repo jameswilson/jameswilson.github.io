@@ -620,6 +620,28 @@ pre code {
   transition: fill .2s ease-out;
 }
 
+.comments {
+  min-height: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.comments .load-comments {
+  display: block;
+  margin: 0 auto;
+  border: 0;
+  text-align: center;
+  background: var(--james-red);
+  color: #fff;
+}
+
+.comments #disqus_thread {
+  width: 100%;
+}
+
 .prevnext {
   display: flex;
   justify-content: space-between;
