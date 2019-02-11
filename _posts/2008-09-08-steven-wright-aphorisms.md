@@ -8,7 +8,7 @@ created: 1220912923
 ---
 For fun today I learned how to <strong>run a bash script from PHP</strong>, and implemented everybody's favorite command line utility:  <strong>fortune</strong>!  The script takes advantage of php's <code>exec()</code> command, and ended up looking something like this:
 
-<pre lang="php" line="1">
+```php
 <?php
 exec ("/opt/local/bin/fortune -s", $lines_of_output, $error_code);
 if (!$error_code) {
@@ -19,7 +19,7 @@ if (!$error_code) {
 	print "script failed with exit code $error_code, see http://tldp.org/LDP/abs/html/exitcodes.html";
 }
 ?>
-</pre>
+```
 
 Check out the two beta versions I've created here (Hit refresh in your browser to get a new fortune).
 
