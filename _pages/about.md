@@ -32,6 +32,26 @@ Today I contribute primarily to Drupal and various other Open Source projects on
   rel="stylesheet"
   href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"
 />
+<style>
+    .calendar {
+        border: 0;
+    }
+    .calendar .contrib-column {
+        border-color: var(--border-gray);
+    }
+    .calendar ul.legend > li::before {
+        display: none;
+    }
+    .calendar .contrib-number {
+        color: var(--secondary-font-color);
+    }
+    .calendar ul.legend > li[style="background-color: #ebedf0"] {
+        background-color: var(--footer-bg) !important;
+    }
+    .calendar .js-calendar-graph-svg [fill="#ebedf0"] {
+        fill: var(--footer-bg) !important;
+    }
+</style>
 <div class="calendar">
     Loading James' open source contributions calendar.
 </div>
