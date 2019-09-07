@@ -15,7 +15,7 @@ version:          2.4.0
 # Jekyll site configuration
 title:            James Wilson
 title_separator:  "&middot;"
-tagline:          Open Source Technologist &amp; Senior Web Developer
+tagline:          Open Source Technologist &amp;&nbsp;Senior&nbsp;Web&nbsp;Developer
 description: >-   # Used in homepage metatag and RSS feed description.
                   The personal blog of James Wilson; senior web developer
                   at Bluespark and avid Open Source enthusiast.
