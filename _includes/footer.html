@@ -16,3 +16,8 @@
 {% if site.disqus.enabled and site.disqus.show_comment_counts %}
 <script id="dsq-count-scr" src="//{{ site.disqus.shortname }}.disqus.com/count.js" async></script>
 {% endif %}
+<script>
+  window.addEventListener('load', function(event) {
+    document.querySelector('html').classList.remove('preload');
+  });
+</script>

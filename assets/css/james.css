@@ -106,6 +106,10 @@ body {
   margin: 0
 }
 
+.preload * {
+  transition: none !important;
+}
+
 #skipnav {
   height: 0;
   overflow: hidden;
