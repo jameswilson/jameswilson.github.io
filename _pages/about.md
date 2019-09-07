@@ -33,24 +33,64 @@ Today I contribute primarily to Drupal and various other Open Source projects on
   href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"
 />
 <style>
-    .calendar {
-        border: 0;
+  :root {
+    --james-blue-100: hsl(193, 41%, 93%);
+    --james-blue-200: hsl(192, 42%, 83%);
+    --james-blue-300: hsl(191, 41%, 73%);
+    --james-blue-400: hsl(191, 41%, 53%);
+    --james-blue-500: hsl(191, 87%, 32%);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --james-blue-500: hsl(191, 87%, 32%);
+      --james-blue-400: hsl(191, 86%, 29%);
+      --james-blue-300: hsl(191, 86%, 19%);
+      --james-blue-200: hsl(191, 86%, 15%);
+      --james-blue-100: hsl(191, 88%, 10%);
     }
-    .calendar .contrib-column {
-        border-color: var(--border-gray);
-    }
-    .calendar ul.legend > li::before {
-        display: none;
-    }
-    .calendar .contrib-number {
-        color: var(--secondary-font-color);
-    }
-    .calendar ul.legend > li[style="background-color: #ebedf0"] {
-        background-color: var(--footer-bg) !important;
-    }
-    .calendar .js-calendar-graph-svg [fill="#ebedf0"] {
-        fill: var(--footer-bg) !important;
-    }
+  }
+  .calendar {
+    border: 0;
+  }
+  .calendar .contrib-column {
+    border-color: var(--border-gray);
+  }
+  .calendar ul.legend > li::before {
+    display: none;
+  }
+  .calendar .contrib-number {
+    color: var(--secondary-font-color);
+  }
+  li[style="background-color: #ebedf0"] {
+    background-color: var(--james-blue-100) !important;
+  }
+  svg [fill="#ebedf0"] {
+    fill: var(--james-blue-100) !important;
+  }
+  li[style="background-color: #c6e48b"] {
+    background-color: var(--james-blue-200) !important;
+  }
+  svg [fill="#c6e48b"] {
+    fill: var(--james-blue-200) !important;
+  }
+  li[style="background-color: #7bc96f"] {
+    background-color: var(--james-blue-300) !important;
+  }
+  svg [fill="#7bc96f"] {
+    fill: var(--james-blue-300) !important;
+  }
+  li[style="background-color: #239a3b"] {
+    background-color: var(--james-blue-400) !important;
+  }
+  svg [fill="#239a3b"] {
+    fill: var(--james-blue-400) !important;
+  }
+  li[style="background-color: #196127"] {
+    background-color: var(--james-blue-500) !important;
+  }
+  svg [fill="#196127"] {
+    fill: var(--james-blue-500) !important;
+  }
 </style>
 <div class="calendar">
     Loading James' open source contributions calendar.
